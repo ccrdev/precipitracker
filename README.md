@@ -1,6 +1,6 @@
 # Precipi-Tracker
  
-**Precipi-Tracker** is an application designed to provide detailed information on rainfall patterns for users in off-the-grid locations. It displays areas with significant rainfall, along with collecting stations, for specified regions such as regions, states, or counties. The goal of PrecipiTracker is to aid individuals in managing water resources and staying informed about precipitation trends in their local areas.
+**Precipi-Tracker** is an application designed to provide detailed information on rainfall patterns for users in off-the-grid locations. It displays areas with significant rainfall, along with collecting stations, for specified locations such as regions, states, or counties. The goal of PrecipiTracker is to aid individuals in managing water resources and staying informed about precipitation trends in their local areas.
 
 ## Features
 
