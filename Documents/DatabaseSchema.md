@@ -23,8 +23,6 @@
 - `state_id` (Foreign Key to States, INT, NULLABLE)
 - `county_id` (Foreign Key to Counties, INT, NULLABLE)
 - `timestamp` (Date and time of the record, DATETIME)
-- `latitude` (Latitude in decimal degrees, DECIMAL(9, 6))
-- `longitude` (Longitude in decimal degrees, DECIMAL(9, 6))
 - `precipitation_amount` (Recorded amount of rainfall in mm, DECIMAL(6, 2))
 
 ---
