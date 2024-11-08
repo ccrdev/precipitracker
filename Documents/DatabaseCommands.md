@@ -1,4 +1,10 @@
-# PostgreSQL Create Table Commands
+# PostgreSQL Database Commands
+
+## Create Database
+
+```sql
+CREATE DATABASE precipitracker_db;
+```
 
 ## Create table for Regions
 
