@@ -1,0 +1,48 @@
+/* Created by: Ryan.S
+ * Advanced Website Development (CIS-1152)
+ */
+
+html {
+    font-family: monospace;
+    background-color: blanchedalmond;
+}
+
+body {
+    padding: 1em;
+    margin: auto;
+    text-indent: 1em;
+    width: 50vw;
+}
+
+a:hover {
+    background-color: beige;
+    color: black;
+    font-style: oblique;
+}
+
+a {
+    margin: 1em;
+}
+
+nav {
+    border: double 2px;
+    align-content: center;
+    font-family: sans-serif;
+    font-style: initial;
+}
+
+h3{
+    font-size: 18px;
+}
+
+ul {
+    font-style: oblique;
+    list-style-type: none;
+}
+
+form, section {
+    border: double 2px black;
+    margin: 1em;
+    text-indent: 1em;
+    box-shadow: 8px 8px 4px;
+}
