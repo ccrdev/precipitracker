@@ -53,3 +53,12 @@ CREATE TABLE Precipitation_Records (
     FOREIGN KEY (county_id) REFERENCES Counties(county_id)
 );
 ```
+
+## Grant permissions to the database
+```sql
+GRANT CONNECT ON DATABASE precipdatatest TO rshirloc;
+GRANT CONNECT ON DATABASE precipdatatest TO ahegarty;
+GRANT CONNECT ON DATABASE precipdatatest TO jremilla;
+GRANT CONNECT ON DATABASE precipdatatest TO crosa;
+```
+
