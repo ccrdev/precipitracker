@@ -1,11 +1,21 @@
 <?php
-//This should connect to the database and list all of the region names in the regions table.
+//This should connect to the database and list all region names in the regions table.
 //To test this, make sure you edit the $username and $password to correctly connect
 echo "Connecting to database...<br/>";
 $servername = "localhost";
 $username   = "ahegarty";
 $password   = "password";
 $dbname     = "precipdatatest";
+
+Check connection for error; Debug
+    if ($DBconnection->connect_error) 
+    {
+        die("Connection failed: " . $DBconnection->connect_error);
+    } 
+    else 
+    {
+        echo "<p>Connected successfully</p>";
+    }
 
 $getRegionData = "SELECT * FROM regions;";
 try {
