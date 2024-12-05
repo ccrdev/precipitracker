@@ -1802,7 +1802,7 @@ INSERT INTO Counties (name, state_id) VALUES
     ('Colfax County', 31),
     ('Curry County', 31),
     ('De Baca County', 31),
-    ('Doña Ana County', 31),
+    ('Doï¿½a Ana County', 31),
     ('Eddy County', 31),
     ('Grant County', 31),
     ('Guadalupe County', 31),
@@ -3141,5 +3141,5 @@ INSERT INTO Counties (name, state_id) VALUES
     ('Teton County', 50),
     ('Uinta County', 50),
     ('Washakie County', 50),
-    ('Weston County', 50);
-    ('District of Columbia', 51),
+    ('Weston County', 50),
+    ('District of Columbia', 51);

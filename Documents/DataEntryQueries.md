@@ -3212,6 +3212,6 @@ INSERT INTO Counties (name, state_id) VALUES
     ('Teton County', 50),
     ('Uinta County', 50),
     ('Washakie County', 50),
-    ('Weston County', 50);
-    ('District of Columbia', 51),
+    ('Weston County', 50),
+    ('District of Columbia', 51);
 ```
