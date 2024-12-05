@@ -42,7 +42,7 @@ CREATE TABLE Counties (
 
 ```sql
 CREATE TABLE Precipitation_Records (
-    record_id INT PRIMARY KEY,
+    record_id SERIAL PRIMARY KEY,
     region_id INT,
     state_id INT,
     county_id INT,

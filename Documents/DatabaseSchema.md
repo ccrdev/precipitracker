@@ -22,7 +22,7 @@
 
 ### Precipitation Records
 
-- `record_id` (Primary Key, INT)
+- `record_id` (Serial, Primary Key, INT)
 - `region_id` (Foreign Key to Regions, INT, NULLABLE)
 - `state_id` (Foreign Key to States, INT, NULLABLE)
 - `county_id` (Foreign Key to Counties, INT, NULLABLE)
