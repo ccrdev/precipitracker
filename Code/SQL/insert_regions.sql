@@ -1,6 +1,6 @@
-INSERT INTO Regions (region_id, name)
+INSERT INTO Regions (name)
 VALUES
-    (1, 'Northeast'),
-    (2, 'Midwest'),
-    (3, 'South'),
-    (4, 'West');
+    ('Northeast'),
+    ('Midwest'),
+    ('South'),
+    ('West');

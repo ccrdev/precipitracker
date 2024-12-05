@@ -4,19 +4,19 @@
 
 ### Regions
 
-- `region_id` (Primary Key, INT)
+- `region_id` (Serial Primary Key, INT)
 - `name` (Name of the region, VARCHAR(255))
 
 ### States
 
-- `state_id` (Primary Key, INT)
+- `state_id` (Serial Primary Key, INT)
 - `name` (Name of the state, VARCHAR(255))
 - `abbreviation` (State abbreviation, CHAR(2))
 - `region_id` (Foreign Key to Regions, INT)
 
 ### Counties
 
-- `county_id` (Primary Key, INT)
+- `county_id` (Serial Primary Key, INT)
 - `name` (Name of the county, VARCHAR(255))
 - `state_id` (Foreign Key to States, INT)
 

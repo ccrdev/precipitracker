@@ -10,7 +10,7 @@ CREATE DATABASE precipitracker_db;
 
 ```sql
 CREATE TABLE Regions (
-    region_id INT PRIMARY KEY,
+    region_id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL
 );
 ```
@@ -19,7 +19,7 @@ CREATE TABLE Regions (
 
 ```sql
 CREATE TABLE States (
-    state_id INT PRIMARY KEY,
+    state_id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     abbreviation CHAR(2) NOT NULL,
     region_id INT,
@@ -31,7 +31,7 @@ CREATE TABLE States (
 
 ```sql
 CREATE TABLE Counties (
-    county_id INT PRIMARY KEY,
+    county_id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     state_id INT,
     FOREIGN KEY (state_id) REFERENCES States(state_id)
