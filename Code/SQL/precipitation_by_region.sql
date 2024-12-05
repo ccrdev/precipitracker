@@ -7,4 +7,4 @@ JOIN
 JOIN 
     Regions r ON s.region_id = r.region_id
 WHERE 
-    r.region_name = 'YourRegionName';
+    r.name = 'North East';

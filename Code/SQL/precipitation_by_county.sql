@@ -5,4 +5,4 @@ FROM
 JOIN 
     Counties c ON pr.county_id = c.county_id
 WHERE 
-    c.county_name = 'YourCountyName';
+    c.name = 'Autauga County';
