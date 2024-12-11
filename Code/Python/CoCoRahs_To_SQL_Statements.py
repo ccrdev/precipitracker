@@ -11,10 +11,10 @@ import re
 # File paths
 MASTER_FILE = "ProjectDataMaster.csv"  # Master sheet with county, state, and region info
 OBSERVATION_FILE = "DailyPrecipReports_VT_2023-12-10_1.csv"  # Observation data
-OUTPUT_FILE = "VTearlyReport.sql"  # Output SQL file for precipitation records
+OUTPUT_FILE = "VermontYearlyReport.sql"  # Output SQL file for precipitation records
 
-# Hardcoded state value (e.g., 'alabama')
-STATE_NAME = "vermont"  # Ensure this matches the 'State' column in MASTER_FINAL.csv after normalization
+# Hardcoded state value (e.g., 'vermont')
+STATE_NAME = "vermont"  # Ensure this matches the 'State' column in MProjectDataMaster.csv after normalization
 
 # Directional prefixes to remove
 DIRECTIONAL_PREFIXES = ["east", "west", "north", "south"]
@@ -47,12 +47,12 @@ def load_and_validate_data():
 
     if not REQUIRED_MASTER_COLUMNS.issubset(master_df.columns):
         missing = REQUIRED_MASTER_COLUMNS - set(master_df.columns)
-        print(f"Error: MASTER_FINAL.csv is missing required columns: {missing}")
+        print(f"Error: ProjectDataMaster.csv is missing required columns: {missing}")
         exit()
 
     if not REQUIRED_OBSERVATION_COLUMNS.issubset(observations_df.columns):
         missing = REQUIRED_OBSERVATION_COLUMNS - set(observations_df.columns)
-        print(f"Error: precipdata.csv is missing required columns: {missing}")
+        print(f"Error: Observation CSV is missing required columns: {missing}")
         exit()
 
     # Clean master data
@@ -68,7 +68,7 @@ def load_and_validate_data():
 # Handle unmatched station names
 def handle_unmatched_station(station_name, master_df):
     while True:
-        print(f"Warning: '{station_name}' was not found in MASTER_FINAL.csv.")
+        print(f"Warning: '{station_name}' was not found in ProjectDataMaster.csv.")
         user_input = input(f"Enter the correct name, a three-digit County ID, or press Enter to skip: ").strip()
 
         if not user_input:
