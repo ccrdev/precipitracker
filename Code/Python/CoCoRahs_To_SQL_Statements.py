@@ -14,7 +14,7 @@ OBSERVATION_FILE = "DailyPrecipReports_VT_2023-12-10_1.csv"  # Observation data
 OUTPUT_FILE = "VermontYearlyReport.sql"  # Output SQL file for precipitation records
 
 # Hardcoded state value (e.g., 'vermont')
-STATE_NAME = "vermont"  # Ensure this matches the 'State' column in MProjectDataMaster.csv after normalization
+STATE_NAME = "vermont"  # Ensure this matches the 'State' column in ProjectDataMaster.csv after normalization
 
 # Directional prefixes to remove
 DIRECTIONAL_PREFIXES = ["east", "west", "north", "south"]
