@@ -1,3145 +1,6288 @@
-INSERT INTO Counties (name, state_id) VALUES
-    ('Autauga County', 1),
-    ('Baldwin County', 1),
-    ('Barbour County', 1),
-    ('Bibb County', 1),
-    ('Blount County', 1),
-    ('Bullock County', 1),
-    ('Butler County', 1),
-    ('Calhoun County', 1),
-    ('Chambers County', 1),
-    ('Cherokee County', 1),
-    ('Chilton County', 1),
-    ('Choctaw County', 1),
-    ('Clarke County', 1),
-    ('Clay County', 1),
-    ('Cleburne County', 1),
-    ('Coffee County', 1),
-    ('Colbert County', 1),
-    ('Conecuh County', 1),
-    ('Coosa County', 1),
-    ('Covington County', 1),
-    ('Crenshaw County', 1),
-    ('Cullman County', 1),
-    ('Dale County', 1),
-    ('Dallas County', 1),
-    ('DeKalb County', 1),
-    ('Elmore County', 1),
-    ('Escambia County', 1),
-    ('Etowah County', 1),
-    ('Fayette County', 1),
-    ('Franklin County', 1),
-    ('Geneva County', 1),
-    ('Greene County', 1),
-    ('Hale County', 1),
-    ('Henry County', 1),
-    ('Houston County', 1),
-    ('Jackson County', 1),
-    ('Jefferson County', 1),
-    ('Lamar County', 1),
-    ('Lauderdale County', 1),
-    ('Lawrence County', 1),
-    ('Lee County', 1),
-    ('Limestone County', 1),
-    ('Lowndes County', 1),
-    ('Macon County', 1),
-    ('Madison County', 1),
-    ('Marengo County', 1),
-    ('Marion County', 1),
-    ('Marshall County', 1),
-    ('Mobile County', 1),
-    ('Monroe County', 1),
-    ('Montgomery County', 1),
-    ('Morgan County', 1),
-    ('Perry County', 1),
-    ('Pickens County', 1),
-    ('Pike County', 1),
-    ('Randolph County', 1),
-    ('Russell County', 1),
-    ('St. Clair County', 1),
-    ('Shelby County', 1),
-    ('Sumter County', 1),
-    ('Talladega County', 1),
-    ('Tallapoosa County', 1),
-    ('Tuscaloosa County', 1),
-    ('Walker County', 1),
-    ('Washington County', 1),
-    ('Wilcox County', 1),
-    ('Winston County', 1),
-    ('Aleutians East Borough', 2),
-    ('Aleutians West Census Area', 2),
-    ('Anchorage Municipality', 2),
-    ('Bethel Census Area', 2),
-    ('Bristol Bay Borough', 2),
-    ('Chugach Census Area', 2),
-    ('Copper River Census Area', 2),
-    ('Denali Borough', 2),
-    ('Dillingham Census Area', 2),
-    ('Fairbanks North Star Borough', 2),
-    ('Haines Borough', 2),
-    ('Hoonah-Angoon Census Area', 2),
-    ('Juneau City and Borough', 2),
-    ('Kenai Peninsula Borough', 2),
-    ('Ketchikan Gateway Borough', 2),
-    ('Kodiak Island Borough', 2),
-    ('Kusilvak Census Area', 2),
-    ('Lake and Peninsula Borough', 2),
-    ('Matanuska-Susitna Borough', 2),
-    ('Nome Census Area', 2),
-    ('North Slope Borough', 2),
-    ('Northwest Arctic Borough', 2),
-    ('Petersburg Borough', 2),
-    ('Prince of Wales-Hyder Census Area', 2),
-    ('Sitka City and Borough', 2),
-    ('Skagway Municipality', 2),
-    ('Southeast Fairbanks Census Area', 2),
-    ('Wrangell City and Borough', 2),
-    ('Yakutat City and Borough', 2),
-    ('Yukon-Koyukuk Census Area', 2),
-    ('Apache County', 3),
-    ('Cochise County', 3),
-    ('Coconino County', 3),
-    ('Gila County', 3),
-    ('Graham County', 3),
-    ('Greenlee County', 3),
-    ('La Paz County', 3),
-    ('Maricopa County', 3),
-    ('Mohave County', 3),
-    ('Navajo County', 3),
-    ('Pima County', 3),
-    ('Pinal County', 3),
-    ('Santa Cruz County', 3),
-    ('Yavapai County', 3),
-    ('Yuma County', 3),
-    ('Arkansas County', 4),
-    ('Ashley County', 4),
-    ('Baxter County', 4),
-    ('Benton County', 4),
-    ('Boone County', 4),
-    ('Bradley County', 4),
-    ('Calhoun County', 4),
-    ('Carroll County', 4),
-    ('Chicot County', 4),
-    ('Clark County', 4),
-    ('Clay County', 4),
-    ('Cleburne County', 4),
-    ('Cleveland County', 4),
-    ('Columbia County', 4),
-    ('Conway County', 4),
-    ('Craighead County', 4),
-    ('Crawford County', 4),
-    ('Crittenden County', 4),
-    ('Cross County', 4),
-    ('Dallas County', 4),
-    ('Desha County', 4),
-    ('Drew County', 4),
-    ('Faulkner County', 4),
-    ('Franklin County', 4),
-    ('Fulton County', 4),
-    ('Garland County', 4),
-    ('Grant County', 4),
-    ('Greene County', 4),
-    ('Hempstead County', 4),
-    ('Hot Spring County', 4),
-    ('Howard County', 4),
-    ('Independence County', 4),
-    ('Izard County', 4),
-    ('Jackson County', 4),
-    ('Jefferson County', 4),
-    ('Johnson County', 4),
-    ('Lafayette County', 4),
-    ('Lawrence County', 4),
-    ('Lee County', 4),
-    ('Lincoln County', 4),
-    ('Little River County', 4),
-    ('Logan County', 4),
-    ('Lonoke County', 4),
-    ('Madison County', 4),
-    ('Marion County', 4),
-    ('Miller County', 4),
-    ('Mississippi County', 4),
-    ('Monroe County', 4),
-    ('Montgomery County', 4),
-    ('Nevada County', 4),
-    ('Newton County', 4),
-    ('Ouachita County', 4),
-    ('Perry County', 4),
-    ('Phillips County', 4),
-    ('Pike County', 4),
-    ('Poinsett County', 4),
-    ('Polk County', 4),
-    ('Pope County', 4),
-    ('Prairie County', 4),
-    ('Pulaski County', 4),
-    ('Randolph County', 4),
-    ('St. Francis County', 4),
-    ('Saline County', 4),
-    ('Scott County', 4),
-    ('Searcy County', 4),
-    ('Sebastian County', 4),
-    ('Sevier County', 4),
-    ('Sharp County', 4),
-    ('Stone County', 4),
-    ('Union County', 4),
-    ('Van Buren County', 4),
-    ('Washington County', 4),
-    ('White County', 4),
-    ('Woodruff County', 4),
-    ('Yell County', 4),
-    ('Alameda County', 5),
-    ('Alpine County', 5),
-    ('Amador County', 5),
-    ('Butte County', 5),
-    ('Calaveras County', 5),
-    ('Colusa County', 5),
-    ('Contra Costa County', 5),
-    ('Del Norte County', 5),
-    ('El Dorado County', 5),
-    ('Fresno County', 5),
-    ('Glenn County', 5),
-    ('Humboldt County', 5),
-    ('Imperial County', 5),
-    ('Inyo County', 5),
-    ('Kern County', 5),
-    ('Kings County', 5),
-    ('Lake County', 5),
-    ('Lassen County', 5),
-    ('Los Angeles County', 5),
-    ('Madera County', 5),
-    ('Marin County', 5),
-    ('Mariposa County', 5),
-    ('Mendocino County', 5),
-    ('Merced County', 5),
-    ('Modoc County', 5),
-    ('Mono County', 5),
-    ('Monterey County', 5),
-    ('Napa County', 5),
-    ('Nevada County', 5),
-    ('Orange County', 5),
-    ('Placer County', 5),
-    ('Plumas County', 5),
-    ('Riverside County', 5),
-    ('Sacramento County', 5),
-    ('San Benito County', 5),
-    ('San Bernardino County', 5),
-    ('San Diego County', 5),
-    ('San Francisco County', 5),
-    ('San Joaquin County', 5),
-    ('San Luis Obispo County', 5),
-    ('San Mateo County', 5),
-    ('Santa Barbara County', 5),
-    ('Santa Clara County', 5),
-    ('Santa Cruz County', 5),
-    ('Shasta County', 5),
-    ('Sierra County', 5),
-    ('Siskiyou County', 5),
-    ('Solano County', 5),
-    ('Sonoma County', 5),
-    ('Stanislaus County', 5),
-    ('Sutter County', 5),
-    ('Tehama County', 5),
-    ('Trinity County', 5),
-    ('Tulare County', 5),
-    ('Tuolumne County', 5),
-    ('Ventura County', 5),
-    ('Yolo County', 5),
-    ('Yuba County', 5),
-    ('Adams County', 6),
-    ('Alamosa County', 6),
-    ('Arapahoe County', 6),
-    ('Archuleta County', 6),
-    ('Baca County', 6),
-    ('Bent County', 6),
-    ('Boulder County', 6),
-    ('Broomfield County', 6),
-    ('Chaffee County', 6),
-    ('Cheyenne County', 6),
-    ('Clear Creek County', 6),
-    ('Conejos County', 6),
-    ('Costilla County', 6),
-    ('Crowley County', 6),
-    ('Custer County', 6),
-    ('Delta County', 6),
-    ('Denver County', 6),
-    ('Dolores County', 6),
-    ('Douglas County', 6),
-    ('Eagle County', 6),
-    ('Elbert County', 6),
-    ('El Paso County', 6),
-    ('Fremont County', 6),
-    ('Garfield County', 6),
-    ('Gilpin County', 6),
-    ('Grand County', 6),
-    ('Gunnison County', 6),
-    ('Hinsdale County', 6),
-    ('Huerfano County', 6),
-    ('Jackson County', 6),
-    ('Jefferson County', 6),
-    ('Kiowa County', 6),
-    ('Kit Carson County', 6),
-    ('Lake County', 6),
-    ('La Plata County', 6),
-    ('Larimer County', 6),
-    ('Las Animas County', 6),
-    ('Lincoln County', 6),
-    ('Logan County', 6),
-    ('Mesa County', 6),
-    ('Mineral County', 6),
-    ('Moffat County', 6),
-    ('Montezuma County', 6),
-    ('Montrose County', 6),
-    ('Morgan County', 6),
-    ('Otero County', 6),
-    ('Ouray County', 6),
-    ('Park County', 6),
-    ('Phillips County', 6),
-    ('Pitkin County', 6),
-    ('Prowers County', 6),
-    ('Pueblo County', 6),
-    ('Rio Blanco County', 6),
-    ('Rio Grande County', 6),
-    ('Routt County', 6),
-    ('Saguache County', 6),
-    ('San Juan County', 6),
-    ('San Miguel County', 6),
-    ('Sedgwick County', 6),
-    ('Summit County', 6),
-    ('Teller County', 6),
-    ('Washington County', 6),
-    ('Weld County', 6),
-    ('Yuma County', 6),
-    ('Capitol Planning Region', 7),
-    ('Greater Bridgeport Planning Region', 7),
-    ('Lower Connecticut River Valley Planning Region', 7),
-    ('Naugatuck Valley Planning Region', 7),
-    ('Northeastern Connecticut Planning Region', 7),
-    ('Northwest Hills Planning Region', 7),
-    ('South Central Connecticut Planning Region', 7),
-    ('Southeastern Connecticut Planning Region', 7),
-    ('Western Connecticut Planning Region', 7),
-    ('Kent County', 8),
-    ('New Castle County', 8),
-    ('Sussex County', 8),
-    ('District of Columbia', 9),
-    ('Alachua County', 10),
-    ('Baker County', 10),
-    ('Bay County', 10),
-    ('Bradford County', 10),
-    ('Brevard County', 10),
-    ('Broward County', 10),
-    ('Calhoun County', 10),
-    ('Charlotte County', 10),
-    ('Citrus County', 10),
-    ('Clay County', 10),
-    ('Collier County', 10),
-    ('Columbia County', 10),
-    ('DeSoto County', 10),
-    ('Dixie County', 10),
-    ('Duval County', 10),
-    ('Escambia County', 10),
-    ('Flagler County', 10),
-    ('Franklin County', 10),
-    ('Gadsden County', 10),
-    ('Gilchrist County', 10),
-    ('Glades County', 10),
-    ('Gulf County', 10),
-    ('Hamilton County', 10),
-    ('Hardee County', 10),
-    ('Hendry County', 10),
-    ('Hernando County', 10),
-    ('Highlands County', 10),
-    ('Hillsborough County', 10),
-    ('Holmes County', 10),
-    ('Indian River County', 10),
-    ('Jackson County', 10),
-    ('Jefferson County', 10),
-    ('Lafayette County', 10),
-    ('Lake County', 10),
-    ('Lee County', 10),
-    ('Leon County', 10),
-    ('Levy County', 10),
-    ('Liberty County', 10),
-    ('Madison County', 10),
-    ('Manatee County', 10),
-    ('Marion County', 10),
-    ('Martin County', 10),
-    ('Miami-Dade County', 10),
-    ('Monroe County', 10),
-    ('Nassau County', 10),
-    ('Okaloosa County', 10),
-    ('Okeechobee County', 10),
-    ('Orange County', 10),
-    ('Osceola County', 10),
-    ('Palm Beach County', 10),
-    ('Pasco County', 10),
-    ('Pinellas County', 10),
-    ('Polk County', 10),
-    ('Putnam County', 10),
-    ('St. Johns County', 10),
-    ('St. Lucie County', 10),
-    ('Santa Rosa County', 10),
-    ('Sarasota County', 10),
-    ('Seminole County', 10),
-    ('Sumter County', 10),
-    ('Suwannee County', 10),
-    ('Taylor County', 10),
-    ('Union County', 10),
-    ('Volusia County', 10),
-    ('Wakulla County', 10),
-    ('Walton County', 10),
-    ('Washington County', 10),
-    ('Appling County', 11),
-    ('Atkinson County', 11),
-    ('Bacon County', 11),
-    ('Baker County', 11),
-    ('Baldwin County', 11),
-    ('Banks County', 11),
-    ('Barrow County', 11),
-    ('Bartow County', 11),
-    ('Ben Hill County', 11),
-    ('Berrien County', 11),
-    ('Bibb County', 11),
-    ('Bleckley County', 11),
-    ('Brantley County', 11),
-    ('Brooks County', 11),
-    ('Bryan County', 11),
-    ('Bulloch County', 11),
-    ('Burke County', 11),
-    ('Butts County', 11),
-    ('Calhoun County', 11),
-    ('Camden County', 11),
-    ('Candler County', 11),
-    ('Carroll County', 11),
-    ('Catoosa County', 11),
-    ('Charlton County', 11),
-    ('Chatham County', 11),
-    ('Chattahoochee County', 11),
-    ('Chattooga County', 11),
-    ('Cherokee County', 11),
-    ('Clarke County', 11),
-    ('Clay County', 11),
-    ('Clayton County', 11),
-    ('Clinch County', 11),
-    ('Cobb County', 11),
-    ('Coffee County', 11),
-    ('Colquitt County', 11),
-    ('Columbia County', 11),
-    ('Cook County', 11),
-    ('Coweta County', 11),
-    ('Crawford County', 11),
-    ('Crisp County', 11),
-    ('Dade County', 11),
-    ('Dawson County', 11),
-    ('Decatur County', 11),
-    ('DeKalb County', 11),
-    ('Dodge County', 11),
-    ('Dooly County', 11),
-    ('Dougherty County', 11),
-    ('Douglas County', 11),
-    ('Early County', 11),
-    ('Echols County', 11),
-    ('Effingham County', 11),
-    ('Elbert County', 11),
-    ('Emanuel County', 11),
-    ('Evans County', 11),
-    ('Fannin County', 11),
-    ('Fayette County', 11),
-    ('Floyd County', 11),
-    ('Forsyth County', 11),
-    ('Franklin County', 11),
-    ('Fulton County', 11),
-    ('Gilmer County', 11),
-    ('Glascock County', 11),
-    ('Glynn County', 11),
-    ('Gordon County', 11),
-    ('Grady County', 11),
-    ('Greene County', 11),
-    ('Gwinnett County', 11),
-    ('Habersham County', 11),
-    ('Hall County', 11),
-    ('Hancock County', 11),
-    ('Haralson County', 11),
-    ('Harris County', 11),
-    ('Hart County', 11),
-    ('Heard County', 11),
-    ('Henry County', 11),
-    ('Houston County', 11),
-    ('Irwin County', 11),
-    ('Jackson County', 11),
-    ('Jasper County', 11),
-    ('Jeff Davis County', 11),
-    ('Jefferson County', 11),
-    ('Jenkins County', 11),
-    ('Johnson County', 11),
-    ('Jones County', 11),
-    ('Lamar County', 11),
-    ('Lanier County', 11),
-    ('Laurens County', 11),
-    ('Lee County', 11),
-    ('Liberty County', 11),
-    ('Lincoln County', 11),
-    ('Long County', 11),
-    ('Lowndes County', 11),
-    ('Lumpkin County', 11),
-    ('McDuffie County', 11),
-    ('McIntosh County', 11),
-    ('Macon County', 11),
-    ('Madison County', 11),
-    ('Marion County', 11),
-    ('Meriwether County', 11),
-    ('Miller County', 11),
-    ('Mitchell County', 11),
-    ('Monroe County', 11),
-    ('Montgomery County', 11),
-    ('Morgan County', 11),
-    ('Murray County', 11),
-    ('Muscogee County', 11),
-    ('Newton County', 11),
-    ('Oconee County', 11),
-    ('Oglethorpe County', 11),
-    ('Paulding County', 11),
-    ('Peach County', 11),
-    ('Pickens County', 11),
-    ('Pierce County', 11),
-    ('Pike County', 11),
-    ('Polk County', 11),
-    ('Pulaski County', 11),
-    ('Putnam County', 11),
-    ('Quitman County', 11),
-    ('Rabun County', 11),
-    ('Randolph County', 11),
-    ('Richmond County', 11),
-    ('Rockdale County', 11),
-    ('Schley County', 11),
-    ('Screven County', 11),
-    ('Seminole County', 11),
-    ('Spalding County', 11),
-    ('Stephens County', 11),
-    ('Stewart County', 11),
-    ('Sumter County', 11),
-    ('Talbot County', 11),
-    ('Taliaferro County', 11),
-    ('Tattnall County', 11),
-    ('Taylor County', 11),
-    ('Telfair County', 11),
-    ('Terrell County', 11),
-    ('Thomas County', 11),
-    ('Tift County', 11),
-    ('Toombs County', 11),
-    ('Towns County', 11),
-    ('Treutlen County', 11),
-    ('Troup County', 11),
-    ('Turner County', 11),
-    ('Twiggs County', 11),
-    ('Union County', 11),
-    ('Upson County', 11),
-    ('Walker County', 11),
-    ('Walton County', 11),
-    ('Ware County', 11),
-    ('Warren County', 11),
-    ('Washington County', 11),
-    ('Wayne County', 11),
-    ('Webster County', 11),
-    ('Wheeler County', 11),
-    ('White County', 11),
-    ('Whitfield County', 11),
-    ('Wilcox County', 11),
-    ('Wilkes County', 11),
-    ('Wilkinson County', 11),
-    ('Worth County', 11),
-    ('Hawaii County', 12),
-    ('Honolulu County', 12),
-    ('Kalawao County', 12),
-    ('Kauai County', 12),
-    ('Maui County', 12),
-    ('Ada County', 13),
-    ('Adams County', 13),
-    ('Bannock County', 13),
-    ('Bear Lake County', 13),
-    ('Benewah County', 13),
-    ('Bingham County', 13),
-    ('Blaine County', 13),
-    ('Boise County', 13),
-    ('Bonner County', 13),
-    ('Bonneville County', 13),
-    ('Boundary County', 13),
-    ('Butte County', 13),
-    ('Camas County', 13),
-    ('Canyon County', 13),
-    ('Caribou County', 13),
-    ('Cassia County', 13),
-    ('Clark County', 13),
-    ('Clearwater County', 13),
-    ('Custer County', 13),
-    ('Elmore County', 13),
-    ('Franklin County', 13),
-    ('Fremont County', 13),
-    ('Gem County', 13),
-    ('Gooding County', 13),
-    ('Idaho County', 13),
-    ('Jefferson County', 13),
-    ('Jerome County', 13),
-    ('Kootenai County', 13),
-    ('Latah County', 13),
-    ('Lemhi County', 13),
-    ('Lewis County', 13),
-    ('Lincoln County', 13),
-    ('Madison County', 13),
-    ('Minidoka County', 13),
-    ('Nez Perce County', 13),
-    ('Oneida County', 13),
-    ('Owyhee County', 13),
-    ('Payette County', 13),
-    ('Power County', 13),
-    ('Shoshone County', 13),
-    ('Teton County', 13),
-    ('Twin Falls County', 13),
-    ('Valley County', 13),
-    ('Washington County', 13),
-    ('Adams County', 14),
-    ('Alexander County', 14),
-    ('Bond County', 14),
-    ('Boone County', 14),
-    ('Brown County', 14),
-    ('Bureau County', 14),
-    ('Calhoun County', 14),
-    ('Carroll County', 14),
-    ('Cass County', 14),
-    ('Champaign County', 14),
-    ('Christian County', 14),
-    ('Clark County', 14),
-    ('Clay County', 14),
-    ('Clinton County', 14),
-    ('Coles County', 14),
-    ('Cook County', 14),
-    ('Crawford County', 14),
-    ('Cumberland County', 14),
-    ('DeKalb County', 14),
-    ('De Witt County', 14),
-    ('Douglas County', 14),
-    ('DuPage County', 14),
-    ('Edgar County', 14),
-    ('Edwards County', 14),
-    ('Effingham County', 14),
-    ('Fayette County', 14),
-    ('Ford County', 14),
-    ('Franklin County', 14),
-    ('Fulton County', 14),
-    ('Gallatin County', 14),
-    ('Greene County', 14),
-    ('Grundy County', 14),
-    ('Hamilton County', 14),
-    ('Hancock County', 14),
-    ('Hardin County', 14),
-    ('Henderson County', 14),
-    ('Henry County', 14),
-    ('Iroquois County', 14),
-    ('Jackson County', 14),
-    ('Jasper County', 14),
-    ('Jefferson County', 14),
-    ('Jersey County', 14),
-    ('Jo Daviess County', 14),
-    ('Johnson County', 14),
-    ('Kane County', 14),
-    ('Kankakee County', 14),
-    ('Kendall County', 14),
-    ('Knox County', 14),
-    ('Lake County', 14),
-    ('LaSalle County', 14),
-    ('Lawrence County', 14),
-    ('Lee County', 14),
-    ('Livingston County', 14),
-    ('Logan County', 14),
-    ('McDonough County', 14),
-    ('McHenry County', 14),
-    ('McLean County', 14),
-    ('Macon County', 14),
-    ('Macoupin County', 14),
-    ('Madison County', 14),
-    ('Marion County', 14),
-    ('Marshall County', 14),
-    ('Mason County', 14),
-    ('Massac County', 14),
-    ('Menard County', 14),
-    ('Mercer County', 14),
-    ('Monroe County', 14),
-    ('Montgomery County', 14),
-    ('Morgan County', 14),
-    ('Moultrie County', 14),
-    ('Ogle County', 14),
-    ('Peoria County', 14),
-    ('Perry County', 14),
-    ('Piatt County', 14),
-    ('Pike County', 14),
-    ('Pope County', 14),
-    ('Pulaski County', 14),
-    ('Putnam County', 14),
-    ('Randolph County', 14),
-    ('Richland County', 14),
-    ('Rock Island County', 14),
-    ('St. Clair County', 14),
-    ('Saline County', 14),
-    ('Sangamon County', 14),
-    ('Schuyler County', 14),
-    ('Scott County', 14),
-    ('Shelby County', 14),
-    ('Stark County', 14),
-    ('Stephenson County', 14),
-    ('Tazewell County', 14),
-    ('Union County', 14),
-    ('Vermilion County', 14),
-    ('Wabash County', 14),
-    ('Warren County', 14),
-    ('Washington County', 14),
-    ('Wayne County', 14),
-    ('White County', 14),
-    ('Whiteside County', 14),
-    ('Will County', 14),
-    ('Williamson County', 14),
-    ('Winnebago County', 14),
-    ('Woodford County', 14),
-    ('Adams County', 15),
-    ('Allen County', 15),
-    ('Bartholomew County', 15),
-    ('Benton County', 15),
-    ('Blackford County', 15),
-    ('Boone County', 15),
-    ('Brown County', 15),
-    ('Carroll County', 15),
-    ('Cass County', 15),
-    ('Clark County', 15),
-    ('Clay County', 15),
-    ('Clinton County', 15),
-    ('Crawford County', 15),
-    ('Daviess County', 15),
-    ('Dearborn County', 15),
-    ('Decatur County', 15),
-    ('DeKalb County', 15),
-    ('Delaware County', 15),
-    ('Dubois County', 15),
-    ('Elkhart County', 15),
-    ('Fayette County', 15),
-    ('Floyd County', 15),
-    ('Fountain County', 15),
-    ('Franklin County', 15),
-    ('Fulton County', 15),
-    ('Gibson County', 15),
-    ('Grant County', 15),
-    ('Greene County', 15),
-    ('Hamilton County', 15),
-    ('Hancock County', 15),
-    ('Harrison County', 15),
-    ('Hendricks County', 15),
-    ('Henry County', 15),
-    ('Howard County', 15),
-    ('Huntington County', 15),
-    ('Jackson County', 15),
-    ('Jasper County', 15),
-    ('Jay County', 15),
-    ('Jefferson County', 15),
-    ('Jennings County', 15),
-    ('Johnson County', 15),
-    ('Knox County', 15),
-    ('Kosciusko County', 15),
-    ('LaGrange County', 15),
-    ('Lake County', 15),
-    ('LaPorte County', 15),
-    ('Lawrence County', 15),
-    ('Madison County', 15),
-    ('Marion County', 15),
-    ('Marshall County', 15),
-    ('Martin County', 15),
-    ('Miami County', 15),
-    ('Monroe County', 15),
-    ('Montgomery County', 15),
-    ('Morgan County', 15),
-    ('Newton County', 15),
-    ('Noble County', 15),
-    ('Ohio County', 15),
-    ('Orange County', 15),
-    ('Owen County', 15),
-    ('Parke County', 15),
-    ('Perry County', 15),
-    ('Pike County', 15),
-    ('Porter County', 15),
-    ('Posey County', 15),
-    ('Pulaski County', 15),
-    ('Putnam County', 15),
-    ('Randolph County', 15),
-    ('Ripley County', 15),
-    ('Rush County', 15),
-    ('St. Joseph County', 15),
-    ('Scott County', 15),
-    ('Shelby County', 15),
-    ('Spencer County', 15),
-    ('Starke County', 15),
-    ('Steuben County', 15),
-    ('Sullivan County', 15),
-    ('Switzerland County', 15),
-    ('Tippecanoe County', 15),
-    ('Tipton County', 15),
-    ('Union County', 15),
-    ('Vanderburgh County', 15),
-    ('Vermillion County', 15),
-    ('Vigo County', 15),
-    ('Wabash County', 15),
-    ('Warren County', 15),
-    ('Warrick County', 15),
-    ('Washington County', 15),
-    ('Wayne County', 15),
-    ('Wells County', 15),
-    ('White County', 15),
-    ('Whitley County', 15),
-    ('Adair County', 16),
-    ('Adams County', 16),
-    ('Allamakee County', 16),
-    ('Appanoose County', 16),
-    ('Audubon County', 16),
-    ('Benton County', 16),
-    ('Black Hawk County', 16),
-    ('Boone County', 16),
-    ('Bremer County', 16),
-    ('Buchanan County', 16),
-    ('Buena Vista County', 16),
-    ('Butler County', 16),
-    ('Calhoun County', 16),
-    ('Carroll County', 16),
-    ('Cass County', 16),
-    ('Cedar County', 16),
-    ('Cerro Gordo County', 16),
-    ('Cherokee County', 16),
-    ('Chickasaw County', 16),
-    ('Clarke County', 16),
-    ('Clay County', 16),
-    ('Clayton County', 16),
-    ('Clinton County', 16),
-    ('Crawford County', 16),
-    ('Dallas County', 16),
-    ('Davis County', 16),
-    ('Decatur County', 16),
-    ('Delaware County', 16),
-    ('Des Moines County', 16),
-    ('Dickinson County', 16),
-    ('Dubuque County', 16),
-    ('Emmet County', 16),
-    ('Fayette County', 16),
-    ('Floyd County', 16),
-    ('Franklin County', 16),
-    ('Fremont County', 16),
-    ('Greene County', 16),
-    ('Grundy County', 16),
-    ('Guthrie County', 16),
-    ('Hamilton County', 16),
-    ('Hancock County', 16),
-    ('Hardin County', 16),
-    ('Harrison County', 16),
-    ('Henry County', 16),
-    ('Howard County', 16),
-    ('Humboldt County', 16),
-    ('Ida County', 16),
-    ('Iowa County', 16),
-    ('Jackson County', 16),
-    ('Jasper County', 16),
-    ('Jefferson County', 16),
-    ('Johnson County', 16),
-    ('Jones County', 16),
-    ('Keokuk County', 16),
-    ('Kossuth County', 16),
-    ('Lee County', 16),
-    ('Linn County', 16),
-    ('Louisa County', 16),
-    ('Lucas County', 16),
-    ('Lyon County', 16),
-    ('Madison County', 16),
-    ('Mahaska County', 16),
-    ('Marion County', 16),
-    ('Marshall County', 16),
-    ('Mills County', 16),
-    ('Mitchell County', 16),
-    ('Monona County', 16),
-    ('Monroe County', 16),
-    ('Montgomery County', 16),
-    ('Muscatine County', 16),
-    ('O''Brien County', 16),
-    ('Osceola County', 16),
-    ('Page County', 16),
-    ('Palo Alto County', 16),
-    ('Plymouth County', 16),
-    ('Pocahontas County', 16),
-    ('Polk County', 16),
-    ('Pottawattamie County', 16),
-    ('Poweshiek County', 16),
-    ('Ringgold County', 16),
-    ('Sac County', 16),
-    ('Scott County', 16),
-    ('Shelby County', 16),
-    ('Sioux County', 16),
-    ('Story County', 16),
-    ('Tama County', 16),
-    ('Taylor County', 16),
-    ('Union County', 16),
-    ('Van Buren County', 16),
-    ('Wapello County', 16),
-    ('Warren County', 16),
-    ('Washington County', 16),
-    ('Wayne County', 16),
-    ('Webster County', 16),
-    ('Winnebago County', 16),
-    ('Winneshiek County', 16),
-    ('Woodbury County', 16),
-    ('Worth County', 16),
-    ('Wright County', 16),
-    ('Allen County', 17),
-    ('Anderson County', 17),
-    ('Atchison County', 17),
-    ('Barber County', 17),
-    ('Barton County', 17),
-    ('Bourbon County', 17),
-    ('Brown County', 17),
-    ('Butler County', 17),
-    ('Chase County', 17),
-    ('Chautauqua County', 17),
-    ('Cherokee County', 17),
-    ('Cheyenne County', 17),
-    ('Clark County', 17),
-    ('Clay County', 17),
-    ('Cloud County', 17),
-    ('Coffey County', 17),
-    ('Comanche County', 17),
-    ('Cowley County', 17),
-    ('Crawford County', 17),
-    ('Decatur County', 17),
-    ('Dickinson County', 17),
-    ('Doniphan County', 17),
-    ('Douglas County', 17),
-    ('Edwards County', 17),
-    ('Elk County', 17),
-    ('Ellis County', 17),
-    ('Ellsworth County', 17),
-    ('Finney County', 17),
-    ('Ford County', 17),
-    ('Franklin County', 17),
-    ('Geary County', 17),
-    ('Gove County', 17),
-    ('Graham County', 17),
-    ('Grant County', 17),
-    ('Gray County', 17),
-    ('Greeley County', 17),
-    ('Greenwood County', 17),
-    ('Hamilton County', 17),
-    ('Harper County', 17),
-    ('Harvey County', 17),
-    ('Haskell County', 17),
-    ('Hodgeman County', 17),
-    ('Jackson County', 17),
-    ('Jefferson County', 17),
-    ('Jewell County', 17),
-    ('Johnson County', 17),
-    ('Kearny County', 17),
-    ('Kingman County', 17),
-    ('Kiowa County', 17),
-    ('Labette County', 17),
-    ('Lane County', 17),
-    ('Leavenworth County', 17),
-    ('Lincoln County', 17),
-    ('Linn County', 17),
-    ('Logan County', 17),
-    ('Lyon County', 17),
-    ('McPherson County', 17),
-    ('Marion County', 17),
-    ('Marshall County', 17),
-    ('Meade County', 17),
-    ('Miami County', 17),
-    ('Mitchell County', 17),
-    ('Montgomery County', 17),
-    ('Morris County', 17),
-    ('Morton County', 17),
-    ('Nemaha County', 17),
-    ('Neosho County', 17),
-    ('Ness County', 17),
-    ('Norton County', 17),
-    ('Osage County', 17),
-    ('Osborne County', 17),
-    ('Ottawa County', 17),
-    ('Pawnee County', 17),
-    ('Phillips County', 17),
-    ('Pottawatomie County', 17),
-    ('Pratt County', 17),
-    ('Rawlins County', 17),
-    ('Reno County', 17),
-    ('Republic County', 17),
-    ('Rice County', 17),
-    ('Riley County', 17),
-    ('Rooks County', 17),
-    ('Rush County', 17),
-    ('Russell County', 17),
-    ('Saline County', 17),
-    ('Scott County', 17),
-    ('Sedgwick County', 17),
-    ('Seward County', 17),
-    ('Shawnee County', 17),
-    ('Sheridan County', 17),
-    ('Sherman County', 17),
-    ('Smith County', 17),
-    ('Stafford County', 17),
-    ('Stanton County', 17),
-    ('Stevens County', 17),
-    ('Sumner County', 17),
-    ('Thomas County', 17),
-    ('Trego County', 17),
-    ('Wabaunsee County', 17),
-    ('Wallace County', 17),
-    ('Washington County', 17),
-    ('Wichita County', 17),
-    ('Wilson County', 17),
-    ('Woodson County', 17),
-    ('Wyandotte County', 17),
-    ('Adair County', 18),
-    ('Allen County', 18),
-    ('Anderson County', 18),
-    ('Ballard County', 18),
-    ('Barren County', 18),
-    ('Bath County', 18),
-    ('Bell County', 18),
-    ('Boone County', 18),
-    ('Bourbon County', 18),
-    ('Boyd County', 18),
-    ('Boyle County', 18),
-    ('Bracken County', 18),
-    ('Breathitt County', 18),
-    ('Breckinridge County', 18),
-    ('Bullitt County', 18),
-    ('Butler County', 18),
-    ('Caldwell County', 18),
-    ('Calloway County', 18),
-    ('Campbell County', 18),
-    ('Carlisle County', 18),
-    ('Carroll County', 18),
-    ('Carter County', 18),
-    ('Casey County', 18),
-    ('Christian County', 18),
-    ('Clark County', 18),
-    ('Clay County', 18),
-    ('Clinton County', 18),
-    ('Crittenden County', 18),
-    ('Cumberland County', 18),
-    ('Daviess County', 18),
-    ('Edmonson County', 18),
-    ('Elliott County', 18),
-    ('Estill County', 18),
-    ('Fayette County', 18),
-    ('Fleming County', 18),
-    ('Floyd County', 18),
-    ('Franklin County', 18),
-    ('Fulton County', 18),
-    ('Gallatin County', 18),
-    ('Garrard County', 18),
-    ('Grant County', 18),
-    ('Graves County', 18),
-    ('Grayson County', 18),
-    ('Green County', 18),
-    ('Greenup County', 18),
-    ('Hancock County', 18),
-    ('Hardin County', 18),
-    ('Harlan County', 18),
-    ('Harrison County', 18),
-    ('Hart County', 18),
-    ('Henderson County', 18),
-    ('Henry County', 18),
-    ('Hickman County', 18),
-    ('Hopkins County', 18),
-    ('Jackson County', 18),
-    ('Jefferson County', 18),
-    ('Jessamine County', 18),
-    ('Johnson County', 18),
-    ('Kenton County', 18),
-    ('Knott County', 18),
-    ('Knox County', 18),
-    ('Larue County', 18),
-    ('Laurel County', 18),
-    ('Lawrence County', 18),
-    ('Lee County', 18),
-    ('Leslie County', 18),
-    ('Letcher County', 18),
-    ('Lewis County', 18),
-    ('Lincoln County', 18),
-    ('Livingston County', 18),
-    ('Logan County', 18),
-    ('Lyon County', 18),
-    ('McCracken County', 18),
-    ('McCreary County', 18),
-    ('McLean County', 18),
-    ('Madison County', 18),
-    ('Magoffin County', 18),
-    ('Marion County', 18),
-    ('Marshall County', 18),
-    ('Martin County', 18),
-    ('Mason County', 18),
-    ('Meade County', 18),
-    ('Menifee County', 18),
-    ('Mercer County', 18),
-    ('Metcalfe County', 18),
-    ('Monroe County', 18),
-    ('Montgomery County', 18),
-    ('Morgan County', 18),
-    ('Muhlenberg County', 18),
-    ('Nelson County', 18),
-    ('Nicholas County', 18),
-    ('Ohio County', 18),
-    ('Oldham County', 18),
-    ('Owen County', 18),
-    ('Owsley County', 18),
-    ('Pendleton County', 18),
-    ('Perry County', 18),
-    ('Pike County', 18),
-    ('Powell County', 18),
-    ('Pulaski County', 18),
-    ('Robertson County', 18),
-    ('Rockcastle County', 18),
-    ('Rowan County', 18),
-    ('Russell County', 18),
-    ('Scott County', 18),
-    ('Shelby County', 18),
-    ('Simpson County', 18),
-    ('Spencer County', 18),
-    ('Taylor County', 18),
-    ('Todd County', 18),
-    ('Trigg County', 18),
-    ('Trimble County', 18),
-    ('Union County', 18),
-    ('Warren County', 18),
-    ('Washington County', 18),
-    ('Wayne County', 18),
-    ('Webster County', 18),
-    ('Whitley County', 18),
-    ('Wolfe County', 18),
-    ('Woodford County', 18),
-    ('Acadia Parish', 19),
-    ('Allen Parish', 19),
-    ('Ascension Parish', 19),
-    ('Assumption Parish', 19),
-    ('Avoyelles Parish', 19),
-    ('Beauregard Parish', 19),
-    ('Bienville Parish', 19),
-    ('Bossier Parish', 19),
-    ('Caddo Parish', 19),
-    ('Calcasieu Parish', 19),
-    ('Caldwell Parish', 19),
-    ('Cameron Parish', 19),
-    ('Catahoula Parish', 19),
-    ('Claiborne Parish', 19),
-    ('Concordia Parish', 19),
-    ('De Soto Parish', 19),
-    ('East Baton Rouge Parish', 19),
-    ('East Carroll Parish', 19),
-    ('East Feliciana Parish', 19),
-    ('Evangeline Parish', 19),
-    ('Franklin Parish', 19),
-    ('Grant Parish', 19),
-    ('Iberia Parish', 19),
-    ('Iberville Parish', 19),
-    ('Jackson Parish', 19),
-    ('Jefferson Parish', 19),
-    ('Jefferson Davis Parish', 19),
-    ('Lafayette Parish', 19),
-    ('Lafourche Parish', 19),
-    ('LaSalle Parish', 19),
-    ('Lincoln Parish', 19),
-    ('Livingston Parish', 19),
-    ('Madison Parish', 19),
-    ('Morehouse Parish', 19),
-    ('Natchitoches Parish', 19),
-    ('Orleans Parish', 19),
-    ('Ouachita Parish', 19),
-    ('Plaquemines Parish', 19),
-    ('Pointe Coupee Parish', 19),
-    ('Rapides Parish', 19),
-    ('Red River Parish', 19),
-    ('Richland Parish', 19),
-    ('Sabine Parish', 19),
-    ('St. Bernard Parish', 19),
-    ('St. Charles Parish', 19),
-    ('St. Helena Parish', 19),
-    ('St. James Parish', 19),
-    ('St. John the Baptist Parish', 19),
-    ('St. Landry Parish', 19),
-    ('St. Martin Parish', 19),
-    ('St. Mary Parish', 19),
-    ('St. Tammany Parish', 19),
-    ('Tangipahoa Parish', 19),
-    ('Tensas Parish', 19),
-    ('Terrebonne Parish', 19),
-    ('Union Parish', 19),
-    ('Vermilion Parish', 19),
-    ('Vernon Parish', 19),
-    ('Washington Parish', 19),
-    ('Webster Parish', 19),
-    ('West Baton Rouge Parish', 19),
-    ('West Carroll Parish', 19),
-    ('West Feliciana Parish', 19),
-    ('Winn Parish', 19),
-    ('Androscoggin County', 20),
-    ('Aroostook County', 20),
-    ('Cumberland County', 20),
-    ('Franklin County', 20),
-    ('Hancock County', 20),
-    ('Kennebec County', 20),
-    ('Knox County', 20),
-    ('Lincoln County', 20),
-    ('Oxford County', 20),
-    ('Penobscot County', 20),
-    ('Piscataquis County', 20),
-    ('Sagadahoc County', 20),
-    ('Somerset County', 20),
-    ('Waldo County', 20),
-    ('Washington County', 20),
-    ('York County', 20),
-    ('Allegany County', 21),
-    ('Anne Arundel County', 21),
-    ('Baltimore County', 21),
-    ('Calvert County', 21),
-    ('Caroline County', 21),
-    ('Carroll County', 21),
-    ('Cecil County', 21),
-    ('Charles County', 21),
-    ('Dorchester County', 21),
-    ('Frederick County', 21),
-    ('Garrett County', 21),
-    ('Harford County', 21),
-    ('Howard County', 21),
-    ('Kent County', 21),
-    ('Montgomery County', 21),
-    ('Prince George''s County', 21),
-    ('Queen Anne''s County', 21),
-    ('St. Mary''s County', 21),
-    ('Somerset County', 21),
-    ('Talbot County', 21),
-    ('Washington County', 21),
-    ('Wicomico County', 21),
-    ('Worcester County', 21),
-    ('Baltimore city', 21),
-    ('Barnstable County', 22),
-    ('Berkshire County', 22),
-    ('Bristol County', 22),
-    ('Dukes County', 22),
-    ('Essex County', 22),
-    ('Franklin County', 22),
-    ('Hampden County', 22),
-    ('Hampshire County', 22),
-    ('Middlesex County', 22),
-    ('Nantucket County', 22),
-    ('Norfolk County', 22),
-    ('Plymouth County', 22),
-    ('Suffolk County', 22),
-    ('Worcester County', 22),
-    ('Alcona County', 23),
-    ('Alger County', 23),
-    ('Allegan County', 23),
-    ('Alpena County', 23),
-    ('Antrim County', 23),
-    ('Arenac County', 23),
-    ('Baraga County', 23),
-    ('Barry County', 23),
-    ('Bay County', 23),
-    ('Benzie County', 23),
-    ('Berrien County', 23),
-    ('Branch County', 23),
-    ('Calhoun County', 23),
-    ('Cass County', 23),
-    ('Charlevoix County', 23),
-    ('Cheboygan County', 23),
-    ('Chippewa County', 23),
-    ('Clare County', 23),
-    ('Clinton County', 23),
-    ('Crawford County', 23),
-    ('Delta County', 23),
-    ('Dickinson County', 23),
-    ('Eaton County', 23),
-    ('Emmet County', 23),
-    ('Genesee County', 23),
-    ('Gladwin County', 23),
-    ('Gogebic County', 23),
-    ('Grand Traverse County', 23),
-    ('Gratiot County', 23),
-    ('Hillsdale County', 23),
-    ('Houghton County', 23),
-    ('Huron County', 23),
-    ('Ingham County', 23),
-    ('Ionia County', 23),
-    ('Iosco County', 23),
-    ('Iron County', 23),
-    ('Isabella County', 23),
-    ('Jackson County', 23),
-    ('Kalamazoo County', 23),
-    ('Kalkaska County', 23),
-    ('Kent County', 23),
-    ('Keweenaw County', 23),
-    ('Lake County', 23),
-    ('Lapeer County', 23),
-    ('Leelanau County', 23),
-    ('Lenawee County', 23),
-    ('Livingston County', 23),
-    ('Luce County', 23),
-    ('Mackinac County', 23),
-    ('Macomb County', 23),
-    ('Manistee County', 23),
-    ('Marquette County', 23),
-    ('Mason County', 23),
-    ('Mecosta County', 23),
-    ('Menominee County', 23),
-    ('Midland County', 23),
-    ('Missaukee County', 23),
-    ('Monroe County', 23),
-    ('Montcalm County', 23),
-    ('Montmorency County', 23),
-    ('Muskegon County', 23),
-    ('Newaygo County', 23),
-    ('Oakland County', 23),
-    ('Oceana County', 23),
-    ('Ogemaw County', 23),
-    ('Ontonagon County', 23),
-    ('Osceola County', 23),
-    ('Oscoda County', 23),
-    ('Otsego County', 23),
-    ('Ottawa County', 23),
-    ('Presque Isle County', 23),
-    ('Roscommon County', 23),
-    ('Saginaw County', 23),
-    ('St. Clair County', 23),
-    ('St. Joseph County', 23),
-    ('Sanilac County', 23),
-    ('Schoolcraft County', 23),
-    ('Shiawassee County', 23),
-    ('Tuscola County', 23),
-    ('Van Buren County', 23),
-    ('Washtenaw County', 23),
-    ('Wayne County', 23),
-    ('Wexford County', 23),
-    ('Aitkin County', 24),
-    ('Anoka County', 24),
-    ('Becker County', 24),
-    ('Beltrami County', 24),
-    ('Benton County', 24),
-    ('Big Stone County', 24),
-    ('Blue Earth County', 24),
-    ('Brown County', 24),
-    ('Carlton County', 24),
-    ('Carver County', 24),
-    ('Cass County', 24),
-    ('Chippewa County', 24),
-    ('Chisago County', 24),
-    ('Clay County', 24),
-    ('Clearwater County', 24),
-    ('Cook County', 24),
-    ('Cottonwood County', 24),
-    ('Crow Wing County', 24),
-    ('Dakota County', 24),
-    ('Dodge County', 24),
-    ('Douglas County', 24),
-    ('Faribault County', 24),
-    ('Fillmore County', 24),
-    ('Freeborn County', 24),
-    ('Goodhue County', 24),
-    ('Grant County', 24),
-    ('Hennepin County', 24),
-    ('Houston County', 24),
-    ('Hubbard County', 24),
-    ('Isanti County', 24),
-    ('Itasca County', 24),
-    ('Jackson County', 24),
-    ('Kanabec County', 24),
-    ('Kandiyohi County', 24),
-    ('Kittson County', 24),
-    ('Koochiching County', 24),
-    ('Lac qui Parle County', 24),
-    ('Lake County', 24),
-    ('Lake of the Woods County', 24),
-    ('Le Sueur County', 24),
-    ('Lincoln County', 24),
-    ('Lyon County', 24),
-    ('McLeod County', 24),
-    ('Mahnomen County', 24),
-    ('Marshall County', 24),
-    ('Martin County', 24),
-    ('Meeker County', 24),
-    ('Mille Lacs County', 24),
-    ('Morrison County', 24),
-    ('Mower County', 24),
-    ('Murray County', 24),
-    ('Nicollet County', 24),
-    ('Nobles County', 24),
-    ('Norman County', 24),
-    ('Olmsted County', 24),
-    ('Otter Tail County', 24),
-    ('Pennington County', 24),
-    ('Pine County', 24),
-    ('Pipestone County', 24),
-    ('Polk County', 24),
-    ('Pope County', 24),
-    ('Ramsey County', 24),
-    ('Red Lake County', 24),
-    ('Redwood County', 24),
-    ('Renville County', 24),
-    ('Rice County', 24),
-    ('Rock County', 24),
-    ('Roseau County', 24),
-    ('St. Louis County', 24),
-    ('Scott County', 24),
-    ('Sherburne County', 24),
-    ('Sibley County', 24),
-    ('Stearns County', 24),
-    ('Steele County', 24),
-    ('Stevens County', 24),
-    ('Swift County', 24),
-    ('Todd County', 24),
-    ('Traverse County', 24),
-    ('Wabasha County', 24),
-    ('Wadena County', 24),
-    ('Waseca County', 24),
-    ('Washington County', 24),
-    ('Watonwan County', 24),
-    ('Wilkin County', 24),
-    ('Winona County', 24),
-    ('Wright County', 24),
-    ('Yellow Medicine County', 24),
-    ('Adams County', 25),
-    ('Alcorn County', 25),
-    ('Amite County', 25),
-    ('Attala County', 25),
-    ('Benton County', 25),
-    ('Bolivar County', 25),
-    ('Calhoun County', 25),
-    ('Carroll County', 25),
-    ('Chickasaw County', 25),
-    ('Choctaw County', 25),
-    ('Claiborne County', 25),
-    ('Clarke County', 25),
-    ('Clay County', 25),
-    ('Coahoma County', 25),
-    ('Copiah County', 25),
-    ('Covington County', 25),
-    ('DeSoto County', 25),
-    ('Forrest County', 25),
-    ('Franklin County', 25),
-    ('George County', 25),
-    ('Greene County', 25),
-    ('Grenada County', 25),
-    ('Hancock County', 25),
-    ('Harrison County', 25),
-    ('Hinds County', 25),
-    ('Holmes County', 25),
-    ('Humphreys County', 25),
-    ('Issaquena County', 25),
-    ('Itawamba County', 25),
-    ('Jackson County', 25),
-    ('Jasper County', 25),
-    ('Jefferson County', 25),
-    ('Jefferson Davis County', 25),
-    ('Jones County', 25),
-    ('Kemper County', 25),
-    ('Lafayette County', 25),
-    ('Lamar County', 25),
-    ('Lauderdale County', 25),
-    ('Lawrence County', 25),
-    ('Leake County', 25),
-    ('Lee County', 25),
-    ('Leflore County', 25),
-    ('Lincoln County', 25),
-    ('Lowndes County', 25),
-    ('Madison County', 25),
-    ('Marion County', 25),
-    ('Marshall County', 25),
-    ('Monroe County', 25),
-    ('Montgomery County', 25),
-    ('Neshoba County', 25),
-    ('Newton County', 25),
-    ('Noxubee County', 25),
-    ('Oktibbeha County', 25),
-    ('Panola County', 25),
-    ('Pearl River County', 25),
-    ('Perry County', 25),
-    ('Pike County', 25),
-    ('Pontotoc County', 25),
-    ('Prentiss County', 25),
-    ('Quitman County', 25),
-    ('Rankin County', 25),
-    ('Scott County', 25),
-    ('Sharkey County', 25),
-    ('Simpson County', 25),
-    ('Smith County', 25),
-    ('Stone County', 25),
-    ('Sunflower County', 25),
-    ('Tallahatchie County', 25),
-    ('Tate County', 25),
-    ('Tippah County', 25),
-    ('Tishomingo County', 25),
-    ('Tunica County', 25),
-    ('Union County', 25),
-    ('Walthall County', 25),
-    ('Warren County', 25),
-    ('Washington County', 25),
-    ('Wayne County', 25),
-    ('Webster County', 25),
-    ('Wilkinson County', 25),
-    ('Winston County', 25),
-    ('Yalobusha County', 25),
-    ('Yazoo County', 25),
-    ('Adair County', 26),
-    ('Andrew County', 26),
-    ('Atchison County', 26),
-    ('Audrain County', 26),
-    ('Barry County', 26),
-    ('Barton County', 26),
-    ('Bates County', 26),
-    ('Benton County', 26),
-    ('Bollinger County', 26),
-    ('Boone County', 26),
-    ('Buchanan County', 26),
-    ('Butler County', 26),
-    ('Caldwell County', 26),
-    ('Callaway County', 26),
-    ('Camden County', 26),
-    ('Cape Girardeau County', 26),
-    ('Carroll County', 26),
-    ('Carter County', 26),
-    ('Cass County', 26),
-    ('Cedar County', 26),
-    ('Chariton County', 26),
-    ('Christian County', 26),
-    ('Clark County', 26),
-    ('Clay County', 26),
-    ('Clinton County', 26),
-    ('Cole County', 26),
-    ('Cooper County', 26),
-    ('Crawford County', 26),
-    ('Dade County', 26),
-    ('Dallas County', 26),
-    ('Daviess County', 26),
-    ('DeKalb County', 26),
-    ('Dent County', 26),
-    ('Douglas County', 26),
-    ('Dunklin County', 26),
-    ('Franklin County', 26),
-    ('Gasconade County', 26),
-    ('Gentry County', 26),
-    ('Greene County', 26),
-    ('Grundy County', 26),
-    ('Harrison County', 26),
-    ('Henry County', 26),
-    ('Hickory County', 26),
-    ('Holt County', 26),
-    ('Howard County', 26),
-    ('Howell County', 26),
-    ('Iron County', 26),
-    ('Jackson County', 26),
-    ('Jasper County', 26),
-    ('Jefferson County', 26),
-    ('Johnson County', 26),
-    ('Knox County', 26),
-    ('Laclede County', 26),
-    ('Lafayette County', 26),
-    ('Lawrence County', 26),
-    ('Lewis County', 26),
-    ('Lincoln County', 26),
-    ('Linn County', 26),
-    ('Livingston County', 26),
-    ('McDonald County', 26),
-    ('Macon County', 26),
-    ('Madison County', 26),
-    ('Maries County', 26),
-    ('Marion County', 26),
-    ('Mercer County', 26),
-    ('Miller County', 26),
-    ('Mississippi County', 26),
-    ('Moniteau County', 26),
-    ('Monroe County', 26),
-    ('Montgomery County', 26),
-    ('Morgan County', 26),
-    ('New Madrid County', 26),
-    ('Newton County', 26),
-    ('Nodaway County', 26),
-    ('Oregon County', 26),
-    ('Osage County', 26),
-    ('Ozark County', 26),
-    ('Pemiscot County', 26),
-    ('Perry County', 26),
-    ('Pettis County', 26),
-    ('Phelps County', 26),
-    ('Pike County', 26),
-    ('Platte County', 26),
-    ('Polk County', 26),
-    ('Pulaski County', 26),
-    ('Putnam County', 26),
-    ('Ralls County', 26),
-    ('Randolph County', 26),
-    ('Ray County', 26),
-    ('Reynolds County', 26),
-    ('Ripley County', 26),
-    ('St. Charles County', 26),
-    ('St. Clair County', 26),
-    ('Ste. Genevieve County', 26),
-    ('St. Francois County', 26),
-    ('St. Louis County', 26),
-    ('Saline County', 26),
-    ('Schuyler County', 26),
-    ('Scotland County', 26),
-    ('Scott County', 26),
-    ('Shannon County', 26),
-    ('Shelby County', 26),
-    ('Stoddard County', 26),
-    ('Stone County', 26),
-    ('Sullivan County', 26),
-    ('Taney County', 26),
-    ('Texas County', 26),
-    ('Vernon County', 26),
-    ('Warren County', 26),
-    ('Washington County', 26),
-    ('Wayne County', 26),
-    ('Webster County', 26),
-    ('Worth County', 26),
-    ('Wright County', 26),
-    ('St. Louis city', 26),
-    ('Beaverhead County', 27),
-    ('Big Horn County', 27),
-    ('Blaine County', 27),
-    ('Broadwater County', 27),
-    ('Carbon County', 27),
-    ('Carter County', 27),
-    ('Cascade County', 27),
-    ('Chouteau County', 27),
-    ('Custer County', 27),
-    ('Daniels County', 27),
-    ('Dawson County', 27),
-    ('Deer Lodge County', 27),
-    ('Fallon County', 27),
-    ('Fergus County', 27),
-    ('Flathead County', 27),
-    ('Gallatin County', 27),
-    ('Garfield County', 27),
-    ('Glacier County', 27),
-    ('Golden Valley County', 27),
-    ('Granite County', 27),
-    ('Hill County', 27),
-    ('Jefferson County', 27),
-    ('Judith Basin County', 27),
-    ('Lake County', 27),
-    ('Lewis and Clark County', 27),
-    ('Liberty County', 27),
-    ('Lincoln County', 27),
-    ('McCone County', 27),
-    ('Madison County', 27),
-    ('Meagher County', 27),
-    ('Mineral County', 27),
-    ('Missoula County', 27),
-    ('Musselshell County', 27),
-    ('Park County', 27),
-    ('Petroleum County', 27),
-    ('Phillips County', 27),
-    ('Pondera County', 27),
-    ('Powder River County', 27),
-    ('Powell County', 27),
-    ('Prairie County', 27),
-    ('Ravalli County', 27),
-    ('Richland County', 27),
-    ('Roosevelt County', 27),
-    ('Rosebud County', 27),
-    ('Sanders County', 27),
-    ('Sheridan County', 27),
-    ('Silver Bow County', 27),
-    ('Stillwater County', 27),
-    ('Sweet Grass County', 27),
-    ('Teton County', 27),
-    ('Toole County', 27),
-    ('Treasure County', 27),
-    ('Valley County', 27),
-    ('Wheatland County', 27),
-    ('Wibaux County', 27),
-    ('Yellowstone County', 27),
-    ('Adams County', 28),
-    ('Antelope County', 28),
-    ('Arthur County', 28),
-    ('Banner County', 28),
-    ('Blaine County', 28),
-    ('Boone County', 28),
-    ('Box Butte County', 28),
-    ('Boyd County', 28),
-    ('Brown County', 28),
-    ('Buffalo County', 28),
-    ('Burt County', 28),
-    ('Butler County', 28),
-    ('Cass County', 28),
-    ('Cedar County', 28),
-    ('Chase County', 28),
-    ('Cherry County', 28),
-    ('Cheyenne County', 28),
-    ('Clay County', 28),
-    ('Colfax County', 28),
-    ('Cuming County', 28),
-    ('Custer County', 28),
-    ('Dakota County', 28),
-    ('Dawes County', 28),
-    ('Dawson County', 28),
-    ('Deuel County', 28),
-    ('Dixon County', 28),
-    ('Dodge County', 28),
-    ('Douglas County', 28),
-    ('Dundy County', 28),
-    ('Fillmore County', 28),
-    ('Franklin County', 28),
-    ('Frontier County', 28),
-    ('Furnas County', 28),
-    ('Gage County', 28),
-    ('Garden County', 28),
-    ('Garfield County', 28),
-    ('Gosper County', 28),
-    ('Grant County', 28),
-    ('Greeley County', 28),
-    ('Hall County', 28),
-    ('Hamilton County', 28),
-    ('Harlan County', 28),
-    ('Hayes County', 28),
-    ('Hitchcock County', 28),
-    ('Holt County', 28),
-    ('Hooker County', 28),
-    ('Howard County', 28),
-    ('Jefferson County', 28),
-    ('Johnson County', 28),
-    ('Kearney County', 28),
-    ('Keith County', 28),
-    ('Keya Paha County', 28),
-    ('Kimball County', 28),
-    ('Knox County', 28),
-    ('Lancaster County', 28),
-    ('Lincoln County', 28),
-    ('Logan County', 28),
-    ('Loup County', 28),
-    ('McPherson County', 28),
-    ('Madison County', 28),
-    ('Merrick County', 28),
-    ('Morrill County', 28),
-    ('Nance County', 28),
-    ('Nemaha County', 28),
-    ('Nuckolls County', 28),
-    ('Otoe County', 28),
-    ('Pawnee County', 28),
-    ('Perkins County', 28),
-    ('Phelps County', 28),
-    ('Pierce County', 28),
-    ('Platte County', 28),
-    ('Polk County', 28),
-    ('Red Willow County', 28),
-    ('Richardson County', 28),
-    ('Rock County', 28),
-    ('Saline County', 28),
-    ('Sarpy County', 28),
-    ('Saunders County', 28),
-    ('Scotts Bluff County', 28),
-    ('Seward County', 28),
-    ('Sheridan County', 28),
-    ('Sherman County', 28),
-    ('Sioux County', 28),
-    ('Stanton County', 28),
-    ('Thayer County', 28),
-    ('Thomas County', 28),
-    ('Thurston County', 28),
-    ('Valley County', 28),
-    ('Washington County', 28),
-    ('Wayne County', 28),
-    ('Webster County', 28),
-    ('Wheeler County', 28),
-    ('York County', 28),
-    ('Churchill County', 29),
-    ('Clark County', 29),
-    ('Douglas County', 29),
-    ('Elko County', 29),
-    ('Esmeralda County', 29),
-    ('Eureka County', 29),
-    ('Humboldt County', 29),
-    ('Lander County', 29),
-    ('Lincoln County', 29),
-    ('Lyon County', 29),
-    ('Mineral County', 29),
-    ('Nye County', 29),
-    ('Pershing County', 29),
-    ('Storey County', 29),
-    ('Washoe County', 29),
-    ('White Pine County', 29),
-    ('Carson City', 29),
-    ('Belknap County', 30),
-    ('Carroll County', 30),
-    ('Cheshire County', 30),
-    ('Coos County', 30),
-    ('Grafton County', 30),
-    ('Hillsborough County', 30),
-    ('Merrimack County', 30),
-    ('Rockingham County', 30),
-    ('Strafford County', 30),
-    ('Sullivan County', 30),
-    ('Atlantic County', 31),
-    ('Bergen County', 31),
-    ('Burlington County', 31),
-    ('Camden County', 31),
-    ('Cape May County', 31),
-    ('Cumberland County', 31),
-    ('Essex County', 31),
-    ('Gloucester County', 31),
-    ('Hudson County', 31),
-    ('Hunterdon County', 31),
-    ('Mercer County', 31),
-    ('Middlesex County', 31),
-    ('Monmouth County', 31),
-    ('Morris County', 31),
-    ('Ocean County', 31),
-    ('Passaic County', 31),
-    ('Salem County', 31),
-    ('Somerset County', 31),
-    ('Sussex County', 31),
-    ('Union County', 31),
-    ('Warren County', 31),
-    ('Bernalillo County', 32),
-    ('Catron County', 32),
-    ('Chaves County', 32),
-    ('Cibola County', 32),
-    ('Colfax County', 32),
-    ('Curry County', 32),
-    ('De Baca County', 32),
-    ('Do�a Ana County', 32),
-    ('Eddy County', 32),
-    ('Grant County', 32),
-    ('Guadalupe County', 32),
-    ('Harding County', 32),
-    ('Hidalgo County', 32),
-    ('Lea County', 32),
-    ('Lincoln County', 32),
-    ('Los Alamos County', 32),
-    ('Luna County', 32),
-    ('McKinley County', 32),
-    ('Mora County', 32),
-    ('Otero County', 32),
-    ('Quay County', 32),
-    ('Rio Arriba County', 32),
-    ('Roosevelt County', 32),
-    ('Sandoval County', 32),
-    ('San Juan County', 32),
-    ('San Miguel County', 32),
-    ('Santa Fe County', 32),
-    ('Sierra County', 32),
-    ('Socorro County', 32),
-    ('Taos County', 32),
-    ('Torrance County', 32),
-    ('Union County', 32),
-    ('Valencia County', 32),
-    ('Albany County', 33),
-    ('Allegany County', 33),
-    ('Bronx County', 33),
-    ('Broome County', 33),
-    ('Cattaraugus County', 33),
-    ('Cayuga County', 33),
-    ('Chautauqua County', 33),
-    ('Chemung County', 33),
-    ('Chenango County', 33),
-    ('Clinton County', 33),
-    ('Columbia County', 33),
-    ('Cortland County', 33),
-    ('Delaware County', 33),
-    ('Dutchess County', 33),
-    ('Erie County', 33),
-    ('Essex County', 33),
-    ('Franklin County', 33),
-    ('Fulton County', 33),
-    ('Genesee County', 33),
-    ('Greene County', 33),
-    ('Hamilton County', 33),
-    ('Herkimer County', 33),
-    ('Jefferson County', 33),
-    ('Kings County', 33),
-    ('Lewis County', 33),
-    ('Livingston County', 33),
-    ('Madison County', 33),
-    ('Monroe County', 33),
-    ('Montgomery County', 33),
-    ('Nassau County', 33),
-    ('New York County', 33),
-    ('Niagara County', 33),
-    ('Oneida County', 33),
-    ('Onondaga County', 33),
-    ('Ontario County', 33),
-    ('Orange County', 33),
-    ('Orleans County', 33),
-    ('Oswego County', 33),
-    ('Otsego County', 33),
-    ('Putnam County', 33),
-    ('Queens County', 33),
-    ('Rensselaer County', 33),
-    ('Richmond County', 33),
-    ('Rockland County', 33),
-    ('St. Lawrence County', 33),
-    ('Saratoga County', 33),
-    ('Schenectady County', 33),
-    ('Schoharie County', 33),
-    ('Schuyler County', 33),
-    ('Seneca County', 33),
-    ('Steuben County', 33),
-    ('Suffolk County', 33),
-    ('Sullivan County', 33),
-    ('Tioga County', 33),
-    ('Tompkins County', 33),
-    ('Ulster County', 33),
-    ('Warren County', 33),
-    ('Washington County', 33),
-    ('Wayne County', 33),
-    ('Westchester County', 33),
-    ('Wyoming County', 33),
-    ('Yates County', 33),
-    ('Alamance County', 34),
-    ('Alexander County', 34),
-    ('Alleghany County', 34),
-    ('Anson County', 34),
-    ('Ashe County', 34),
-    ('Avery County', 34),
-    ('Beaufort County', 34),
-    ('Bertie County', 34),
-    ('Bladen County', 34),
-    ('Brunswick County', 34),
-    ('Buncombe County', 34),
-    ('Burke County', 34),
-    ('Cabarrus County', 34),
-    ('Caldwell County', 34),
-    ('Camden County', 34),
-    ('Carteret County', 34),
-    ('Caswell County', 34),
-    ('Catawba County', 34),
-    ('Chatham County', 34),
-    ('Cherokee County', 34),
-    ('Chowan County', 34),
-    ('Clay County', 34),
-    ('Cleveland County', 34),
-    ('Columbus County', 34),
-    ('Craven County', 34),
-    ('Cumberland County', 34),
-    ('Currituck County', 34),
-    ('Dare County', 34),
-    ('Davidson County', 34),
-    ('Davie County', 34),
-    ('Duplin County', 34),
-    ('Durham County', 34),
-    ('Edgecombe County', 34),
-    ('Forsyth County', 34),
-    ('Franklin County', 34),
-    ('Gaston County', 34),
-    ('Gates County', 34),
-    ('Graham County', 34),
-    ('Granville County', 34),
-    ('Greene County', 34),
-    ('Guilford County', 34),
-    ('Halifax County', 34),
-    ('Harnett County', 34),
-    ('Haywood County', 34),
-    ('Henderson County', 34),
-    ('Hertford County', 34),
-    ('Hoke County', 34),
-    ('Hyde County', 34),
-    ('Iredell County', 34),
-    ('Jackson County', 34),
-    ('Johnston County', 34),
-    ('Jones County', 34),
-    ('Lee County', 34),
-    ('Lenoir County', 34),
-    ('Lincoln County', 34),
-    ('McDowell County', 34),
-    ('Macon County', 34),
-    ('Madison County', 34),
-    ('Martin County', 34),
-    ('Mecklenburg County', 34),
-    ('Mitchell County', 34),
-    ('Montgomery County', 34),
-    ('Moore County', 34),
-    ('Nash County', 34),
-    ('New Hanover County', 34),
-    ('Northampton County', 34),
-    ('Onslow County', 34),
-    ('Orange County', 34),
-    ('Pamlico County', 34),
-    ('Pasquotank County', 34),
-    ('Pender County', 34),
-    ('Perquimans County', 34),
-    ('Person County', 34),
-    ('Pitt County', 34),
-    ('Polk County', 34),
-    ('Randolph County', 34),
-    ('Richmond County', 34),
-    ('Robeson County', 34),
-    ('Rockingham County', 34),
-    ('Rowan County', 34),
-    ('Rutherford County', 34),
-    ('Sampson County', 34),
-    ('Scotland County', 34),
-    ('Stanly County', 34),
-    ('Stokes County', 34),
-    ('Surry County', 34),
-    ('Swain County', 34),
-    ('Transylvania County', 34),
-    ('Tyrrell County', 34),
-    ('Union County', 34),
-    ('Vance County', 34),
-    ('Wake County', 34),
-    ('Warren County', 34),
-    ('Washington County', 34),
-    ('Watauga County', 34),
-    ('Wayne County', 34),
-    ('Wilkes County', 34),
-    ('Wilson County', 34),
-    ('Yadkin County', 34),
-    ('Yancey County', 34),
-    ('Adams County', 35),
-    ('Barnes County', 35),
-    ('Benson County', 35),
-    ('Billings County', 35),
-    ('Bottineau County', 35),
-    ('Bowman County', 35),
-    ('Burke County', 35),
-    ('Burleigh County', 35),
-    ('Cass County', 35),
-    ('Cavalier County', 35),
-    ('Dickey County', 35),
-    ('Divide County', 35),
-    ('Dunn County', 35),
-    ('Eddy County', 35),
-    ('Emmons County', 35),
-    ('Foster County', 35),
-    ('Golden Valley County', 35),
-    ('Grand Forks County', 35),
-    ('Grant County', 35),
-    ('Griggs County', 35),
-    ('Hettinger County', 35),
-    ('Kidder County', 35),
-    ('LaMoure County', 35),
-    ('Logan County', 35),
-    ('McHenry County', 35),
-    ('McIntosh County', 35),
-    ('McKenzie County', 35),
-    ('McLean County', 35),
-    ('Mercer County', 35),
-    ('Morton County', 35),
-    ('Mountrail County', 35),
-    ('Nelson County', 35),
-    ('Oliver County', 35),
-    ('Pembina County', 35),
-    ('Pierce County', 35),
-    ('Ramsey County', 35),
-    ('Ransom County', 35),
-    ('Renville County', 35),
-    ('Richland County', 35),
-    ('Rolette County', 35),
-    ('Sargent County', 35),
-    ('Sheridan County', 35),
-    ('Sioux County', 35),
-    ('Slope County', 35),
-    ('Stark County', 35),
-    ('Steele County', 35),
-    ('Stutsman County', 35),
-    ('Towner County', 35),
-    ('Traill County', 35),
-    ('Walsh County', 35),
-    ('Ward County', 35),
-    ('Wells County', 35),
-    ('Williams County', 35),
-    ('Adams County', 36),
-    ('Allen County', 36),
-    ('Ashland County', 36),
-    ('Ashtabula County', 36),
-    ('Athens County', 36),
-    ('Auglaize County', 36),
-    ('Belmont County', 36),
-    ('Brown County', 36),
-    ('Butler County', 36),
-    ('Carroll County', 36),
-    ('Champaign County', 36),
-    ('Clark County', 36),
-    ('Clermont County', 36),
-    ('Clinton County', 36),
-    ('Columbiana County', 36),
-    ('Coshocton County', 36),
-    ('Crawford County', 36),
-    ('Cuyahoga County', 36),
-    ('Darke County', 36),
-    ('Defiance County', 36),
-    ('Delaware County', 36),
-    ('Erie County', 36),
-    ('Fairfield County', 36),
-    ('Fayette County', 36),
-    ('Franklin County', 36),
-    ('Fulton County', 36),
-    ('Gallia County', 36),
-    ('Geauga County', 36),
-    ('Greene County', 36),
-    ('Guernsey County', 36),
-    ('Hamilton County', 36),
-    ('Hancock County', 36),
-    ('Hardin County', 36),
-    ('Harrison County', 36),
-    ('Henry County', 36),
-    ('Highland County', 36),
-    ('Hocking County', 36),
-    ('Holmes County', 36),
-    ('Huron County', 36),
-    ('Jackson County', 36),
-    ('Jefferson County', 36),
-    ('Knox County', 36),
-    ('Lake County', 36),
-    ('Lawrence County', 36),
-    ('Licking County', 36),
-    ('Logan County', 36),
-    ('Lorain County', 36),
-    ('Lucas County', 36),
-    ('Madison County', 36),
-    ('Mahoning County', 36),
-    ('Marion County', 36),
-    ('Medina County', 36),
-    ('Meigs County', 36),
-    ('Mercer County', 36),
-    ('Miami County', 36),
-    ('Monroe County', 36),
-    ('Montgomery County', 36),
-    ('Morgan County', 36),
-    ('Morrow County', 36),
-    ('Muskingum County', 36),
-    ('Noble County', 36),
-    ('Ottawa County', 36),
-    ('Paulding County', 36),
-    ('Perry County', 36),
-    ('Pickaway County', 36),
-    ('Pike County', 36),
-    ('Portage County', 36),
-    ('Preble County', 36),
-    ('Putnam County', 36),
-    ('Richland County', 36),
-    ('Ross County', 36),
-    ('Sandusky County', 36),
-    ('Scioto County', 36),
-    ('Seneca County', 36),
-    ('Shelby County', 36),
-    ('Stark County', 36),
-    ('Summit County', 36),
-    ('Trumbull County', 36),
-    ('Tuscarawas County', 36),
-    ('Union County', 36),
-    ('Van Wert County', 36),
-    ('Vinton County', 36),
-    ('Warren County', 36),
-    ('Washington County', 36),
-    ('Wayne County', 36),
-    ('Williams County', 36),
-    ('Wood County', 36),
-    ('Wyandot County', 36),
-    ('Adair County', 37),
-    ('Alfalfa County', 37),
-    ('Atoka County', 37),
-    ('Beaver County', 37),
-    ('Beckham County', 37),
-    ('Blaine County', 37),
-    ('Bryan County', 37),
-    ('Caddo County', 37),
-    ('Canadian County', 37),
-    ('Carter County', 37),
-    ('Cherokee County', 37),
-    ('Choctaw County', 37),
-    ('Cimarron County', 37),
-    ('Cleveland County', 37),
-    ('Coal County', 37),
-    ('Comanche County', 37),
-    ('Cotton County', 37),
-    ('Craig County', 37),
-    ('Creek County', 37),
-    ('Custer County', 37),
-    ('Delaware County', 37),
-    ('Dewey County', 37),
-    ('Ellis County', 37),
-    ('Garfield County', 37),
-    ('Garvin County', 37),
-    ('Grady County', 37),
-    ('Grant County', 37),
-    ('Greer County', 37),
-    ('Harmon County', 37),
-    ('Harper County', 37),
-    ('Haskell County', 37),
-    ('Hughes County', 37),
-    ('Jackson County', 37),
-    ('Jefferson County', 37),
-    ('Johnston County', 37),
-    ('Kay County', 37),
-    ('Kingfisher County', 37),
-    ('Kiowa County', 37),
-    ('Latimer County', 37),
-    ('Le Flore County', 37),
-    ('Lincoln County', 37),
-    ('Logan County', 37),
-    ('Love County', 37),
-    ('McClain County', 37),
-    ('McCurtain County', 37),
-    ('McIntosh County', 37),
-    ('Major County', 37),
-    ('Marshall County', 37),
-    ('Mayes County', 37),
-    ('Murray County', 37),
-    ('Muskogee County', 37),
-    ('Noble County', 37),
-    ('Nowata County', 37),
-    ('Okfuskee County', 37),
-    ('Oklahoma County', 37),
-    ('Okmulgee County', 37),
-    ('Osage County', 37),
-    ('Ottawa County', 37),
-    ('Pawnee County', 37),
-    ('Payne County', 37),
-    ('Pittsburg County', 37),
-    ('Pontotoc County', 37),
-    ('Pottawatomie County', 37),
-    ('Pushmataha County', 37),
-    ('Roger Mills County', 37),
-    ('Rogers County', 37),
-    ('Seminole County', 37),
-    ('Sequoyah County', 37),
-    ('Stephens County', 37),
-    ('Texas County', 37),
-    ('Tillman County', 37),
-    ('Tulsa County', 37),
-    ('Wagoner County', 37),
-    ('Washington County', 37),
-    ('Washita County', 37),
-    ('Woods County', 37),
-    ('Woodward County', 37),
-    ('Baker County', 38),
-    ('Benton County', 38),
-    ('Clackamas County', 38),
-    ('Clatsop County', 38),
-    ('Columbia County', 38),
-    ('Coos County', 38),
-    ('Crook County', 38),
-    ('Curry County', 38),
-    ('Deschutes County', 38),
-    ('Douglas County', 38),
-    ('Gilliam County', 38),
-    ('Grant County', 38),
-    ('Harney County', 38),
-    ('Hood River County', 38),
-    ('Jackson County', 38),
-    ('Jefferson County', 38),
-    ('Josephine County', 38),
-    ('Klamath County', 38),
-    ('Lake County', 38),
-    ('Lane County', 38),
-    ('Lincoln County', 38),
-    ('Linn County', 38),
-    ('Malheur County', 38),
-    ('Marion County', 38),
-    ('Morrow County', 38),
-    ('Multnomah County', 38),
-    ('Polk County', 38),
-    ('Sherman County', 38),
-    ('Tillamook County', 38),
-    ('Umatilla County', 38),
-    ('Union County', 38),
-    ('Wallowa County', 38),
-    ('Wasco County', 38),
-    ('Washington County', 38),
-    ('Wheeler County', 38),
-    ('Yamhill County', 38),
-    ('Adams County', 39),
-    ('Allegheny County', 39),
-    ('Armstrong County', 39),
-    ('Beaver County', 39),
-    ('Bedford County', 39),
-    ('Berks County', 39),
-    ('Blair County', 39),
-    ('Bradford County', 39),
-    ('Bucks County', 39),
-    ('Butler County', 39),
-    ('Cambria County', 39),
-    ('Cameron County', 39),
-    ('Carbon County', 39),
-    ('Centre County', 39),
-    ('Chester County', 39),
-    ('Clarion County', 39),
-    ('Clearfield County', 39),
-    ('Clinton County', 39),
-    ('Columbia County', 39),
-    ('Crawford County', 39),
-    ('Cumberland County', 39),
-    ('Dauphin County', 39),
-    ('Delaware County', 39),
-    ('Elk County', 39),
-    ('Erie County', 39),
-    ('Fayette County', 39),
-    ('Forest County', 39),
-    ('Franklin County', 39),
-    ('Fulton County', 39),
-    ('Greene County', 39),
-    ('Huntingdon County', 39),
-    ('Indiana County', 39),
-    ('Jefferson County', 39),
-    ('Juniata County', 39),
-    ('Lackawanna County', 39),
-    ('Lancaster County', 39),
-    ('Lawrence County', 39),
-    ('Lebanon County', 39),
-    ('Lehigh County', 39),
-    ('Luzerne County', 39),
-    ('Lycoming County', 39),
-    ('McKean County', 39),
-    ('Mercer County', 39),
-    ('Mifflin County', 39),
-    ('Monroe County', 39),
-    ('Montgomery County', 39),
-    ('Montour County', 39),
-    ('Northampton County', 39),
-    ('Northumberland County', 39),
-    ('Perry County', 39),
-    ('Philadelphia County', 39),
-    ('Pike County', 39),
-    ('Potter County', 39),
-    ('Schuylkill County', 39),
-    ('Snyder County', 39),
-    ('Somerset County', 39),
-    ('Sullivan County', 39),
-    ('Susquehanna County', 39),
-    ('Tioga County', 39),
-    ('Union County', 39),
-    ('Venango County', 39),
-    ('Warren County', 39),
-    ('Washington County', 39),
-    ('Wayne County', 39),
-    ('Westmoreland County', 39),
-    ('Wyoming County', 39),
-    ('York County', 39),
-    ('Bristol County', 40),
-    ('Kent County', 40),
-    ('Newport County', 40),
-    ('Providence County', 40),
-    ('Washington County', 40),
-    ('Abbeville County', 41),
-    ('Aiken County', 41),
-    ('Allendale County', 41),
-    ('Anderson County', 41),
-    ('Bamberg County', 41),
-    ('Barnwell County', 41),
-    ('Beaufort County', 41),
-    ('Berkeley County', 41),
-    ('Calhoun County', 41),
-    ('Charleston County', 41),
-    ('Cherokee County', 41),
-    ('Chester County', 41),
-    ('Chesterfield County', 41),
-    ('Clarendon County', 41),
-    ('Colleton County', 41),
-    ('Darlington County', 41),
-    ('Dillon County', 41),
-    ('Dorchester County', 41),
-    ('Edgefield County', 41),
-    ('Fairfield County', 41),
-    ('Florence County', 41),
-    ('Georgetown County', 41),
-    ('Greenville County', 41),
-    ('Greenwood County', 41),
-    ('Hampton County', 41),
-    ('Horry County', 41),
-    ('Jasper County', 41),
-    ('Kershaw County', 41),
-    ('Lancaster County', 41),
-    ('Laurens County', 41),
-    ('Lee County', 41),
-    ('Lexington County', 41),
-    ('McCormick County', 41),
-    ('Marion County', 41),
-    ('Marlboro County', 41),
-    ('Newberry County', 41),
-    ('Oconee County', 41),
-    ('Orangeburg County', 41),
-    ('Pickens County', 41),
-    ('Richland County', 41),
-    ('Saluda County', 41),
-    ('Spartanburg County', 41),
-    ('Sumter County', 41),
-    ('Union County', 41),
-    ('Williamsburg County', 41),
-    ('York County', 41),
-    ('Aurora County', 42),
-    ('Beadle County', 42),
-    ('Bennett County', 42),
-    ('Bon Homme County', 42),
-    ('Brookings County', 42),
-    ('Brown County', 42),
-    ('Brule County', 42),
-    ('Buffalo County', 42),
-    ('Butte County', 42),
-    ('Campbell County', 42),
-    ('Charles Mix County', 42),
-    ('Clark County', 42),
-    ('Clay County', 42),
-    ('Codington County', 42),
-    ('Corson County', 42),
-    ('Custer County', 42),
-    ('Davison County', 42),
-    ('Day County', 42),
-    ('Deuel County', 42),
-    ('Dewey County', 42),
-    ('Douglas County', 42),
-    ('Edmunds County', 42),
-    ('Fall River County', 42),
-    ('Faulk County', 42),
-    ('Grant County', 42),
-    ('Gregory County', 42),
-    ('Haakon County', 42),
-    ('Hamlin County', 42),
-    ('Hand County', 42),
-    ('Hanson County', 42),
-    ('Harding County', 42),
-    ('Hughes County', 42),
-    ('Hutchinson County', 42),
-    ('Hyde County', 42),
-    ('Jackson County', 42),
-    ('Jerauld County', 42),
-    ('Jones County', 42),
-    ('Kingsbury County', 42),
-    ('Lake County', 42),
-    ('Lawrence County', 42),
-    ('Lincoln County', 42),
-    ('Lyman County', 42),
-    ('McCook County', 42),
-    ('McPherson County', 42),
-    ('Marshall County', 42),
-    ('Meade County', 42),
-    ('Mellette County', 42),
-    ('Miner County', 42),
-    ('Minnehaha County', 42),
-    ('Moody County', 42),
-    ('Oglala Lakota County', 42),
-    ('Pennington County', 42),
-    ('Perkins County', 42),
-    ('Potter County', 42),
-    ('Roberts County', 42),
-    ('Sanborn County', 42),
-    ('Spink County', 42),
-    ('Stanley County', 42),
-    ('Sully County', 42),
-    ('Todd County', 42),
-    ('Tripp County', 42),
-    ('Turner County', 42),
-    ('Union County', 42),
-    ('Walworth County', 42),
-    ('Yankton County', 42),
-    ('Ziebach County', 42),
-    ('Anderson County', 43),
-    ('Bedford County', 43),
-    ('Benton County', 43),
-    ('Bledsoe County', 43),
-    ('Blount County', 43),
-    ('Bradley County', 43),
-    ('Campbell County', 43),
-    ('Cannon County', 43),
-    ('Carroll County', 43),
-    ('Carter County', 43),
-    ('Cheatham County', 43),
-    ('Chester County', 43),
-    ('Claiborne County', 43),
-    ('Clay County', 43),
-    ('Cocke County', 43),
-    ('Coffee County', 43),
-    ('Crockett County', 43),
-    ('Cumberland County', 43),
-    ('Davidson County', 43),
-    ('Decatur County', 43),
-    ('DeKalb County', 43),
-    ('Dickson County', 43),
-    ('Dyer County', 43),
-    ('Fayette County', 43),
-    ('Fentress County', 43),
-    ('Franklin County', 43),
-    ('Gibson County', 43),
-    ('Giles County', 43),
-    ('Grainger County', 43),
-    ('Greene County', 43),
-    ('Grundy County', 43),
-    ('Hamblen County', 43),
-    ('Hamilton County', 43),
-    ('Hancock County', 43),
-    ('Hardeman County', 43),
-    ('Hardin County', 43),
-    ('Hawkins County', 43),
-    ('Haywood County', 43),
-    ('Henderson County', 43),
-    ('Henry County', 43),
-    ('Hickman County', 43),
-    ('Houston County', 43),
-    ('Humphreys County', 43),
-    ('Jackson County', 43),
-    ('Jefferson County', 43),
-    ('Johnson County', 43),
-    ('Knox County', 43),
-    ('Lake County', 43),
-    ('Lauderdale County', 43),
-    ('Lawrence County', 43),
-    ('Lewis County', 43),
-    ('Lincoln County', 43),
-    ('Loudon County', 43),
-    ('McMinn County', 43),
-    ('McNairy County', 43),
-    ('Macon County', 43),
-    ('Madison County', 43),
-    ('Marion County', 43),
-    ('Marshall County', 43),
-    ('Maury County', 43),
-    ('Meigs County', 43),
-    ('Monroe County', 43),
-    ('Montgomery County', 43),
-    ('Moore County', 43),
-    ('Morgan County', 43),
-    ('Obion County', 43),
-    ('Overton County', 43),
-    ('Perry County', 43),
-    ('Pickett County', 43),
-    ('Polk County', 43),
-    ('Putnam County', 43),
-    ('Rhea County', 43),
-    ('Roane County', 43),
-    ('Robertson County', 43),
-    ('Rutherford County', 43),
-    ('Scott County', 43),
-    ('Sequatchie County', 43),
-    ('Sevier County', 43),
-    ('Shelby County', 43),
-    ('Smith County', 43),
-    ('Stewart County', 43),
-    ('Sullivan County', 43),
-    ('Sumner County', 43),
-    ('Tipton County', 43),
-    ('Trousdale County', 43),
-    ('Unicoi County', 43),
-    ('Union County', 43),
-    ('Van Buren County', 43),
-    ('Warren County', 43),
-    ('Washington County', 43),
-    ('Wayne County', 43),
-    ('Weakley County', 43),
-    ('White County', 43),
-    ('Williamson County', 43),
-    ('Wilson County', 43),
-    ('Anderson County', 44),
-    ('Andrews County', 44),
-    ('Angelina County', 44),
-    ('Aransas County', 44),
-    ('Archer County', 44),
-    ('Armstrong County', 44),
-    ('Atascosa County', 44),
-    ('Austin County', 44),
-    ('Bailey County', 44),
-    ('Bandera County', 44),
-    ('Bastrop County', 44),
-    ('Baylor County', 44),
-    ('Bee County', 44),
-    ('Bell County', 44),
-    ('Bexar County', 44),
-    ('Blanco County', 44),
-    ('Borden County', 44),
-    ('Bosque County', 44),
-    ('Bowie County', 44),
-    ('Brazoria County', 44),
-    ('Brazos County', 44),
-    ('Brewster County', 44),
-    ('Briscoe County', 44),
-    ('Brooks County', 44),
-    ('Brown County', 44),
-    ('Burleson County', 44),
-    ('Burnet County', 44),
-    ('Caldwell County', 44),
-    ('Calhoun County', 44),
-    ('Callahan County', 44),
-    ('Cameron County', 44),
-    ('Camp County', 44),
-    ('Carson County', 44),
-    ('Cass County', 44),
-    ('Castro County', 44),
-    ('Chambers County', 44),
-    ('Cherokee County', 44),
-    ('Childress County', 44),
-    ('Clay County', 44),
-    ('Cochran County', 44),
-    ('Coke County', 44),
-    ('Coleman County', 44),
-    ('Collin County', 44),
-    ('Collingsworth County', 44),
-    ('Colorado County', 44),
-    ('Comal County', 44),
-    ('Comanche County', 44),
-    ('Concho County', 44),
-    ('Cooke County', 44),
-    ('Coryell County', 44),
-    ('Cottle County', 44),
-    ('Crane County', 44),
-    ('Crockett County', 44),
-    ('Crosby County', 44),
-    ('Culberson County', 44),
-    ('Dallam County', 44),
-    ('Dallas County', 44),
-    ('Dawson County', 44),
-    ('Deaf Smith County', 44),
-    ('Delta County', 44),
-    ('Denton County', 44),
-    ('DeWitt County', 44),
-    ('Dickens County', 44),
-    ('Dimmit County', 44),
-    ('Donley County', 44),
-    ('Duval County', 44),
-    ('Eastland County', 44),
-    ('Ector County', 44),
-    ('Edwards County', 44),
-    ('Ellis County', 44),
-    ('El Paso County', 44),
-    ('Erath County', 44),
-    ('Falls County', 44),
-    ('Fannin County', 44),
-    ('Fayette County', 44),
-    ('Fisher County', 44),
-    ('Floyd County', 44),
-    ('Foard County', 44),
-    ('Fort Bend County', 44),
-    ('Franklin County', 44),
-    ('Freestone County', 44),
-    ('Frio County', 44),
-    ('Gaines County', 44),
-    ('Galveston County', 44),
-    ('Garza County', 44),
-    ('Gillespie County', 44),
-    ('Glasscock County', 44),
-    ('Goliad County', 44),
-    ('Gonzales County', 44),
-    ('Gray County', 44),
-    ('Grayson County', 44),
-    ('Gregg County', 44),
-    ('Grimes County', 44),
-    ('Guadalupe County', 44),
-    ('Hale County', 44),
-    ('Hall County', 44),
-    ('Hamilton County', 44),
-    ('Hansford County', 44),
-    ('Hardeman County', 44),
-    ('Hardin County', 44),
-    ('Harris County', 44),
-    ('Harrison County', 44),
-    ('Hartley County', 44),
-    ('Haskell County', 44),
-    ('Hays County', 44),
-    ('Hemphill County', 44),
-    ('Henderson County', 44),
-    ('Hidalgo County', 44),
-    ('Hill County', 44),
-    ('Hockley County', 44),
-    ('Hood County', 44),
-    ('Hopkins County', 44),
-    ('Houston County', 44),
-    ('Howard County', 44),
-    ('Hudspeth County', 44),
-    ('Hunt County', 44),
-    ('Hutchinson County', 44),
-    ('Irion County', 44),
-    ('Jack County', 44),
-    ('Jackson County', 44),
-    ('Jasper County', 44),
-    ('Jeff Davis County', 44),
-    ('Jefferson County', 44),
-    ('Jim Hogg County', 44),
-    ('Jim Wells County', 44),
-    ('Johnson County', 44),
-    ('Jones County', 44),
-    ('Karnes County', 44),
-    ('Kaufman County', 44),
-    ('Kendall County', 44),
-    ('Kenedy County', 44),
-    ('Kent County', 44),
-    ('Kerr County', 44),
-    ('Kimble County', 44),
-    ('King County', 44),
-    ('Kinney County', 44),
-    ('Kleberg County', 44),
-    ('Knox County', 44),
-    ('Lamar County', 44),
-    ('Lamb County', 44),
-    ('Lampasas County', 44),
-    ('La Salle County', 44),
-    ('Lavaca County', 44),
-    ('Lee County', 44),
-    ('Leon County', 44),
-    ('Liberty County', 44),
-    ('Limestone County', 44),
-    ('Lipscomb County', 44),
-    ('Live Oak County', 44),
-    ('Llano County', 44),
-    ('Loving County', 44),
-    ('Lubbock County', 44),
-    ('Lynn County', 44),
-    ('McCulloch County', 44),
-    ('McLennan County', 44),
-    ('McMullen County', 44),
-    ('Madison County', 44),
-    ('Marion County', 44),
-    ('Martin County', 44),
-    ('Mason County', 44),
-    ('Matagorda County', 44),
-    ('Maverick County', 44),
-    ('Medina County', 44),
-    ('Menard County', 44),
-    ('Midland County', 44),
-    ('Milam County', 44),
-    ('Mills County', 44),
-    ('Mitchell County', 44),
-    ('Montague County', 44),
-    ('Montgomery County', 44),
-    ('Moore County', 44),
-    ('Morris County', 44),
-    ('Motley County', 44),
-    ('Nacogdoches County', 44),
-    ('Navarro County', 44),
-    ('Newton County', 44),
-    ('Nolan County', 44),
-    ('Nueces County', 44),
-    ('Ochiltree County', 44),
-    ('Oldham County', 44),
-    ('Orange County', 44),
-    ('Palo Pinto County', 44),
-    ('Panola County', 44),
-    ('Parker County', 44),
-    ('Parmer County', 44),
-    ('Pecos County', 44),
-    ('Polk County', 44),
-    ('Potter County', 44),
-    ('Presidio County', 44),
-    ('Rains County', 44),
-    ('Randall County', 44),
-    ('Reagan County', 44),
-    ('Real County', 44),
-    ('Red River County', 44),
-    ('Reeves County', 44),
-    ('Refugio County', 44),
-    ('Roberts County', 44),
-    ('Robertson County', 44),
-    ('Rockwall County', 44),
-    ('Runnels County', 44),
-    ('Rusk County', 44),
-    ('Sabine County', 44),
-    ('San Augustine County', 44),
-    ('San Jacinto County', 44),
-    ('San Patricio County', 44),
-    ('San Saba County', 44),
-    ('Schleicher County', 44),
-    ('Scurry County', 44),
-    ('Shackelford County', 44),
-    ('Shelby County', 44),
-    ('Sherman County', 44),
-    ('Smith County', 44),
-    ('Somervell County', 44),
-    ('Starr County', 44),
-    ('Stephens County', 44),
-    ('Sterling County', 44),
-    ('Stonewall County', 44),
-    ('Sutton County', 44),
-    ('Swisher County', 44),
-    ('Tarrant County', 44),
-    ('Taylor County', 44),
-    ('Terrell County', 44),
-    ('Terry County', 44),
-    ('Throckmorton County', 44),
-    ('Titus County', 44),
-    ('Tom Green County', 44),
-    ('Travis County', 44),
-    ('Trinity County', 44),
-    ('Tyler County', 44),
-    ('Upshur County', 44),
-    ('Upton County', 44),
-    ('Uvalde County', 44),
-    ('Val Verde County', 44),
-    ('Van Zandt County', 44),
-    ('Victoria County', 44),
-    ('Walker County', 44),
-    ('Waller County', 44),
-    ('Ward County', 44),
-    ('Washington County', 44),
-    ('Webb County', 44),
-    ('Wharton County', 44),
-    ('Wheeler County', 44),
-    ('Wichita County', 44),
-    ('Wilbarger County', 44),
-    ('Willacy County', 44),
-    ('Williamson County', 44),
-    ('Wilson County', 44),
-    ('Winkler County', 44),
-    ('Wise County', 44),
-    ('Wood County', 44),
-    ('Yoakum County', 44),
-    ('Young County', 44),
-    ('Zapata County', 44),
-    ('Zavala County', 44),
-    ('Beaver County', 45),
-    ('Box Elder County', 45),
-    ('Cache County', 45),
-    ('Carbon County', 45),
-    ('Daggett County', 45),
-    ('Davis County', 45),
-    ('Duchesne County', 45),
-    ('Emery County', 45),
-    ('Garfield County', 45),
-    ('Grand County', 45),
-    ('Iron County', 45),
-    ('Juab County', 45),
-    ('Kane County', 45),
-    ('Millard County', 45),
-    ('Morgan County', 45),
-    ('Piute County', 45),
-    ('Rich County', 45),
-    ('Salt Lake County', 45),
-    ('San Juan County', 45),
-    ('Sanpete County', 45),
-    ('Sevier County', 45),
-    ('Summit County', 45),
-    ('Tooele County', 45),
-    ('Uintah County', 45),
-    ('Utah County', 45),
-    ('Wasatch County', 45),
-    ('Washington County', 45),
-    ('Wayne County', 45),
-    ('Weber County', 45),
-    ('Addison County', 46),
-    ('Bennington County', 46),
-    ('Caledonia County', 46),
-    ('Chittenden County', 46),
-    ('Essex County', 46),
-    ('Franklin County', 46),
-    ('Grand Isle County', 46),
-    ('Lamoille County', 46),
-    ('Orange County', 46),
-    ('Orleans County', 46),
-    ('Rutland County', 46),
-    ('Washington County', 46),
-    ('Windham County', 46),
-    ('Windsor County', 46),
-    ('Accomack County', 47),
-    ('Albemarle County', 47),
-    ('Alleghany County', 47),
-    ('Amelia County', 47),
-    ('Amherst County', 47),
-    ('Appomattox County', 47),
-    ('Arlington County', 47),
-    ('Augusta County', 47),
-    ('Bath County', 47),
-    ('Bedford County', 47),
-    ('Bland County', 47),
-    ('Botetourt County', 47),
-    ('Brunswick County', 47),
-    ('Buchanan County', 47),
-    ('Buckingham County', 47),
-    ('Campbell County', 47),
-    ('Caroline County', 47),
-    ('Carroll County', 47),
-    ('Charles City County', 47),
-    ('Charlotte County', 47),
-    ('Chesterfield County', 47),
-    ('Clarke County', 47),
-    ('Craig County', 47),
-    ('Culpeper County', 47),
-    ('Cumberland County', 47),
-    ('Dickenson County', 47),
-    ('Dinwiddie County', 47),
-    ('Essex County', 47),
-    ('Fairfax County', 47),
-    ('Fauquier County', 47),
-    ('Floyd County', 47),
-    ('Fluvanna County', 47),
-    ('Franklin County', 47),
-    ('Frederick County', 47),
-    ('Giles County', 47),
-    ('Gloucester County', 47),
-    ('Goochland County', 47),
-    ('Grayson County', 47),
-    ('Greene County', 47),
-    ('Greensville County', 47),
-    ('Halifax County', 47),
-    ('Hanover County', 47),
-    ('Henrico County', 47),
-    ('Henry County', 47),
-    ('Highland County', 47),
-    ('Isle of Wight County', 47),
-    ('James City County', 47),
-    ('King and Queen County', 47),
-    ('King George County', 47),
-    ('King William County', 47),
-    ('Lancaster County', 47),
-    ('Lee County', 47),
-    ('Loudoun County', 47),
-    ('Louisa County', 47),
-    ('Lunenburg County', 47),
-    ('Madison County', 47),
-    ('Mathews County', 47),
-    ('Mecklenburg County', 47),
-    ('Middlesex County', 47),
-    ('Montgomery County', 47),
-    ('Nelson County', 47),
-    ('New Kent County', 47),
-    ('Northampton County', 47),
-    ('Northumberland County', 47),
-    ('Nottoway County', 47),
-    ('Orange County', 47),
-    ('Page County', 47),
-    ('Patrick County', 47),
-    ('Pittsylvania County', 47),
-    ('Powhatan County', 47),
-    ('Prince Edward County', 47),
-    ('Prince George County', 47),
-    ('Prince William County', 47),
-    ('Pulaski County', 47),
-    ('Rappahannock County', 47),
-    ('Richmond County', 47),
-    ('Roanoke County', 47),
-    ('Rockbridge County', 47),
-    ('Rockingham County', 47),
-    ('Russell County', 47),
-    ('Scott County', 47),
-    ('Shenandoah County', 47),
-    ('Smyth County', 47),
-    ('Southampton County', 47),
-    ('Spotsylvania County', 47),
-    ('Stafford County', 47),
-    ('Surry County', 47),
-    ('Sussex County', 47),
-    ('Tazewell County', 47),
-    ('Warren County', 47),
-    ('Washington County', 47),
-    ('Westmoreland County', 47),
-    ('Wise County', 47),
-    ('Wythe County', 47),
-    ('York County', 47),
-    ('Alexandria city', 47),
-    ('Bristol city', 47),
-    ('Buena Vista city', 47),
-    ('Charlottesville city', 47),
-    ('Chesapeake city', 47),
-    ('Colonial Heights city', 47),
-    ('Covington city', 47),
-    ('Danville city', 47),
-    ('Emporia city', 47),
-    ('Fairfax city', 47),
-    ('Falls Church city', 47),
-    ('Franklin city', 47),
-    ('Fredericksburg city', 47),
-    ('Galax city', 47),
-    ('Hampton city', 47),
-    ('Harrisonburg city', 47),
-    ('Hopewell city', 47),
-    ('Lexington city', 47),
-    ('Lynchburg city', 47),
-    ('Manassas city', 47),
-    ('Manassas Park city', 47),
-    ('Martinsville city', 47),
-    ('Newport News city', 47),
-    ('Norfolk city', 47),
-    ('Norton city', 47),
-    ('Petersburg city', 47),
-    ('Poquoson city', 47),
-    ('Portsmouth city', 47),
-    ('Radford city', 47),
-    ('Richmond city', 47),
-    ('Roanoke city', 47),
-    ('Salem city', 47),
-    ('Staunton city', 47),
-    ('Suffolk city', 47),
-    ('Virginia Beach city', 47),
-    ('Waynesboro city', 47),
-    ('Williamsburg city', 47),
-    ('Winchester city', 47),
-    ('Adams County', 48),
-    ('Asotin County', 48),
-    ('Benton County', 48),
-    ('Chelan County', 48),
-    ('Clallam County', 48),
-    ('Clark County', 48),
-    ('Columbia County', 48),
-    ('Cowlitz County', 48),
-    ('Douglas County', 48),
-    ('Ferry County', 48),
-    ('Franklin County', 48),
-    ('Garfield County', 48),
-    ('Grant County', 48),
-    ('Grays Harbor County', 48),
-    ('Island County', 48),
-    ('Jefferson County', 48),
-    ('King County', 48),
-    ('Kitsap County', 48),
-    ('Kittitas County', 48),
-    ('Klickitat County', 48),
-    ('Lewis County', 48),
-    ('Lincoln County', 48),
-    ('Mason County', 48),
-    ('Okanogan County', 48),
-    ('Pacific County', 48),
-    ('Pend Oreille County', 48),
-    ('Pierce County', 48),
-    ('San Juan County', 48),
-    ('Skagit County', 48),
-    ('Skamania County', 48),
-    ('Snohomish County', 48),
-    ('Spokane County', 48),
-    ('Stevens County', 48),
-    ('Thurston County', 48),
-    ('Wahkiakum County', 48),
-    ('Walla Walla County', 48),
-    ('Whatcom County', 48),
-    ('Whitman County', 48),
-    ('Yakima County', 48),
-    ('Barbour County', 49),
-    ('Berkeley County', 49),
-    ('Boone County', 49),
-    ('Braxton County', 49),
-    ('Brooke County', 49),
-    ('Cabell County', 49),
-    ('Calhoun County', 49),
-    ('Clay County', 49),
-    ('Doddridge County', 49),
-    ('Fayette County', 49),
-    ('Gilmer County', 49),
-    ('Grant County', 49),
-    ('Greenbrier County', 49),
-    ('Hampshire County', 49),
-    ('Hancock County', 49),
-    ('Hardy County', 49),
-    ('Harrison County', 49),
-    ('Jackson County', 49),
-    ('Jefferson County', 49),
-    ('Kanawha County', 49),
-    ('Lewis County', 49),
-    ('Lincoln County', 49),
-    ('Logan County', 49),
-    ('McDowell County', 49),
-    ('Marion County', 49),
-    ('Marshall County', 49),
-    ('Mason County', 49),
-    ('Mercer County', 49),
-    ('Mineral County', 49),
-    ('Mingo County', 49),
-    ('Monongalia County', 49),
-    ('Monroe County', 49),
-    ('Morgan County', 49),
-    ('Nicholas County', 49),
-    ('Ohio County', 49),
-    ('Pendleton County', 49),
-    ('Pleasants County', 49),
-    ('Pocahontas County', 49),
-    ('Preston County', 49),
-    ('Putnam County', 49),
-    ('Raleigh County', 49),
-    ('Randolph County', 49),
-    ('Ritchie County', 49),
-    ('Roane County', 49),
-    ('Summers County', 49),
-    ('Taylor County', 49),
-    ('Tucker County', 49),
-    ('Tyler County', 49),
-    ('Upshur County', 49),
-    ('Wayne County', 49),
-    ('Webster County', 49),
-    ('Wetzel County', 49),
-    ('Wirt County', 49),
-    ('Wood County', 49),
-    ('Wyoming County', 49),
-    ('Adams County', 50),
-    ('Ashland County', 50),
-    ('Barron County', 50),
-    ('Bayfield County', 50),
-    ('Brown County', 50),
-    ('Buffalo County', 50),
-    ('Burnett County', 50),
-    ('Calumet County', 50),
-    ('Chippewa County', 50),
-    ('Clark County', 50),
-    ('Columbia County', 50),
-    ('Crawford County', 50),
-    ('Dane County', 50),
-    ('Dodge County', 50),
-    ('Door County', 50),
-    ('Douglas County', 50),
-    ('Dunn County', 50),
-    ('Eau Claire County', 50),
-    ('Florence County', 50),
-    ('Fond du Lac County', 50),
-    ('Forest County', 50),
-    ('Grant County', 50),
-    ('Green County', 50),
-    ('Green Lake County', 50),
-    ('Iowa County', 50),
-    ('Iron County', 50),
-    ('Jackson County', 50),
-    ('Jefferson County', 50),
-    ('Juneau County', 50),
-    ('Kenosha County', 50),
-    ('Kewaunee County', 50),
-    ('La Crosse County', 50),
-    ('Lafayette County', 50),
-    ('Langlade County', 50),
-    ('Lincoln County', 50),
-    ('Manitowoc County', 50),
-    ('Marathon County', 50),
-    ('Marinette County', 50),
-    ('Marquette County', 50),
-    ('Menominee County', 50),
-    ('Milwaukee County', 50),
-    ('Monroe County', 50),
-    ('Oconto County', 50),
-    ('Oneida County', 50),
-    ('Outagamie County', 50),
-    ('Ozaukee County', 50),
-    ('Pepin County', 50),
-    ('Pierce County', 50),
-    ('Polk County', 50),
-    ('Portage County', 50),
-    ('Price County', 50),
-    ('Racine County', 50),
-    ('Richland County', 50),
-    ('Rock County', 50),
-    ('Rusk County', 50),
-    ('St. Croix County', 50),
-    ('Sauk County', 50),
-    ('Sawyer County', 50),
-    ('Shawano County', 50),
-    ('Sheboygan County', 50),
-    ('Taylor County', 50),
-    ('Trempealeau County', 50),
-    ('Vernon County', 50),
-    ('Vilas County', 50),
-    ('Walworth County', 50),
-    ('Washburn County', 50),
-    ('Washington County', 50),
-    ('Waukesha County', 50),
-    ('Waupaca County', 50),
-    ('Waushara County', 50),
-    ('Winnebago County', 50),
-    ('Wood County', 50),
-    ('Albany County', 51),
-    ('Big Horn County', 51),
-    ('Campbell County', 51),
-    ('Carbon County', 51),
-    ('Converse County', 51),
-    ('Crook County', 51),
-    ('Fremont County', 51),
-    ('Goshen County', 51),
-    ('Hot Springs County', 51),
-    ('Johnson County', 51),
-    ('Laramie County', 51),
-    ('Lincoln County', 51),
-    ('Natrona County', 51),
-    ('Niobrara County', 51),
-    ('Park County', 51),
-    ('Platte County', 51),
-    ('Sheridan County', 51),
-    ('Sublette County', 51),
-    ('Sweetwater County', 51),
-    ('Teton County', 51),
-    ('Uinta County', 51),
-    ('Washakie County', 51),
-    ('Weston County', 51);
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Autauga County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Baldwin County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Barbour County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Bibb County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Blount County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Bullock County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Butler County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Calhoun County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Chambers County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Cherokee County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Chilton County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Choctaw County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Clarke County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Clay County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Cleburne County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Coffee County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Colbert County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Conecuh County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Coosa County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Covington County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Crenshaw County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Cullman County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Dale County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Dallas County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'DeKalb County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Elmore County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Escambia County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Etowah County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Fayette County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Franklin County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Geneva County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Greene County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Hale County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Henry County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Houston County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Jackson County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Jefferson County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Lamar County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Lauderdale County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Lawrence County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Lee County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Limestone County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Lowndes County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Macon County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Madison County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Marengo County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Marion County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Marshall County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Mobile County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Monroe County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Montgomery County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Morgan County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Perry County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Pickens County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Pike County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Randolph County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Russell County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'St. Clair County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Shelby County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Sumter County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Talladega County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Tallapoosa County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Tuscaloosa County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Walker County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Washington County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Wilcox County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Winston County', '01');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Aleutians East Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('016', 'Aleutians West Census Area', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('020', 'Anchorage Municipality', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('050', 'Bethel Census Area', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('060', 'Bristol Bay Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Chugach Census Area', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('066', 'Copper River Census Area', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('068', 'Denali Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('070', 'Dillingham Census Area', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('090', 'Fairbanks North Star Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('100', 'Haines Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Hoonah-Angoon Census Area', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('110', 'Juneau City and Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('122', 'Kenai Peninsula Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('130', 'Ketchikan Gateway Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('150', 'Kodiak Island Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('158', 'Kusilvak Census Area', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('164', 'Lake and Peninsula Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('170', 'Matanuska-Susitna Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('180', 'Nome Census Area', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'North Slope Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('188', 'Northwest Arctic Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('195', 'Petersburg Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('198', 'Prince of Wales-Hyder Census Area', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('220', 'Sitka City and Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('230', 'Skagway Municipality', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('240', 'Southeast Fairbanks Census Area', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('275', 'Wrangell City and Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('282', 'Yakutat City and Borough', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('290', 'Yukon-Koyukuk Census Area', '02');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Apache County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Cochise County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Coconino County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Gila County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Graham County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Greenlee County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('012', 'La Paz County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Maricopa County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Mohave County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Navajo County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Pima County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Pinal County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Santa Cruz County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Yavapai County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Yuma County', '04');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Arkansas County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Ashley County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Baxter County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Benton County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Boone County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Bradley County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Calhoun County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Carroll County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Chicot County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Clark County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Clay County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Cleburne County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Cleveland County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Columbia County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Conway County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Craighead County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Crawford County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Crittenden County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Cross County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Dallas County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Desha County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Drew County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Faulkner County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Franklin County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Fulton County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Garland County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Grant County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Greene County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Hempstead County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Hot Spring County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Howard County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Independence County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Izard County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Jackson County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Jefferson County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Johnson County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Lafayette County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Lawrence County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Lee County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Lincoln County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Little River County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Logan County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Lonoke County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Madison County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Marion County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Miller County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Mississippi County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Monroe County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Montgomery County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Nevada County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Newton County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Ouachita County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Perry County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Phillips County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Pike County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Poinsett County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Polk County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Pope County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Prairie County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Pulaski County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Randolph County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'St. Francis County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Saline County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Scott County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Searcy County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Sebastian County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Sevier County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Sharp County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Stone County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Union County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Van Buren County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Washington County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'White County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Woodruff County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Yell County', '05');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Alameda County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Alpine County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Amador County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Butte County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Calaveras County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Colusa County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Contra Costa County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Del Norte County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'El Dorado County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Fresno County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Glenn County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Humboldt County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Imperial County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Inyo County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Kern County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Kings County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Lake County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Lassen County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Los Angeles County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Madera County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Marin County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Mariposa County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Mendocino County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Merced County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Modoc County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Mono County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Monterey County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Napa County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Nevada County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Orange County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Placer County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Plumas County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Riverside County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Sacramento County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'San Benito County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'San Bernardino County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'San Diego County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'San Francisco County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'San Joaquin County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'San Luis Obispo County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'San Mateo County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Santa Barbara County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Santa Clara County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Santa Cruz County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Shasta County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Sierra County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Siskiyou County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Solano County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Sonoma County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Stanislaus County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Sutter County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Tehama County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Trinity County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Tulare County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Tuolumne County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Ventura County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Yolo County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Yuba County', '06');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adams County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Alamosa County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Arapahoe County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Archuleta County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Baca County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Bent County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Boulder County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('014', 'Broomfield County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Chaffee County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Cheyenne County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Clear Creek County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Conejos County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Costilla County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Crowley County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Custer County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Delta County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Denver County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Dolores County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Douglas County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Eagle County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Elbert County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'El Paso County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Fremont County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Garfield County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Gilpin County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Grand County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Gunnison County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Hinsdale County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Huerfano County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Jackson County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Jefferson County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Kiowa County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Kit Carson County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Lake County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'La Plata County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Larimer County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Las Animas County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Lincoln County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Logan County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Mesa County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Mineral County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Moffat County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Montezuma County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Montrose County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Morgan County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Otero County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Ouray County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Park County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Phillips County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Pitkin County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Prowers County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Pueblo County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Rio Blanco County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Rio Grande County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Routt County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Saguache County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'San Juan County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'San Miguel County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Sedgwick County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Summit County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Teller County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Washington County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Weld County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Yuma County', '08');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('110', 'Capitol Planning Region', '09');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('120', 'Greater Bridgeport Planning Region', '09');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('130', 'Lower Connecticut River Valley Planning Region', '09');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('140', 'Naugatuck Valley Planning Region', '09');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('150', 'Northeastern Connecticut Planning Region', '09');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('160', 'Northwest Hills Planning Region', '09');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('170', 'South Central Connecticut Planning Region', '09');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('180', 'Southeastern Connecticut Planning Region', '09');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('190', 'Western Connecticut Planning Region', '09');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Kent County', '10');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'New Castle County', '10');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Sussex County', '10');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'District of Columbia', '11');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Alachua County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Baker County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Bay County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Bradford County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Brevard County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Broward County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Calhoun County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Charlotte County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Citrus County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Clay County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Collier County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Columbia County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'DeSoto County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Dixie County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Duval County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Escambia County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Flagler County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Franklin County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Gadsden County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Gilchrist County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Glades County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Gulf County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Hamilton County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Hardee County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Hendry County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Hernando County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Highlands County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Hillsborough County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Holmes County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Indian River County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Jackson County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Jefferson County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Lafayette County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Lake County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Lee County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Leon County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Levy County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Liberty County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Madison County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Manatee County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Marion County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Martin County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('086', 'Miami-Dade County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Monroe County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Nassau County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Okaloosa County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Okeechobee County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Orange County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Osceola County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Palm Beach County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Pasco County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Pinellas County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Polk County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Putnam County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'St. Johns County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'St. Lucie County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Santa Rosa County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Sarasota County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Seminole County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Sumter County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Suwannee County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Taylor County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Union County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Volusia County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Wakulla County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Walton County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Washington County', '12');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Appling County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Atkinson County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Bacon County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Baker County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Baldwin County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Banks County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Barrow County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Bartow County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Ben Hill County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Berrien County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Bibb County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Bleckley County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Brantley County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Brooks County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Bryan County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Bulloch County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Burke County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Butts County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Calhoun County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Camden County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Candler County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Carroll County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Catoosa County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Charlton County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Chatham County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Chattahoochee County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Chattooga County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Cherokee County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Clarke County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Clay County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Clayton County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Clinch County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Cobb County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Coffee County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Colquitt County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Columbia County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Cook County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Coweta County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Crawford County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Crisp County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Dade County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Dawson County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Decatur County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'DeKalb County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Dodge County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Dooly County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Dougherty County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Douglas County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Early County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Echols County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Effingham County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Elbert County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Emanuel County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Evans County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Fannin County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Fayette County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Floyd County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Forsyth County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Franklin County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Fulton County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Gilmer County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Glascock County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Glynn County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Gordon County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Grady County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Greene County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Gwinnett County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Habersham County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Hall County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Hancock County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Haralson County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Harris County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Hart County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Heard County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Henry County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Houston County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Irwin County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Jackson County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Jasper County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Jeff Davis County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Jefferson County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Jenkins County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Johnson County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Jones County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Lamar County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Lanier County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Laurens County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Lee County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Liberty County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'Lincoln County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'Long County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'Lowndes County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('187', 'Lumpkin County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('189', 'McDuffie County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('191', 'McIntosh County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('193', 'Macon County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('195', 'Madison County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('197', 'Marion County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('199', 'Meriwether County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('201', 'Miller County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('205', 'Mitchell County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('207', 'Monroe County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('209', 'Montgomery County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('211', 'Morgan County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('213', 'Murray County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('215', 'Muscogee County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('217', 'Newton County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('219', 'Oconee County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('221', 'Oglethorpe County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('223', 'Paulding County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('225', 'Peach County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('227', 'Pickens County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('229', 'Pierce County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('231', 'Pike County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('233', 'Polk County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('235', 'Pulaski County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('237', 'Putnam County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('239', 'Quitman County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('241', 'Rabun County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('243', 'Randolph County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('245', 'Richmond County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('247', 'Rockdale County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('249', 'Schley County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('251', 'Screven County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('253', 'Seminole County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('255', 'Spalding County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('257', 'Stephens County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('259', 'Stewart County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('261', 'Sumter County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('263', 'Talbot County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('265', 'Taliaferro County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('267', 'Tattnall County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('269', 'Taylor County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('271', 'Telfair County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('273', 'Terrell County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('275', 'Thomas County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('277', 'Tift County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('279', 'Toombs County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('281', 'Towns County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('283', 'Treutlen County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('285', 'Troup County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('287', 'Turner County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('289', 'Twiggs County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('291', 'Union County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('293', 'Upson County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('295', 'Walker County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('297', 'Walton County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('299', 'Ware County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('301', 'Warren County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('303', 'Washington County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('305', 'Wayne County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('307', 'Webster County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('309', 'Wheeler County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('311', 'White County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('313', 'Whitfield County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('315', 'Wilcox County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('317', 'Wilkes County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('319', 'Wilkinson County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('321', 'Worth County', '13');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Hawaii County', '15');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Honolulu County', '15');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Kalawao County', '15');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Kauai County', '15');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Maui County', '15');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Ada County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Adams County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Bannock County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Bear Lake County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Benewah County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Bingham County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Blaine County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Boise County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Bonner County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Bonneville County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Boundary County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Butte County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Camas County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Canyon County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Caribou County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Cassia County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Clark County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Clearwater County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Custer County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Elmore County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Franklin County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Fremont County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Gem County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Gooding County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Idaho County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Jefferson County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Jerome County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Kootenai County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Latah County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Lemhi County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Lewis County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Lincoln County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Madison County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Minidoka County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Nez Perce County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Oneida County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Owyhee County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Payette County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Power County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Shoshone County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Teton County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Twin Falls County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Valley County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Washington County', '16');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adams County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Alexander County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Bond County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Boone County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Brown County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Bureau County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Calhoun County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Carroll County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Cass County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Champaign County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Christian County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Clark County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Clay County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Clinton County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Coles County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Cook County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Crawford County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Cumberland County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'DeKalb County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'De Witt County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Douglas County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'DuPage County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Edgar County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Edwards County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Effingham County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Fayette County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Ford County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Franklin County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Fulton County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Gallatin County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Greene County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Grundy County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Hamilton County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Hancock County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Hardin County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Henderson County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Henry County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Iroquois County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Jackson County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Jasper County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Jefferson County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Jersey County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Jo Daviess County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Johnson County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Kane County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Kankakee County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Kendall County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Knox County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Lake County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'LaSalle County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Lawrence County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Lee County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Livingston County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Logan County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'McDonough County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'McHenry County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'McLean County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Macon County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Macoupin County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Madison County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Marion County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Marshall County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Mason County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Massac County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Menard County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Mercer County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Monroe County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Montgomery County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Morgan County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Moultrie County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Ogle County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Peoria County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Perry County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Piatt County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Pike County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Pope County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Pulaski County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Putnam County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Randolph County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Richland County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Rock Island County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'St. Clair County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Saline County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Sangamon County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Schuyler County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Scott County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Shelby County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Stark County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Stephenson County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Tazewell County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'Union County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'Vermilion County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'Wabash County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('187', 'Warren County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('189', 'Washington County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('191', 'Wayne County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('193', 'White County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('195', 'Whiteside County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('197', 'Will County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('199', 'Williamson County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('201', 'Winnebago County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('203', 'Woodford County', '17');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adams County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Allen County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Bartholomew County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Benton County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Blackford County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Boone County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Brown County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Carroll County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Cass County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Clark County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Clay County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Clinton County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Crawford County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Daviess County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Dearborn County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Decatur County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'DeKalb County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Delaware County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Dubois County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Elkhart County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Fayette County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Floyd County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Fountain County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Franklin County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Fulton County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Gibson County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Grant County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Greene County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Hamilton County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Hancock County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Harrison County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Hendricks County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Henry County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Howard County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Huntington County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Jackson County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Jasper County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Jay County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Jefferson County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Jennings County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Johnson County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Knox County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Kosciusko County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'LaGrange County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Lake County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'LaPorte County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Lawrence County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Madison County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Marion County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Marshall County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Martin County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Miami County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Monroe County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Montgomery County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Morgan County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Newton County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Noble County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Ohio County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Orange County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Owen County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Parke County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Perry County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Pike County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Porter County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Posey County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Pulaski County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Putnam County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Randolph County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Ripley County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Rush County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'St. Joseph County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Scott County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Shelby County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Spencer County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Starke County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Steuben County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Sullivan County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Switzerland County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Tippecanoe County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Tipton County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Union County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Vanderburgh County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Vermillion County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Vigo County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Wabash County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Warren County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Warrick County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Washington County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Wayne County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Wells County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'White County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'Whitley County', '18');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adair County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Adams County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Allamakee County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Appanoose County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Audubon County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Benton County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Black Hawk County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Boone County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Bremer County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Buchanan County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Buena Vista County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Butler County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Calhoun County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Carroll County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Cass County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Cedar County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Cerro Gordo County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Cherokee County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Chickasaw County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Clarke County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Clay County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Clayton County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Clinton County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Crawford County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Dallas County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Davis County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Decatur County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Delaware County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Des Moines County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Dickinson County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Dubuque County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Emmet County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Fayette County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Floyd County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Franklin County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Fremont County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Greene County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Grundy County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Guthrie County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Hamilton County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Hancock County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Hardin County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Harrison County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Henry County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Howard County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Humboldt County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Ida County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Iowa County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Jackson County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Jasper County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Jefferson County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Johnson County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Jones County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Keokuk County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Kossuth County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Lee County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Linn County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Louisa County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Lucas County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Lyon County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Madison County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Mahaska County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Marion County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Marshall County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Mills County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Mitchell County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Monona County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Monroe County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Montgomery County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Muscatine County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'O''Brien County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Osceola County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Page County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Palo Alto County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Plymouth County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Pocahontas County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Polk County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Pottawattamie County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Poweshiek County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Ringgold County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Sac County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Scott County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Shelby County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Sioux County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Story County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Tama County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Taylor County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Union County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Van Buren County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Wapello County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'Warren County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'Washington County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'Wayne County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('187', 'Webster County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('189', 'Winnebago County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('191', 'Winneshiek County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('193', 'Woodbury County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('195', 'Worth County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('197', 'Wright County', '19');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Allen County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Anderson County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Atchison County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Barber County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Barton County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Bourbon County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Brown County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Butler County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Chase County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Chautauqua County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Cherokee County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Cheyenne County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Clark County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Clay County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Cloud County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Coffey County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Comanche County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Cowley County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Crawford County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Decatur County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Dickinson County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Doniphan County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Douglas County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Edwards County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Elk County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Ellis County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Ellsworth County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Finney County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Ford County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Franklin County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Geary County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Gove County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Graham County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Grant County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Gray County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Greeley County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Greenwood County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Hamilton County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Harper County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Harvey County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Haskell County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Hodgeman County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Jackson County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Jefferson County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Jewell County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Johnson County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Kearny County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Kingman County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Kiowa County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Labette County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Lane County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Leavenworth County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Lincoln County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Linn County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Logan County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Lyon County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'McPherson County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Marion County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Marshall County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Meade County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Miami County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Mitchell County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Montgomery County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Morris County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Morton County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Nemaha County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Neosho County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Ness County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Norton County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Osage County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Osborne County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Ottawa County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Pawnee County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Phillips County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Pottawatomie County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Pratt County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Rawlins County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Reno County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Republic County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Rice County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Riley County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Rooks County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Rush County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Russell County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Saline County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Scott County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Sedgwick County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Seward County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Shawnee County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Sheridan County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'Sherman County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'Smith County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'Stafford County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('187', 'Stanton County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('189', 'Stevens County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('191', 'Sumner County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('193', 'Thomas County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('195', 'Trego County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('197', 'Wabaunsee County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('199', 'Wallace County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('201', 'Washington County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('203', 'Wichita County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('205', 'Wilson County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('207', 'Woodson County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('209', 'Wyandotte County', '20');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adair County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Allen County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Anderson County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Ballard County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Barren County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Bath County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Bell County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Boone County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Bourbon County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Boyd County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Boyle County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Bracken County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Breathitt County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Breckinridge County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Bullitt County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Butler County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Caldwell County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Calloway County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Campbell County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Carlisle County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Carroll County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Carter County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Casey County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Christian County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Clark County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Clay County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Clinton County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Crittenden County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Cumberland County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Daviess County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Edmonson County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Elliott County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Estill County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Fayette County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Fleming County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Floyd County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Franklin County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Fulton County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Gallatin County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Garrard County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Grant County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Graves County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Grayson County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Green County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Greenup County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Hancock County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Hardin County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Harlan County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Harrison County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Hart County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Henderson County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Henry County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Hickman County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Hopkins County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Jackson County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Jefferson County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Jessamine County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Johnson County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Kenton County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Knott County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Knox County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Larue County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Laurel County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Lawrence County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Lee County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Leslie County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Letcher County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Lewis County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Lincoln County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Livingston County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Logan County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Lyon County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'McCracken County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'McCreary County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'McLean County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Madison County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Magoffin County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Marion County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Marshall County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Martin County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Mason County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Meade County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Menifee County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Mercer County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Metcalfe County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Monroe County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Montgomery County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Morgan County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Muhlenberg County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Nelson County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'Nicholas County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'Ohio County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'Oldham County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('187', 'Owen County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('189', 'Owsley County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('191', 'Pendleton County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('193', 'Perry County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('195', 'Pike County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('197', 'Powell County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('199', 'Pulaski County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('201', 'Robertson County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('203', 'Rockcastle County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('205', 'Rowan County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('207', 'Russell County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('209', 'Scott County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('211', 'Shelby County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('213', 'Simpson County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('215', 'Spencer County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('217', 'Taylor County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('219', 'Todd County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('221', 'Trigg County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('223', 'Trimble County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('225', 'Union County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('227', 'Warren County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('229', 'Washington County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('231', 'Wayne County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('233', 'Webster County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('235', 'Whitley County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('237', 'Wolfe County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('239', 'Woodford County', '21');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Acadia Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Allen Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Ascension Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Assumption Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Avoyelles Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Beauregard Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Bienville Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Bossier Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Caddo Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Calcasieu Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Caldwell Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Cameron Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Catahoula Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Claiborne Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Concordia Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'De Soto Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'East Baton Rouge Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'East Carroll Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'East Feliciana Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Evangeline Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Franklin Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Grant Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Iberia Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Iberville Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Jackson Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Jefferson Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Jefferson Davis Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Lafayette Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Lafourche Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'LaSalle Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Lincoln Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Livingston Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Madison Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Morehouse Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Natchitoches Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Orleans Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Ouachita Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Plaquemines Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Pointe Coupee Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Rapides Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Red River Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Richland Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Sabine Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'St. Bernard Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'St. Charles Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'St. Helena Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'St. James Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'St. John the Baptist Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'St. Landry Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'St. Martin Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'St. Mary Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'St. Tammany Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Tangipahoa Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Tensas Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Terrebonne Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Union Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Vermilion Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Vernon Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Washington Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Webster Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'West Baton Rouge Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'West Carroll Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'West Feliciana Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Winn Parish', '22');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Androscoggin County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Aroostook County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Cumberland County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Franklin County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Hancock County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Kennebec County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Knox County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Lincoln County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Oxford County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Penobscot County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Piscataquis County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Sagadahoc County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Somerset County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Waldo County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Washington County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'York County', '23');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Allegany County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Anne Arundel County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Baltimore County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Calvert County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Caroline County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Carroll County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Cecil County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Charles County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Dorchester County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Frederick County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Garrett County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Harford County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Howard County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Kent County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Montgomery County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Prince George''s County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Queen Anne''s County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'St. Mary''s County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Somerset County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Talbot County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Washington County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Wicomico County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Worcester County', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('510', 'Baltimore city', '24');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Barnstable County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Berkshire County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Bristol County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Dukes County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Essex County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Franklin County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Hampden County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Hampshire County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Middlesex County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Nantucket County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Norfolk County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Plymouth County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Suffolk County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Worcester County', '25');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Alcona County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Alger County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Allegan County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Alpena County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Antrim County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Arenac County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Baraga County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Barry County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Bay County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Benzie County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Berrien County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Branch County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Calhoun County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Cass County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Charlevoix County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Cheboygan County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Chippewa County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Clare County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Clinton County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Crawford County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Delta County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Dickinson County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Eaton County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Emmet County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Genesee County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Gladwin County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Gogebic County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Grand Traverse County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Gratiot County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Hillsdale County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Houghton County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Huron County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Ingham County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Ionia County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Iosco County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Iron County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Isabella County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Jackson County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Kalamazoo County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Kalkaska County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Kent County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Keweenaw County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Lake County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Lapeer County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Leelanau County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Lenawee County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Livingston County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Luce County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Mackinac County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Macomb County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Manistee County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Marquette County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Mason County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Mecosta County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Menominee County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Midland County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Missaukee County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Monroe County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Montcalm County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Montmorency County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Muskegon County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Newaygo County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Oakland County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Oceana County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Ogemaw County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Ontonagon County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Osceola County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Oscoda County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Otsego County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Ottawa County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Presque Isle County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Roscommon County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Saginaw County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'St. Clair County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'St. Joseph County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Sanilac County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Schoolcraft County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Shiawassee County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Tuscola County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Van Buren County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Washtenaw County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Wayne County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Wexford County', '26');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Aitkin County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Anoka County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Becker County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Beltrami County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Benton County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Big Stone County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Blue Earth County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Brown County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Carlton County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Carver County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Cass County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Chippewa County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Chisago County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Clay County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Clearwater County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Cook County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Cottonwood County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Crow Wing County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Dakota County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Dodge County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Douglas County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Faribault County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Fillmore County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Freeborn County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Goodhue County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Grant County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Hennepin County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Houston County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Hubbard County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Isanti County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Itasca County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Jackson County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Kanabec County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Kandiyohi County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Kittson County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Koochiching County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Lac qui Parle County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Lake County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Lake of the Woods County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Le Sueur County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Lincoln County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Lyon County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'McLeod County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Mahnomen County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Marshall County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Martin County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Meeker County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Mille Lacs County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Morrison County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Mower County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Murray County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Nicollet County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Nobles County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Norman County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Olmsted County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Otter Tail County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Pennington County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Pine County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Pipestone County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Polk County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Pope County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Ramsey County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Red Lake County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Redwood County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Renville County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Rice County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Rock County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Roseau County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'St. Louis County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Scott County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Sherburne County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Sibley County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Stearns County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Steele County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Stevens County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Swift County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Todd County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Traverse County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Wabasha County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Wadena County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Waseca County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Washington County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Watonwan County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Wilkin County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Winona County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Wright County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Yellow Medicine County', '27');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adams County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Alcorn County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Amite County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Attala County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Benton County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Bolivar County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Calhoun County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Carroll County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Chickasaw County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Choctaw County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Claiborne County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Clarke County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Clay County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Coahoma County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Copiah County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Covington County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'DeSoto County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Forrest County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Franklin County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'George County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Greene County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Grenada County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Hancock County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Harrison County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Hinds County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Holmes County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Humphreys County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Issaquena County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Itawamba County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Jackson County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Jasper County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Jefferson County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Jefferson Davis County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Jones County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Kemper County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Lafayette County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Lamar County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Lauderdale County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Lawrence County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Leake County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Lee County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Leflore County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Lincoln County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Lowndes County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Madison County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Marion County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Marshall County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Monroe County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Montgomery County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Neshoba County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Newton County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Noxubee County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Oktibbeha County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Panola County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Pearl River County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Perry County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Pike County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Pontotoc County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Prentiss County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Quitman County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Rankin County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Scott County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Sharkey County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Simpson County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Smith County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Stone County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Sunflower County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Tallahatchie County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Tate County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Tippah County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Tishomingo County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Tunica County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Union County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Walthall County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Warren County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Washington County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Wayne County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Webster County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Wilkinson County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Winston County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Yalobusha County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Yazoo County', '28');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adair County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Andrew County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Atchison County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Audrain County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Barry County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Barton County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Bates County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Benton County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Bollinger County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Boone County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Buchanan County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Butler County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Caldwell County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Callaway County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Camden County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Cape Girardeau County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Carroll County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Carter County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Cass County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Cedar County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Chariton County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Christian County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Clark County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Clay County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Clinton County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Cole County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Cooper County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Crawford County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Dade County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Dallas County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Daviess County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'DeKalb County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Dent County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Douglas County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Dunklin County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Franklin County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Gasconade County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Gentry County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Greene County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Grundy County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Harrison County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Henry County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Hickory County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Holt County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Howard County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Howell County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Iron County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Jackson County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Jasper County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Jefferson County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Johnson County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Knox County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Laclede County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Lafayette County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Lawrence County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Lewis County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Lincoln County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Linn County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Livingston County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'McDonald County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Macon County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Madison County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Maries County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Marion County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Mercer County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Miller County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Mississippi County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Moniteau County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Monroe County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Montgomery County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Morgan County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'New Madrid County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Newton County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Nodaway County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Oregon County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Osage County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Ozark County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Pemiscot County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Perry County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Pettis County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Phelps County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Pike County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Platte County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Polk County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Pulaski County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Putnam County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Ralls County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Randolph County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Ray County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Reynolds County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'Ripley County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'St. Charles County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'St. Clair County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('186', 'Ste. Genevieve County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('187', 'St. Francois County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('189', 'St. Louis County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('195', 'Saline County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('197', 'Schuyler County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('199', 'Scotland County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('201', 'Scott County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('203', 'Shannon County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('205', 'Shelby County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('207', 'Stoddard County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('209', 'Stone County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('211', 'Sullivan County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('213', 'Taney County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('215', 'Texas County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('217', 'Vernon County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('219', 'Warren County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('221', 'Washington County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('223', 'Wayne County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('225', 'Webster County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('227', 'Worth County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('229', 'Wright County', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('510', 'St. Louis city', '29');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Beaverhead County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Big Horn County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Blaine County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Broadwater County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Carbon County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Carter County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Cascade County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Chouteau County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Custer County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Daniels County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Dawson County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Deer Lodge County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Fallon County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Fergus County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Flathead County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Gallatin County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Garfield County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Glacier County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Golden Valley County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Granite County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Hill County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Jefferson County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Judith Basin County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Lake County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Lewis and Clark County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Liberty County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Lincoln County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'McCone County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Madison County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Meagher County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Mineral County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Missoula County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Musselshell County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Park County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Petroleum County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Phillips County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Pondera County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Powder River County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Powell County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Prairie County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Ravalli County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Richland County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Roosevelt County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Rosebud County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Sanders County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Sheridan County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Silver Bow County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Stillwater County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Sweet Grass County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Teton County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Toole County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Treasure County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Valley County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Wheatland County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Wibaux County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Yellowstone County', '30');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adams County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Antelope County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Arthur County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Banner County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Blaine County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Boone County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Box Butte County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Boyd County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Brown County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Buffalo County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Burt County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Butler County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Cass County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Cedar County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Chase County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Cherry County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Cheyenne County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Clay County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Colfax County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Cuming County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Custer County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Dakota County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Dawes County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Dawson County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Deuel County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Dixon County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Dodge County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Douglas County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Dundy County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Fillmore County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Franklin County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Frontier County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Furnas County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Gage County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Garden County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Garfield County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Gosper County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Grant County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Greeley County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Hall County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Hamilton County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Harlan County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Hayes County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Hitchcock County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Holt County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Hooker County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Howard County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Jefferson County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Johnson County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Kearney County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Keith County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Keya Paha County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Kimball County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Knox County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Lancaster County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Lincoln County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Logan County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Loup County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'McPherson County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Madison County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Merrick County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Morrill County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Nance County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Nemaha County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Nuckolls County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Otoe County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Pawnee County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Perkins County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Phelps County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Pierce County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Platte County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Polk County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Red Willow County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Richardson County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Rock County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Saline County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Sarpy County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Saunders County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Scotts Bluff County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Seward County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Sheridan County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Sherman County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Sioux County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Stanton County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Thayer County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Thomas County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Thurston County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Valley County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Washington County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Wayne County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'Webster County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'Wheeler County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'York County', '31');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Churchill County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Clark County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Douglas County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Elko County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Esmeralda County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Eureka County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Humboldt County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Lander County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Lincoln County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Lyon County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Mineral County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Nye County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Pershing County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Storey County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Washoe County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'White Pine County', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('510', 'Carson City', '32');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Belknap County', '33');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Carroll County', '33');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Cheshire County', '33');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Coos County', '33');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Grafton County', '33');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Hillsborough County', '33');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Merrimack County', '33');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Rockingham County', '33');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Strafford County', '33');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Sullivan County', '33');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Atlantic County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Bergen County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Burlington County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Camden County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Cape May County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Cumberland County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Essex County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Gloucester County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Hudson County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Hunterdon County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Mercer County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Middlesex County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Monmouth County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Morris County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Ocean County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Passaic County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Salem County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Somerset County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Sussex County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Union County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Warren County', '34');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Bernalillo County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Catron County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Chaves County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('006', 'Cibola County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Colfax County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Curry County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'De Baca County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Do�a Ana County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Eddy County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Grant County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Guadalupe County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Harding County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Hidalgo County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Lea County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Lincoln County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('028', 'Los Alamos County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Luna County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'McKinley County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Mora County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Otero County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Quay County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Rio Arriba County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Roosevelt County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Sandoval County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'San Juan County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'San Miguel County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Santa Fe County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Sierra County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Socorro County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Taos County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Torrance County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Union County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Valencia County', '35');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Albany County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Allegany County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Bronx County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Broome County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Cattaraugus County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Cayuga County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Chautauqua County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Chemung County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Chenango County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Clinton County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Columbia County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Cortland County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Delaware County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Dutchess County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Erie County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Essex County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Franklin County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Fulton County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Genesee County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Greene County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Hamilton County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Herkimer County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Jefferson County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Kings County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Lewis County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Livingston County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Madison County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Monroe County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Montgomery County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Nassau County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'New York County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Niagara County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Oneida County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Onondaga County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Ontario County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Orange County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Orleans County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Oswego County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Otsego County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Putnam County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Queens County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Rensselaer County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Richmond County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Rockland County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'St. Lawrence County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Saratoga County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Schenectady County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Schoharie County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Schuyler County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Seneca County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Steuben County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Suffolk County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Sullivan County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Tioga County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Tompkins County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Ulster County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Warren County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Washington County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Wayne County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Westchester County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Wyoming County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Yates County', '36');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Alamance County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Alexander County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Alleghany County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Anson County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Ashe County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Avery County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Beaufort County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Bertie County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Bladen County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Brunswick County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Buncombe County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Burke County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Cabarrus County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Caldwell County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Camden County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Carteret County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Caswell County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Catawba County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Chatham County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Cherokee County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Chowan County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Clay County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Cleveland County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Columbus County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Craven County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Cumberland County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Currituck County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Dare County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Davidson County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Davie County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Duplin County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Durham County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Edgecombe County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Forsyth County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Franklin County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Gaston County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Gates County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Graham County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Granville County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Greene County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Guilford County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Halifax County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Harnett County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Haywood County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Henderson County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Hertford County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Hoke County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Hyde County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Iredell County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Jackson County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Johnston County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Jones County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Lee County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Lenoir County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Lincoln County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'McDowell County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Macon County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Madison County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Martin County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Mecklenburg County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Mitchell County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Montgomery County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Moore County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Nash County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'New Hanover County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Northampton County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Onslow County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Orange County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Pamlico County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Pasquotank County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Pender County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Perquimans County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Person County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Pitt County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Polk County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Randolph County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Richmond County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Robeson County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Rockingham County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Rowan County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Rutherford County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Sampson County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Scotland County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Stanly County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Stokes County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Surry County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Swain County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Transylvania County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Tyrrell County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Union County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'Vance County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'Wake County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'Warren County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('187', 'Washington County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('189', 'Watauga County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('191', 'Wayne County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('193', 'Wilkes County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('195', 'Wilson County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('197', 'Yadkin County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('199', 'Yancey County', '37');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adams County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Barnes County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Benson County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Billings County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Bottineau County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Bowman County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Burke County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Burleigh County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Cass County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Cavalier County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Dickey County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Divide County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Dunn County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Eddy County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Emmons County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Foster County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Golden Valley County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Grand Forks County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Grant County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Griggs County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Hettinger County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Kidder County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'LaMoure County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Logan County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'McHenry County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'McIntosh County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'McKenzie County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'McLean County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Mercer County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Morton County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Mountrail County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Nelson County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Oliver County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Pembina County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Pierce County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Ramsey County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Ransom County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Renville County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Richland County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Rolette County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Sargent County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Sheridan County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Sioux County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Slope County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Stark County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Steele County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Stutsman County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Towner County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Traill County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Walsh County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Ward County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Wells County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Williams County', '38');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adams County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Allen County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Ashland County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Ashtabula County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Athens County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Auglaize County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Belmont County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Brown County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Butler County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Carroll County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Champaign County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Clark County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Clermont County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Clinton County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Columbiana County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Coshocton County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Crawford County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Cuyahoga County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Darke County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Defiance County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Delaware County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Erie County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Fairfield County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Fayette County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Franklin County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Fulton County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Gallia County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Geauga County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Greene County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Guernsey County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Hamilton County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Hancock County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Hardin County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Harrison County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Henry County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Highland County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Hocking County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Holmes County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Huron County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Jackson County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Jefferson County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Knox County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Lake County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Lawrence County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Licking County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Logan County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Lorain County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Lucas County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Madison County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Mahoning County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Marion County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Medina County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Meigs County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Mercer County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Miami County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Monroe County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Montgomery County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Morgan County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Morrow County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Muskingum County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Noble County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Ottawa County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Paulding County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Perry County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Pickaway County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Pike County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Portage County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Preble County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Putnam County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Richland County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Ross County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Sandusky County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Scioto County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Seneca County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Shelby County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Stark County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Summit County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Trumbull County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Tuscarawas County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Union County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Van Wert County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Vinton County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Warren County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Washington County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Wayne County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Williams County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Wood County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Wyandot County', '39');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adair County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Alfalfa County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Atoka County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Beaver County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Beckham County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Blaine County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Bryan County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Caddo County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Canadian County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Carter County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Cherokee County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Choctaw County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Cimarron County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Cleveland County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Coal County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Comanche County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Cotton County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Craig County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Creek County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Custer County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Delaware County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Dewey County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Ellis County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Garfield County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Garvin County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Grady County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Grant County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Greer County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Harmon County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Harper County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Haskell County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Hughes County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Jackson County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Jefferson County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Johnston County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Kay County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Kingfisher County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Kiowa County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Latimer County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Le Flore County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Lincoln County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Logan County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Love County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'McClain County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'McCurtain County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'McIntosh County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Major County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Marshall County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Mayes County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Murray County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Muskogee County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Noble County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Nowata County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Okfuskee County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Oklahoma County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Okmulgee County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Osage County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Ottawa County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Pawnee County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Payne County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Pittsburg County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Pontotoc County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Pottawatomie County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Pushmataha County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Roger Mills County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Rogers County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Seminole County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Sequoyah County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Stephens County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Texas County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Tillman County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Tulsa County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Wagoner County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Washington County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Washita County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Woods County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Woodward County', '40');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Baker County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Benton County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Clackamas County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Clatsop County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Columbia County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Coos County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Crook County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Curry County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Deschutes County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Douglas County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Gilliam County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Grant County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Harney County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Hood River County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Jackson County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Jefferson County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Josephine County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Klamath County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Lake County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Lane County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Lincoln County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Linn County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Malheur County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Marion County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Morrow County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Multnomah County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Polk County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Sherman County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Tillamook County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Umatilla County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Union County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Wallowa County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Wasco County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Washington County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Wheeler County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Yamhill County', '41');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adams County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Allegheny County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Armstrong County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Beaver County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Bedford County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Berks County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Blair County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Bradford County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Bucks County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Butler County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Cambria County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Cameron County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Carbon County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Centre County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Chester County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Clarion County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Clearfield County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Clinton County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Columbia County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Crawford County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Cumberland County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Dauphin County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Delaware County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Elk County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Erie County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Fayette County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Forest County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Franklin County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Fulton County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Greene County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Huntingdon County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Indiana County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Jefferson County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Juniata County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Lackawanna County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Lancaster County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Lawrence County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Lebanon County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Lehigh County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Luzerne County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Lycoming County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'McKean County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Mercer County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Mifflin County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Monroe County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Montgomery County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Montour County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Northampton County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Northumberland County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Perry County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Philadelphia County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Pike County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Potter County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Schuylkill County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Snyder County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Somerset County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Sullivan County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Susquehanna County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Tioga County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Union County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Venango County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Warren County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Washington County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Wayne County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Westmoreland County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Wyoming County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'York County', '42');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Bristol County', '44');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Kent County', '44');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Newport County', '44');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Providence County', '44');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Washington County', '44');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Abbeville County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Aiken County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Allendale County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Anderson County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Bamberg County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Barnwell County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Beaufort County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Berkeley County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Calhoun County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Charleston County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Cherokee County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Chester County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Chesterfield County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Clarendon County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Colleton County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Darlington County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Dillon County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Dorchester County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Edgefield County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Fairfield County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Florence County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Georgetown County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Greenville County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Greenwood County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Hampton County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Horry County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Jasper County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Kershaw County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Lancaster County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Laurens County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Lee County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Lexington County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'McCormick County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Marion County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Marlboro County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Newberry County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Oconee County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Orangeburg County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Pickens County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Richland County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Saluda County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Spartanburg County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Sumter County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Union County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Williamsburg County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'York County', '45');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Aurora County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Beadle County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Bennett County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Bon Homme County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Brookings County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Brown County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Brule County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Buffalo County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Butte County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Campbell County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Charles Mix County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Clark County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Clay County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Codington County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Corson County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Custer County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Davison County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Day County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Deuel County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Dewey County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Douglas County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Edmunds County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Fall River County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Faulk County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Grant County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Gregory County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Haakon County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Hamlin County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Hand County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Hanson County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Harding County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Hughes County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Hutchinson County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Hyde County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Jackson County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Jerauld County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Jones County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Kingsbury County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Lake County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Lawrence County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Lincoln County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Lyman County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'McCook County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'McPherson County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Marshall County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Meade County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Mellette County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Miner County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Minnehaha County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Moody County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('102', 'Oglala Lakota County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Pennington County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Perkins County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Potter County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Roberts County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Sanborn County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Spink County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Stanley County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Sully County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Todd County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Tripp County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Turner County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Union County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Walworth County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Yankton County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Ziebach County', '46');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Anderson County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Bedford County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Benton County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Bledsoe County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Blount County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Bradley County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Campbell County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Cannon County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Carroll County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Carter County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Cheatham County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Chester County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Claiborne County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Clay County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Cocke County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Coffee County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Crockett County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Cumberland County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Davidson County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Decatur County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'DeKalb County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Dickson County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Dyer County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Fayette County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Fentress County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Franklin County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Gibson County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Giles County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Grainger County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Greene County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Grundy County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Hamblen County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Hamilton County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Hancock County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Hardeman County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Hardin County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Hawkins County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Haywood County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Henderson County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Henry County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Hickman County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Houston County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Humphreys County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Jackson County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Jefferson County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Johnson County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Knox County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Lake County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Lauderdale County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Lawrence County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Lewis County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Lincoln County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Loudon County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'McMinn County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'McNairy County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Macon County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Madison County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Marion County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Marshall County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Maury County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Meigs County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Monroe County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Montgomery County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Moore County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Morgan County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Obion County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Overton County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Perry County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Pickett County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Polk County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Putnam County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Rhea County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Roane County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Robertson County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Rutherford County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Scott County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Sequatchie County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Sevier County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Shelby County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Smith County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Stewart County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Sullivan County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Sumner County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Tipton County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Trousdale County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Unicoi County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Union County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Van Buren County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Warren County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Washington County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'Wayne County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'Weakley County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'White County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('187', 'Williamson County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('189', 'Wilson County', '47');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Anderson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Andrews County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Angelina County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Aransas County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Archer County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Armstrong County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Atascosa County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Austin County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Bailey County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Bandera County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Bastrop County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Baylor County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Bee County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Bell County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Bexar County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Blanco County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Borden County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Bosque County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Bowie County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Brazoria County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Brazos County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Brewster County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Briscoe County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Brooks County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Brown County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Burleson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Burnet County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Caldwell County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Calhoun County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Callahan County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Cameron County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Camp County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Carson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Cass County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Castro County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Chambers County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Cherokee County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Childress County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Clay County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Cochran County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Coke County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Coleman County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Collin County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Collingsworth County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Colorado County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Comal County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Comanche County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Concho County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Cooke County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Coryell County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Cottle County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Crane County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Crockett County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Crosby County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Culberson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Dallam County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Dallas County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Dawson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Deaf Smith County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Delta County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Denton County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'DeWitt County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Dickens County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Dimmit County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Donley County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Duval County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Eastland County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Ector County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Edwards County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Ellis County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'El Paso County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Erath County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Falls County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Fannin County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Fayette County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('151', 'Fisher County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Floyd County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Foard County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Fort Bend County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Franklin County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Freestone County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Frio County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Gaines County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Galveston County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Garza County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Gillespie County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Glasscock County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Goliad County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Gonzales County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Gray County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'Grayson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'Gregg County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'Grimes County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('187', 'Guadalupe County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('189', 'Hale County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('191', 'Hall County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('193', 'Hamilton County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('195', 'Hansford County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('197', 'Hardeman County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('199', 'Hardin County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('201', 'Harris County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('203', 'Harrison County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('205', 'Hartley County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('207', 'Haskell County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('209', 'Hays County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('211', 'Hemphill County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('213', 'Henderson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('215', 'Hidalgo County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('217', 'Hill County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('219', 'Hockley County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('221', 'Hood County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('223', 'Hopkins County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('225', 'Houston County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('227', 'Howard County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('229', 'Hudspeth County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('231', 'Hunt County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('233', 'Hutchinson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('235', 'Irion County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('237', 'Jack County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('239', 'Jackson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('241', 'Jasper County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('243', 'Jeff Davis County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('245', 'Jefferson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('247', 'Jim Hogg County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('249', 'Jim Wells County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('251', 'Johnson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('253', 'Jones County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('255', 'Karnes County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('257', 'Kaufman County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('259', 'Kendall County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('261', 'Kenedy County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('263', 'Kent County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('265', 'Kerr County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('267', 'Kimble County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('269', 'King County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('271', 'Kinney County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('273', 'Kleberg County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('275', 'Knox County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('277', 'Lamar County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('279', 'Lamb County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('281', 'Lampasas County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('283', 'La Salle County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('285', 'Lavaca County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('287', 'Lee County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('289', 'Leon County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('291', 'Liberty County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('293', 'Limestone County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('295', 'Lipscomb County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('297', 'Live Oak County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('299', 'Llano County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('301', 'Loving County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('303', 'Lubbock County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('305', 'Lynn County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('307', 'McCulloch County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('309', 'McLennan County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('311', 'McMullen County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('313', 'Madison County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('315', 'Marion County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('317', 'Martin County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('319', 'Mason County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('321', 'Matagorda County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('323', 'Maverick County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('325', 'Medina County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('327', 'Menard County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('329', 'Midland County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('331', 'Milam County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('333', 'Mills County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('335', 'Mitchell County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('337', 'Montague County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('339', 'Montgomery County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('341', 'Moore County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('343', 'Morris County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('345', 'Motley County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('347', 'Nacogdoches County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('349', 'Navarro County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('351', 'Newton County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('353', 'Nolan County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('355', 'Nueces County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('357', 'Ochiltree County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('359', 'Oldham County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('361', 'Orange County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('363', 'Palo Pinto County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('365', 'Panola County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('367', 'Parker County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('369', 'Parmer County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('371', 'Pecos County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('373', 'Polk County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('375', 'Potter County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('377', 'Presidio County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('379', 'Rains County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('381', 'Randall County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('383', 'Reagan County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('385', 'Real County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('387', 'Red River County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('389', 'Reeves County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('391', 'Refugio County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('393', 'Roberts County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('395', 'Robertson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('397', 'Rockwall County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('399', 'Runnels County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('401', 'Rusk County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('403', 'Sabine County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('405', 'San Augustine County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('407', 'San Jacinto County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('409', 'San Patricio County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('411', 'San Saba County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('413', 'Schleicher County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('415', 'Scurry County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('417', 'Shackelford County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('419', 'Shelby County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('421', 'Sherman County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('423', 'Smith County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('425', 'Somervell County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('427', 'Starr County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('429', 'Stephens County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('431', 'Sterling County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('433', 'Stonewall County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('435', 'Sutton County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('437', 'Swisher County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('439', 'Tarrant County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('441', 'Taylor County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('443', 'Terrell County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('445', 'Terry County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('447', 'Throckmorton County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('449', 'Titus County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('451', 'Tom Green County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('453', 'Travis County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('455', 'Trinity County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('457', 'Tyler County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('459', 'Upshur County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('461', 'Upton County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('463', 'Uvalde County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('465', 'Val Verde County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('467', 'Van Zandt County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('469', 'Victoria County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('471', 'Walker County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('473', 'Waller County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('475', 'Ward County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('477', 'Washington County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('479', 'Webb County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('481', 'Wharton County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('483', 'Wheeler County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('485', 'Wichita County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('487', 'Wilbarger County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('489', 'Willacy County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('491', 'Williamson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('493', 'Wilson County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('495', 'Winkler County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('497', 'Wise County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('499', 'Wood County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('501', 'Yoakum County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('503', 'Young County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('505', 'Zapata County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('507', 'Zavala County', '48');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Beaver County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Box Elder County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Cache County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Carbon County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Daggett County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Davis County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Duchesne County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Emery County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Garfield County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Grand County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Iron County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Juab County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Kane County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Millard County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Morgan County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Piute County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Rich County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Salt Lake County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'San Juan County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Sanpete County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Sevier County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Summit County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Tooele County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Uintah County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Utah County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Wasatch County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Washington County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Wayne County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Weber County', '49');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Addison County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Bennington County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Caledonia County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Chittenden County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Essex County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Franklin County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Grand Isle County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Lamoille County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Orange County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Orleans County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Rutland County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Washington County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Windham County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Windsor County', '50');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Accomack County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Albemarle County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Alleghany County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Amelia County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Amherst County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Appomattox County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Arlington County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Augusta County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Bath County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Bedford County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Bland County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Botetourt County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Brunswick County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Buchanan County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Buckingham County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Campbell County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Caroline County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Carroll County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('036', 'Charles City County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Charlotte County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Chesterfield County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Clarke County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Craig County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Culpeper County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Cumberland County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Dickenson County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Dinwiddie County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Essex County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Fairfax County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Fauquier County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Floyd County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Fluvanna County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Franklin County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Frederick County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Giles County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Gloucester County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Goochland County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Grayson County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Greene County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Greensville County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Halifax County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Hanover County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Henrico County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Henry County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Highland County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Isle of Wight County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'James City County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'King and Queen County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'King George County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'King William County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Lancaster County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Lee County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Loudoun County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Louisa County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Lunenburg County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Madison County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Mathews County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Mecklenburg County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Middlesex County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Montgomery County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Nelson County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'New Kent County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Northampton County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Northumberland County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Nottoway County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Orange County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Page County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Patrick County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('143', 'Pittsylvania County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('145', 'Powhatan County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('147', 'Prince Edward County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('149', 'Prince George County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('153', 'Prince William County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('155', 'Pulaski County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('157', 'Rappahannock County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('159', 'Richmond County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('161', 'Roanoke County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('163', 'Rockbridge County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('165', 'Rockingham County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('167', 'Russell County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('169', 'Scott County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('171', 'Shenandoah County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('173', 'Smyth County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('175', 'Southampton County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('177', 'Spotsylvania County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('179', 'Stafford County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('181', 'Surry County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('183', 'Sussex County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('185', 'Tazewell County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('187', 'Warren County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('191', 'Washington County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('193', 'Westmoreland County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('195', 'Wise County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('197', 'Wythe County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('199', 'York County', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('510', 'Alexandria city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('520', 'Bristol city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('530', 'Buena Vista city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('540', 'Charlottesville city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('550', 'Chesapeake city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('570', 'Colonial Heights city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('580', 'Covington city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('590', 'Danville city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('595', 'Emporia city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('600', 'Fairfax city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('610', 'Falls Church city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('620', 'Franklin city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('630', 'Fredericksburg city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('640', 'Galax city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('650', 'Hampton city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('660', 'Harrisonburg city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('670', 'Hopewell city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('678', 'Lexington city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('680', 'Lynchburg city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('683', 'Manassas city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('685', 'Manassas Park city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('690', 'Martinsville city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('700', 'Newport News city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('710', 'Norfolk city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('720', 'Norton city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('730', 'Petersburg city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('735', 'Poquoson city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('740', 'Portsmouth city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('750', 'Radford city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('760', 'Richmond city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('770', 'Roanoke city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('775', 'Salem city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('790', 'Staunton city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('800', 'Suffolk city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('810', 'Virginia Beach city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('820', 'Waynesboro city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('830', 'Williamsburg city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('840', 'Winchester city', '51');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adams County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Asotin County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Benton County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Chelan County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Clallam County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Clark County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Columbia County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Cowlitz County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Douglas County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Ferry County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Franklin County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Garfield County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Grant County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Grays Harbor County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Island County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Jefferson County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'King County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Kitsap County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Kittitas County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Klickitat County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Lewis County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Lincoln County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Mason County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Okanogan County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Pacific County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Pend Oreille County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Pierce County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'San Juan County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Skagit County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Skamania County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Snohomish County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Spokane County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Stevens County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Thurston County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Wahkiakum County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Walla Walla County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Whatcom County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Whitman County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Yakima County', '53');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Barbour County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Berkeley County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Boone County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Braxton County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Brooke County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Cabell County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Calhoun County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Clay County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Doddridge County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Fayette County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Gilmer County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Grant County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Greenbrier County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Hampshire County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Hancock County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Hardy County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Harrison County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Jackson County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Jefferson County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Kanawha County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Lewis County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Lincoln County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Logan County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'McDowell County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Marion County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Marshall County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Mason County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Mercer County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Mineral County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Mingo County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Monongalia County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'Monroe County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Morgan County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Nicholas County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Ohio County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Pendleton County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Pleasants County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Pocahontas County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Preston County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Putnam County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Raleigh County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Randolph County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Ritchie County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Roane County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Summers County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Taylor County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Tucker County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Tyler County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Upshur County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Wayne County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Webster County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Wetzel County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Wirt County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Wood County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'Wyoming County', '54');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Adams County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Ashland County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Barron County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Bayfield County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Brown County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Buffalo County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Burnett County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Calumet County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Chippewa County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Clark County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Columbia County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Crawford County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Dane County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Dodge County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Door County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Douglas County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Dunn County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Eau Claire County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Florence County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Fond du Lac County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Forest County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Grant County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Green County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('047', 'Green Lake County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('049', 'Iowa County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('051', 'Iron County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('053', 'Jackson County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('055', 'Jefferson County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('057', 'Juneau County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('059', 'Kenosha County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('061', 'Kewaunee County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('063', 'La Crosse County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('065', 'Lafayette County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('067', 'Langlade County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('069', 'Lincoln County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('071', 'Manitowoc County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('073', 'Marathon County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('075', 'Marinette County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('077', 'Marquette County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('078', 'Menominee County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('079', 'Milwaukee County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('081', 'Monroe County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('083', 'Oconto County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('085', 'Oneida County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('087', 'Outagamie County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('089', 'Ozaukee County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('091', 'Pepin County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('093', 'Pierce County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('095', 'Polk County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('097', 'Portage County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('099', 'Price County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('101', 'Racine County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('103', 'Richland County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('105', 'Rock County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('107', 'Rusk County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('109', 'St. Croix County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('111', 'Sauk County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('113', 'Sawyer County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('115', 'Shawano County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('117', 'Sheboygan County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('119', 'Taylor County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('121', 'Trempealeau County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('123', 'Vernon County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('125', 'Vilas County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('127', 'Walworth County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('129', 'Washburn County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('131', 'Washington County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('133', 'Waukesha County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('135', 'Waupaca County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('137', 'Waushara County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('139', 'Winnebago County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('141', 'Wood County', '55');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('001', 'Albany County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('003', 'Big Horn County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('005', 'Campbell County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('007', 'Carbon County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('009', 'Converse County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('011', 'Crook County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('013', 'Fremont County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('015', 'Goshen County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('017', 'Hot Springs County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('019', 'Johnson County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('021', 'Laramie County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('023', 'Lincoln County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('025', 'Natrona County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('027', 'Niobrara County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('029', 'Park County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('031', 'Platte County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('033', 'Sheridan County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('035', 'Sublette County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('037', 'Sweetwater County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('039', 'Teton County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('041', 'Uinta County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('043', 'Washakie County', '56');
+INSERT INTO Counties (county_id, name, state_id)
+    VALUES ('045', 'Weston County', '56');
