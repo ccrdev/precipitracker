@@ -7,14 +7,16 @@
 
 import pandas as pd
 import re
+import argparse
 
 # File paths
-MASTER_FILE = "ProjectDataMaster.csv"  # Master sheet with county, state, and region info
-OBSERVATION_FILE = "DailyPrecipReports_VT_2023-12-10_1.csv"  # Observation data
-OUTPUT_FILE = "VermontYearlyReport.sql"  # Output SQL file for precipitation records
+MASTER_FILE = "ProjectDataMaster.csv" # Master sheet with county, state, and region info
+OBSERVATION_FILE = "DailyPrecipReports_VT_2023-12-10_1.csv" # Observation data
+CORRECTIONS_FILE = "Corrections.csv" # Corrections data
+OUTPUT_FILE = "VermontYearlyReport.sql" # Output SQL file for precipitation records
 
 # Hardcoded state value (e.g., 'vermont')
-STATE_NAME = "vermont"  # Ensure this matches the 'State' column in ProjectDataMaster.csv after normalization
+STATE_NAME = "vermont" # Ensure this matches the 'State' column in ProjectDataMaster.csv after normalization
 
 # Directional prefixes to remove
 DIRECTIONAL_PREFIXES = ["east", "west", "north", "south"]
@@ -22,10 +24,6 @@ DIRECTIONAL_PREFIXES = ["east", "west", "north", "south"]
 # Required columns
 REQUIRED_MASTER_COLUMNS = {'City/Town', 'State', 'CountyID', 'StateID', 'RegionID'}
 REQUIRED_OBSERVATION_COLUMNS = {'StationName', 'DateTimeStamp', 'TotalPrecipAmt'}
-
-# Dictionaries for user corrections and county mappings
-user_corrections = {}
-county_code_mapping = {}
 
 # Helper function to clean and standardize city names
 def clean_name(name):
@@ -55,50 +53,54 @@ def load_and_validate_data():
         print(f"Error: Observation CSV is missing required columns: {missing}")
         exit()
 
-    # Clean master data
     master_df['City/Town'] = master_df['City/Town'].apply(clean_name)
     master_df['State'] = master_df['State'].str.strip().str.lower()
     master_df['CountyID'] = master_df['CountyID'].astype(str).str.zfill(3)
-
-    # Clean observation data
     observations_df['StationName'] = observations_df['StationName'].apply(clean_name)
 
     return master_df, observations_df
 
-# Handle unmatched station names
-def handle_unmatched_station(station_name, master_df):
-    while True:
-        print(f"Warning: '{station_name}' was not found in ProjectDataMaster.csv.")
-        user_input = input(f"Enter the correct name, a three-digit County ID, or press Enter to skip: ").strip()
+# First run: Collect unmatched stations
+def collect_unmatched(master_df, observations_df):
+    unmatched = []
+    for station_name in observations_df['StationName'].unique():
+        matching_row = master_df[
+            (master_df['City/Town'] == station_name) & (master_df['State'] == STATE_NAME)
+        ]
+        if matching_row.empty:
+            unmatched.append({'StationName': station_name, 'CountyID': ''})
 
-        if not user_input:
-            print(f"Skipping '{station_name}'...")
-            return None
+    unmatched_df = pd.DataFrame(unmatched)
+    unmatched_df.to_csv(CORRECTIONS_FILE, index=False)
+    print(f"Unmatched stations written to {CORRECTIONS_FILE}. Please update it with County IDs.")
 
-        if user_input.isdigit() and len(user_input) == 3:
-            county_id = user_input.zfill(3)
-            matching_row = master_df[
-                (master_df['CountyID'] == county_id) & (master_df['State'] == STATE_NAME)
-            ]
-            if not matching_row.empty:
-                county_code_mapping[station_name] = county_id
-                print(f"County ID mapping saved for '{station_name}': '{county_id}'.")
-                return matching_row
-            else:
-                print(f"County ID '{user_input}' is not valid for the state '{STATE_NAME}'.")
+# Check edits: Validate corrections
+def validate_corrections(master_df):
+    try:
+        corrections_df = pd.read_csv(CORRECTIONS_FILE)
+    except FileNotFoundError:
+        print(f"Error: Corrections file {CORRECTIONS_FILE} not found.")
+        return
+
+    for _, row in corrections_df.iterrows():
+        station_name = row['StationName']
+        county_id = str(row['CountyID']).zfill(3)
+        matching_row = master_df[
+            (master_df['CountyID'] == county_id) & (master_df['State'] == STATE_NAME)
+        ]
+        if matching_row.empty:
+            print(f"Warning: County ID '{county_id}' for station '{station_name}' is invalid.")
         else:
-            corrected_name = clean_name(user_input)
-            user_corrections[station_name] = corrected_name
-            matching_row = master_df[
-                (master_df['City/Town'] == corrected_name) & (master_df['State'] == STATE_NAME)
-            ]
-            if not matching_row.empty:
-                return matching_row
-            else:
-                print(f"'{corrected_name}' could not be found. Please try again.")
+            print(f"Station '{station_name}' mapped to County ID '{county_id}'.")
 
-# Generate SQL queries from observations
+# Final run: Generate SQL queries
 def generate_queries(master_df, observations_df):
+    try:
+        corrections_df = pd.read_csv(CORRECTIONS_FILE)
+        corrections = dict(zip(corrections_df['StationName'], corrections_df['CountyID']))
+    except FileNotFoundError:
+        corrections = {}
+
     queries = []
     for _, row in observations_df.iterrows():
         station_name = row['StationName']
@@ -114,13 +116,8 @@ def generate_queries(master_df, observations_df):
             else float(precipitation_amount)
         )
 
-        if station_name in user_corrections:
-            corrected_name = user_corrections[station_name]
-            matching_row = master_df[
-                (master_df['City/Town'] == corrected_name) & (master_df['State'] == STATE_NAME)
-            ]
-        elif station_name in county_code_mapping:
-            county_id = county_code_mapping[station_name]
+        if station_name in corrections:
+            county_id = corrections[station_name]
             matching_row = master_df[
                 (master_df['CountyID'] == county_id) & (master_df['State'] == STATE_NAME)
             ]
@@ -128,14 +125,6 @@ def generate_queries(master_df, observations_df):
             matching_row = master_df[
                 (master_df['City/Town'] == station_name) & (master_df['State'] == STATE_NAME)
             ]
-            if matching_row.empty:
-                matching_row = master_df[
-                    master_df['City/Town'].str.contains(re.escape(station_name), case=False, na=False) &
-                    (master_df['State'] == STATE_NAME)
-                ]
-
-            if matching_row.empty:
-                matching_row = handle_unmatched_station(station_name, master_df)
 
         if matching_row is not None and not matching_row.empty:
             county_id = matching_row.iloc[0]['CountyID']
@@ -148,15 +137,24 @@ def generate_queries(master_df, observations_df):
             """
             queries.append(query.strip())
 
-    return queries
-
-# Main execution
-def main():
-    master_df, observations_df = load_and_validate_data()
-    queries = generate_queries(master_df, observations_df)
     with open(OUTPUT_FILE, "w") as f:
         f.write("\n".join(queries))
     print(f"SQL file generated: {OUTPUT_FILE}")
+
+# Main execution
+def main():
+    parser = argparse.ArgumentParser(description="Process precipitation observation data.")
+    parser.add_argument("mode", choices=["first_run", "check_edits", "final_run"], help="Mode to run the script in.")
+    args = parser.parse_args()
+
+    master_df, observations_df = load_and_validate_data()
+
+    if args.mode == "first_run":
+        collect_unmatched(master_df, observations_df)
+    elif args.mode == "check_edits":
+        validate_corrections(master_df)
+    elif args.mode == "final_run":
+        generate_queries(master_df, observations_df)
 
 if __name__ == "__main__":
     main()
