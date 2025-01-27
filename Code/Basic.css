@@ -1,48 +1,29 @@
-/* Created by: Ryan.S
- * Advanced Website Development (CIS-1152)
- */
-
-html {
-    font-family: monospace;
-    background-color: blanchedalmond;
+/* General reset */
+body, h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    padding: 1em;
-    margin: auto;
-    text-indent: 1em;
-    width: 50vw;
+/* Header container styling */
+#top-header {
+    background-color: #f0f0f0; /* Light gray background for the rectangle */
+    padding: 20px; /* Adds space around the text */
+    border-radius: 8px; /* Softens corners of the rectangle */
+    text-align: center; /* Centers the text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
-a:hover {
-    background-color: beige;
-    color: black;
-    font-style: oblique;
+/* Title styling */
+#header-title h1 {
+    font-size: 2.5rem; /* Larger font for the title */
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 10px; /* Adds spacing below the title */
 }
 
-a {
-    margin: 1em;
-}
-
-nav {
-    border: double 2px;
-    align-content: center;
-    font-family: sans-serif;
-    font-style: initial;
-}
-
-h3{
-    font-size: 18px;
-}
-
-ul {
-    font-style: oblique;
-    list-style-type: none;
-}
-
-form, section {
-    border: double 2px black;
-    margin: 1em;
-    text-indent: 1em;
-    box-shadow: 8px 8px 4px;
+/* Subtitle styling */
+#header-subtitle h1 {
+    font-size: 1.5rem; /* Smaller font for the subtitle */
+    color: #555; /* Softer color for the subtitle */
+    margin-top: 0; /* Ensures no extra space above */
 }
