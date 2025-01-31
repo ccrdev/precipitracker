@@ -1,0 +1,58 @@
+<!-- Created by: Ryan.S -->
+<!-- Senior Project -->
+
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Precipitracker</title>
+            <link rel="stylesheet" href="Precip-Test.css" />
+            <div id="top-header">
+                <div id="header-title"> 
+                    <h1>PrecipiTracker</h1>
+                </div>
+                <div id="header-subtitle"> 
+                    <h1>Decipher the downpour!</h1>
+                </div>
+            </div>
+        </head>
+
+        <body>
+            <section id="main">
+                <h3>Welcome to Precipi-Tracker! [V0.01 Alpha]</h3>
+                <p>Click the area where you'd like to see rain data on the provided map.</p>
+                <p>For your sake, we've condenced this complex action into three buttons.</p>
+            </section>
+
+            <section id="map">
+                <p> Date Range: <b>[MM/DD/YYYY]</b> => <b>[MM/DD/YYYY]</b>  </p>
+                <img id="image" src="/Images/USA.png" />
+                <button onclick="toUSA()">Continent</button>
+                <button onclick="toRegion()">State</button>
+                <button onclick="toState()">County</button>
+            </section>
+
+            <script>
+                function toUSA() 
+                {
+                    document.getElementById("image").src = "/Images/USA.png";
+                }
+                function toRegion() 
+                {
+                    document.getElementById("image").src = "/Images/New England.png";
+                }
+                function toState() 
+                {
+                    document.getElementById("image").src = "/Images/VT.png";
+                }
+            </script>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <h6>©Lololololol Precipi-Tracker team. All rights reserved, unless stated otherwise, in which case no rights reserved, except where we say so and that starts on this web page you see now... so take that.</h6>
+        </body>
+    </html>
+</DOCTYPE>
