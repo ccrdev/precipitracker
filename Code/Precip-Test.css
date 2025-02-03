@@ -82,3 +82,10 @@ form, section {
     margin-right: auto;
     width: 75%;
 }
+/*Styling for map API*/
+.leaflet-container {
+        
+height: 600px;
+width: 800px;
+
+}
