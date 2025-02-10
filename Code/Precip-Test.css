@@ -76,16 +76,16 @@ form, section {
     box-shadow: 8px 8px 4px;
 }
 
-#image {
-    display: block;
+#image, #main {
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    align-items: center;
+    width: 90%;
 }
 /*Styling for map API*/
 .leaflet-container {
-        
-height: 600px;
-width: 800px;
-
+    height: 500px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
