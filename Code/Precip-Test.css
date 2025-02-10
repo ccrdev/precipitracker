@@ -31,7 +31,6 @@ html {
     margin-top: 0; /* Ensures no extra space above */
 }
 
-
 body {
     padding: 1em;
     margin: auto;
@@ -55,7 +54,7 @@ nav {
     font-style: initial;
 }
 
-h3{
+h3 {
     font-size: 18px;
     text-align: center;
 }
@@ -69,14 +68,16 @@ ul {
     list-style-type: none;
 }
 
-form, section {
+form,
+section {
     border: double 2px black;
     margin: 1em;
     text-indent: 1em;
     box-shadow: 8px 8px 4px;
 }
 
-#image, #main {
+#image,
+#main {
     margin-left: auto;
     margin-right: auto;
     align-items: center;

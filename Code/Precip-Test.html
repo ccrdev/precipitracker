@@ -2,78 +2,91 @@
 <!-- Modified by: Josh.R-->
 <!-- Senior Project -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <title>Precipitracker</title>
-    <link rel="stylesheet" href="Precip-Test.css" />
-    <div id="top-header">
-        <div id="header-title">
-            <h1>PrecipiTracker</h1>
+    <head>
+        <title>Precipitracker</title>
+        <link rel="stylesheet" href="Precip-Test.css" />
+        <div id="top-header">
+            <div id="header-title">
+                <h1>PrecipiTracker</h1>
+            </div>
+            <div id="header-subtitle">
+                <h1>Decipher the downpour!</h1>
+            </div>
         </div>
-        <div id="header-subtitle">
-            <h1>Decipher the downpour!</h1>
-        </div>
-    </div>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin="" />
+        <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    </head>
 
-</head>
+    <body>
+        <section id="main">
+            <h3><u>Welcome to Precipi-Tracker!</u></h3>
+            <h4>[V0.5 Beta]</h4>
+            <p>Scroll around the map to view rain data for different regions!</p>
+            <p>Date Range: <b>[MM/DD/YYYY]</b> => <b>[MM/DD/YYYY]</b></p>
+        </section>
 
-<body>
-    <section id="main">
-        <h3><u>Welcome to Precipi-Tracker!</u></h3>
-        <h4>[V0.01 Alpha]</h4>
-        <p>Click the area where you'd like to see rain data on the provided map.</p>
-    </section>
+        <section id="map">
+            <script type="text/javascript" src="us-state-borders.js"></script>
 
-    <section id="map">
-        <p> Date Range: <b>[MM/DD/YYYY]</b> => <b>[MM/DD/YYYY]</b> </p>
-    </section>
-    <script type="text/javascript" src="us-state-borders.js"></script>
+            <script type="text/javascript">
+                const map = L.map("map").setView([37.8, -96], 4);
 
-    <script type="text/javascript">
+                const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
 
-        const map = L.map('map').setView([37.8, -96], 4);
+                // get color depending on density value
+                function getColor(d) {
+                    return d > 1000
+                        ? "#004d00"
+                        : d > 500
+                          ? "#004d00"
+                          : d > 200
+                            ? "#008000"
+                            : d > 100
+                              ? "#00a000"
+                              : d > 50
+                                ? "#32cd32"
+                                : d > 20
+                                  ? "#90ee90"
+                                  : d > 10
+                                    ? "#b0f2b6"
+                                    : "#d4fcd4";
+                }
 
-        const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+                function style(feature) {
+                    return {
+                        weight: 2,
+                        opacity: 1,
+                        color: "white",
+                        dashArray: "3",
+                        fillOpacity: 0.7,
+                        fillColor: getColor(feature.properties.density)
+                    };
+                }
 
-        // get color depending on density value
-        function getColor(d) {
-            return d > 1000 ? '#004d00' :
-                d > 500 ? '#004d00' :
-                    d > 200 ? '#008000' :
-                        d > 100 ? '#00a000' :
-                            d > 50 ? '#32cd32' :
-                                d > 20 ? '#90ee90' :
-                                    d > 10 ? '#b0f2b6' : '#d4fcd4';
-        }
+                /* global statesData */
+                const geojson = L.geoJson(statesData, { style }).addTo(map);
+            </script>
+        </section>
 
-        function style(feature) {
-            return {
-                weight: 2,
-                opacity: 1,
-                color: 'white',
-                dashArray: '3',
-                fillOpacity: 0.7,
-                fillColor: getColor(feature.properties.density)
-            };
-        }
+        <p>
+            People who clicked on the page: <b><i>ERROR_INVALID_NUM</i></b>
+        </p>
 
-        /* global statesData */
-        const geojson = L.geoJson(statesData, { style, }).addTo(map);
-
-    </script>
-
-    <p> People who clicked on the page: <b><i>ERROR_INVALID_NUM</i></b></p>
-
-    <h6>©Lololololol Precipi-Tracker team. All rights reserved, unless stated otherwise, in which case no rights
-        reserved, except where we say so and that starts on this web page you see now... so take that.</h6>
-</body>
-
+        <h6>
+            ©Lololololol Precipi-Tracker team. All rights reserved, unless stated otherwise, in which case no rights
+            reserved, except where we say so and that starts on this web page you see now... so take that.
+        </h6>
+    </body>
 </html>
