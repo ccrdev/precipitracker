@@ -79,19 +79,13 @@ form, section {
 #image, #main {
     margin-left: auto;
     margin-right: auto;
-<<<<<<< Updated upstream
-    width: 75%;
-=======
     align-items: center;
     width: 90%;
 }
 /*Styling for map API*/
 .leaflet-container {
-        
     height: 500px;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-
->>>>>>> Stashed changes
 }
