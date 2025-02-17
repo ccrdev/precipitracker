@@ -29,7 +29,7 @@
     <body>
         <section id="main">
             <h3><u>Welcome to Precipi-Tracker!</u></h3>
-            <h4>[V0.5 Beta]</h4>
+            <h4>[V0.5.1 Beta]</h4>
             <p>Scroll around the map to view rain data for different regions!</p>
             <p>Date Range: <b>[MM/DD/YYYY]</b> => <b>[MM/DD/YYYY]</b></p>
         </section>
@@ -102,6 +102,7 @@
 	       function onLocationError(e) 
                 {
 		          alert(e.message);
+                    map.setView([37.8, -96], 4);//if geolocation not enabled, set default view
 	            }
 
 	           map.on('locationfound', onLocationFound);
