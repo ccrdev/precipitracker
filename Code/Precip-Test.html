@@ -38,37 +38,43 @@
             <script type="text/javascript" src="us-state-borders.js"></script>
 
             <script type="text/javascript">
-                const map = L.map("map").setView([37.8, -96], 4);
+                
+            /*initialize map*/
+               //uncomment if not using users location
+               //const map = L.map("map").setView([37.8, -96], 4);
+                const map = L.map("map")
 
+                //default tile for map, attribution goes here
                 const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
                     maxZoom: 19,
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                 }).addTo(map);
 
-                // get color depending on density value
+                // get color depending on density value for choropleth map
                 function getColor(d) {
                     return d > 1000
                         ? "#004d00"
                         : d > 500
-                          ? "#004d00"
-                          : d > 200
-                            ? "#008000"
-                            : d > 100
-                              ? "#00a000"
-                              : d > 50
-                                ? "#32cd32"
-                                : d > 20
-                                  ? "#90ee90"
-                                  : d > 10
-                                    ? "#b0f2b6"
-                                    : "#d4fcd4";
+                        ? "#004d00"
+                        : d > 200
+                        ? "#008000"
+                        : d > 100
+                        ? "#00a000"
+                        : d > 50
+                        ? "#32cd32"
+                        : d > 20
+                        ? "#90ee90"
+                        : d > 10
+                        ? "#b0f2b6"
+                        : "#d4fcd4";
                 }
-
+                
+                //border color
                 function style(feature) {
                     return {
                         weight: 2,
                         opacity: 1,
-                        color: "white",
+                        color: "black",
                         dashArray: "3",
                         fillOpacity: 0.7,
                         fillColor: getColor(feature.properties.density)
@@ -77,6 +83,31 @@
 
                 /* global statesData */
                 const geojson = L.geoJson(statesData, { style }).addTo(map);
+                
+        /*get user location*/
+                
+                map.locate({setView: true, maxZoom: 7});
+                
+            function onLocationFound(e) 
+               {
+		         const radius = e.accuracy / 2;
+
+		         const locationMarker = L.marker(e.latlng).addTo(map)
+                 //uncomment if you want to display accuracy
+			     //.bindPopup(`You are within ${radius} meters from this point`).openPopup();
+
+		         const locationCircle = L.circle(e.latlng, radius).addTo(map);
+	           }
+
+	       function onLocationError(e) 
+                {
+		          alert(e.message);
+	            }
+
+	           map.on('locationfound', onLocationFound);
+	           map.on('locationerror', onLocationError);
+               
+	           
             </script>
         </section>
 
