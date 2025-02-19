@@ -40,7 +40,7 @@ CREATE TABLE Counties (
 ## Create table for Precipitation Records
 
 ```sql
-CREATE TABLE PrecipitationRecords (
+CREATE TABLE Precipitation_Records (
     record_id SERIAL PRIMARY KEY,
     region_id INT REFERENCES Regions(region_id) ON DELETE CASCADE,
     state_id INT REFERENCES States(state_id) ON DELETE CASCADE,
