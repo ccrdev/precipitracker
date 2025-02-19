@@ -4,7 +4,7 @@ class DBConnection {
 
     // Load configuration from JSON file
     private static function loadConfig() {
-        $configPath = __DIR__ . '../config.json';
+        $configPath = __DIR__ . '/../config.json';
         if (!file_exists($configPath)) {
             die(json_encode(["status" => "error", "message" => "Configuration file missing"]));
         }
