@@ -30,7 +30,7 @@ function enableUserLocation(map) {
 }
 
 // Fetch precipitation data
-function fetchPrecipitationData() {
+async function fetchPrecipitationData() {
     return fetch("PHP/api.php?action=get_precipitation")
         .then(response => response.json())
         .then(precipitationData => {
