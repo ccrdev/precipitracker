@@ -51,7 +51,7 @@ async function fetchPrecipitationData() {
 
 // Load GeoJSON and apply precipitation data
 function loadGeoJSON(map, precipitationData) {
-    fetch("../US_Counties.geojson")
+    fetch("./US_Counties.geojson")
         .then(response => response.json())
         .then(geojsonData => {
             console.log("GeoJSON Data Loaded:", geojsonData);
