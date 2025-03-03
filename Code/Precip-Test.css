@@ -10,11 +10,15 @@ html {
 /* Header container styling */
 #top-header {
     background-color: #2d9faf; /* Light-blue background for the rectangle */
-    padding: 10px; /* Adds space around the text */
-    border-radius: 10px; /* Softens corners of the rectangle */
+    padding: 5px; /* Adds space around the text */
+    border: double 2px black;
+    border-radius: 20px; /* Softens corners of the rectangle */
     text-align: center; /* Centers the text */
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
-    text-shadow: 8px black;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 90%;
 }
 
 /* Title styling */
@@ -79,8 +83,9 @@ ul {
 form,
 section {
     border: double 2px black;
+    border-radius: 20px; /* Softens corners of the rectangle */    
     margin: 1em;
-    text-indent: 1em;
+    text-indent: 2em;
     box-shadow: 8px 8px 4px;
 }
 
