@@ -4,12 +4,12 @@
 
 html {
     font-family: monospace;
-    background-color: blanchedalmond;
+    background-color: #017585;
 }
 
 /* Header container styling */
 #top-header {
-    background-color: #62615b; /* Light gray background for the rectangle */
+    background-color: #2d9faf; /* Light-blue background for the rectangle */
     padding: 10px; /* Adds space around the text */
     border-radius: 10px; /* Softens corners of the rectangle */
     text-align: center; /* Centers the text */
@@ -20,15 +20,23 @@ html {
 /* Title styling */
 #header-title h1 {
     font-size: 2.5rem; /* Larger font for the title */
-    color: antiquewhite; /* Darker color for contrast */
+    color: lightcyan; /* Darker color for contrast */
     margin-bottom: 10px; /* Adds spacing below the title */
 }
 
 /* Subtitle styling */
 #header-subtitle h1 {
     font-size: 1.5rem; /* Smaller font for the subtitle */
-    color: antiquewhite; /* Softer color for the subtitle */
+    color: cyan; /* Softer color for the subtitle */
     margin-top: 0; /* Ensures no extra space above */
+}
+
+b {
+    color: lightcyan; /* Brighter color for the bold sections */
+}
+
+p {
+    color: cyan; /* Softer color for the main sections */
 }
 
 body {
@@ -78,6 +86,7 @@ section {
 
 #image,
 #main {
+    background-color: #2d9faf; /* Light-blue background for the rectangle */
     margin-left: auto;
     margin-right: auto;
     align-items: center;
