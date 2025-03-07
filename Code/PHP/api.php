@@ -49,6 +49,7 @@ try {
             $key        = $stateFips . $countyFips;
             $precipitationData[$key] = (float) $row['precipitation_amount'];
         }
+        echo "Lookup Array has been built";
 
         // 2) Load the US_Counties.geojson
         $geojsonFilePath = __DIR__ . '/../US_Counties.geojson';
@@ -109,7 +110,25 @@ try {
         echo $output;
         exit;
 
-    } else {
+    }
+    if ($action === 'test_create_file') {
+        // Construct a file path. For example, place it in the same directory as api.php:
+        $filePath = __DIR__ . '/test_file.txt';
+
+        // Write some test content
+        $content = "This is a test file, created on " . date('r') . "\n";
+        
+        // Attempt to write
+        file_put_contents($filePath, $content);
+
+        // Respond with success
+        echo json_encode([
+            "status"  => "success",
+            "message" => "File created successfully at $filePath"
+        ]);
+        exit;
+
+    }else {
         // Action not recognized
         echo json_encode(["status" => "error", "message" => "Invalid action"]);
         exit;
