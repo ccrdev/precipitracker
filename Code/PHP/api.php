@@ -7,7 +7,7 @@ $action = isset($_GET['action']) ? $_GET['action'] : '';
 
 try {
     if ($action === 'get_precipitation') {
-        $query = "SELECT state_id, county_id, precipitation_amount FROM precipitationrecords";
+        $query = "SELECT state_id, county_id, precipitation_amount FROM precipitationrecords WHERE precipitation_amount > 0";
         $data = DBConnection::query($query);
         echo json_encode(["status" => "success", "data" => $data]);
     } else {
