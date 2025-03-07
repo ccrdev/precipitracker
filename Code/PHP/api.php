@@ -14,7 +14,7 @@ require_once 'DBConnection.php';
 $action = isset($_GET['action']) ? $_GET['action'] : '';
 
 // Customize these to your preferences:
-$cacheFile          = __DIR__ . '/partial_geojson_cache.json';
+$cacheFile          = __DIR__ . '/../partial_geojson_cache.json';
 $cacheTimeInSeconds = 3600; // e.g. 1 hour
 
 try {
@@ -51,7 +51,7 @@ try {
         }
 
         // 2) Load the US_Counties.geojson
-        $geojsonFilePath = __DIR__ . '../US_Counties.geojson';
+        $geojsonFilePath = __DIR__ . '/../US_Counties.geojson';
         if (!file_exists($geojsonFilePath)) {
             $output = json_encode([
                 "status"  => "error",
