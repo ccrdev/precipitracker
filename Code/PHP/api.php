@@ -51,7 +51,7 @@ try {
         }
 
         // 2) Load the US_Counties.geojson
-        $geojsonFilePath = __DIR__ . '/US_Counties.geojson';
+        $geojsonFilePath = __DIR__ . '../US_Counties.geojson';
         if (!file_exists($geojsonFilePath)) {
             $output = json_encode([
                 "status"  => "error",
