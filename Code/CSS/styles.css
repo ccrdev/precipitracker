@@ -1,0 +1,108 @@
+/* Created by: Ryan.S
+ * Modified by: Cody R.
+ */
+
+ html {
+    font-family: monospace;
+    background-color: #017585;
+}
+
+/* Header container styling */
+#top-header {
+    background-color: #2d9faf; /* Light-blue background for the rectangle */
+    padding: 5px; /* Adds space around the text */
+    border: double 2px black;
+    border-radius: 20px; /* Softens corners of the rectangle */
+    text-align: center; /* Centers the text */
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 90%;
+}
+
+/* Title styling */
+#header-title h1 {
+    font-size: 2.5rem; /* Larger font for the title */
+    color: lightcyan; /* Darker color for contrast */
+    margin-bottom: 10px; /* Adds spacing below the title */
+}
+
+/* Subtitle styling */
+#header-subtitle h1 {
+    font-size: 1.5rem; /* Smaller font for the subtitle */
+    color: cyan; /* Softer color for the subtitle */
+    margin-top: 0; /* Ensures no extra space above */
+}
+
+b {
+    color: lightcyan; /* Brighter color for the bold sections */
+}
+
+p {
+    color: cyan; /* Softer color for the main sections */
+}
+
+body {
+    padding: 1em;
+    margin: auto;
+    width: auto;
+}
+
+a:hover {
+    background-color: beige;
+    color: black;
+    font-style: oblique;
+}
+
+a {
+    margin: 1em;
+}
+
+nav {
+    border: double 2px;
+    align-content: center;
+    font-family: sans-serif;
+    font-style: initial;
+}
+
+h3 {
+    font-size: 18px;
+    text-align: center;
+}
+h4 {
+    font-size: 12px;
+    text-align: center;
+}
+
+ul {
+    font-style: oblique;
+    list-style-type: none;
+}
+
+form,
+section {
+    border: double 2px black;
+    border-radius: 20px; /* Softens corners of the rectangle */    
+    margin: 1em;
+    text-indent: 2em;
+    box-shadow: 8px 8px 4px;
+}
+
+#image,
+#main {
+    background-color: #2d9faf; /* Light-blue background for the rectangle */
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 90%;
+}
+/*Styling for map API*/
+.leaflet-container {
+    height: 500px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 90%;
+}
