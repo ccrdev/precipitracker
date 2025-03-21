@@ -29,8 +29,31 @@ function enableUserLocation(map) {
     });
 }
 
+// Modified by Austin H 3/21/2025
 // Fetch precipitation data
 async function fetchPrecipitationData() {
+    //Handles the date range when the form is submitted, shouldnt affect first load
+    if (startDate && endDate) {
+        const url = `PHP/api.php?action=get_precipitation&start_date=${encodeURIComponent(startDate)}&end_date=${encodeURIComponent(endDate)}`;
+
+        return fetch(url)
+        .then(response => response.json())
+        .then(precipitationData => {
+            console.log("Precipitation Data:", precipitationData);
+
+            if (precipitationData.status !== "success") {
+                console.error("Error fetching precipitation data:", precipitationData.message);
+                return null;
+            }
+
+            return precipitationData.data; // Return the data for further processing
+        })
+        .catch(error => {
+            console.error("Error fetching precipitation data:", error);
+            return null;
+        })
+    } else {
+        //Normal code we had before
     return fetch("PHP/api.php?action=get_precipitation")
         .then(response => response.json())
         .then(precipitationData => {
@@ -47,6 +70,7 @@ async function fetchPrecipitationData() {
             console.error("Error fetching precipitation data:", error);
             return null;
         });
+    }
 }
 
 // Load GeoJSON and apply precipitation data
@@ -63,6 +87,39 @@ function loadGeoJSON(map, precipitationData) {
         })
         .catch(error => console.error("Error loading GeoJSON:", error));
 }
+
+// Added by Austin H 3/21/2025
+// Add an event listener to the form
+document.getElementById("date-range-form").addEventListener("submit", async (event) => {
+    event.preventDefault(); // Prevent the form from reloading the page
+
+    // Get the selected start and end dates
+    const startDate = document.getElementById("start-date").value;
+    const endDate = document.getElementById("end-date").value;
+
+    if (!startDate || !endDate) {
+        alert("Please select both a start and end date.");
+        return;
+    }
+
+    console.log(`Fetching data for date range: ${startDate} to ${endDate}`);
+
+    // Fetch precipitation data with the date range
+    const precipitationData = await fetchPrecipitationData(startDate, endDate);
+
+    //Not certain if needed
+    if (precipitationData) {
+        // Clear the existing map layers (if needed)
+        map.eachLayer((layer) => {
+            if (layer instanceof L.GeoJSON || layer instanceof L.Marker || layer instanceof L.Circle) {
+                map.removeLayer(layer);
+            }
+        });
+
+        // Reload GeoJSON with the new precipitation data
+        loadGeoJSON(map, precipitationData);
+    }
+});
 
 // Define styles based on precipitation data (in inches)
 function styleFeature(feature, precipitationData) {
