@@ -1,7 +1,7 @@
 <!-- Created by: Ryan.S -->
 <!-- Modified by: Josh.R-->
- <!-- Modified by: Cody.R-->
-  <!-- Modified by: Austin.H -->
+<!-- Modified by: Cody.R-->
+<!-- Modified by: Austin.H -->
 <!-- Senior Project -->
 
 <!doctype html>
@@ -27,32 +27,29 @@
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
             crossorigin=""></script>
     </head>
-
     <body>
         <section id="main">
             <h3><u>Welcome to Precipi-Tracker!</u></h3>
-            <h4>[V0.5.2 Beta]</h4>
-            <p>Scroll around the map to view rain data for different regions!</p>
-            <p>Date Range: <form>
+            <h4>[V0.5.3 Beta]</h4>
+            <p>
+Scroll around the map to view rain data for different regions!
+</p>
+            <p>
+Date Range:
+<form id="date-range-form">
                 <label for="start-date">Start Date:</label>
                 <input type="date" id="start-date" name="start-date" required>
                 <label for="end-date">End Date:</label>
                 <input type="date" id="end-date" name="end-date" required>
                 <button type="submit">Submit</button>
-            </form> <br>
-            <b>Note: Rain data is only available for the 2024 year currently! </b>
+            </form>
+<br>
+            <b>Note: Rain data is only available for the 2024 year currently!</b>
          </p>
         </section>
-
         <section id="map">
             <script type="text/javascript" src="JS/map-init.js"></script>
-
         </section>
-
-        <!-- <p>
-           People who clicked on the page: <b><i>ERROR_INVALID_NUM</i></b>
-        </p> -->
-
         <h6>
             Precipi-Tracker team. All rights reserved, unless stated otherwise, in which case no rights
             reserved, except where we say so and that starts on this web page you see now... so take that.
