@@ -1,0 +1,79 @@
+<!-- Created by: Ryan.S -->
+<!-- Modified by: Josh.R-->
+<!-- Modified by: Cody.R-->
+<!-- Modified by: Austin.H -->
+<!-- Senior Project -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Precipitracker</title>
+        <link rel="stylesheet" href="CSS/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <div id="top-header">
+            <div id="header-title">
+                <h1>PrecipiTracker</h1>
+            </div>
+            <div id="header-subtitle">
+                <h1>Decipher the downpour!</h1>
+                <h4>[V0.5.90210 Beta-Gamma]</h4>
+            </div>
+        </div>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin="" />
+        <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+        <script>
+            /* Set the width of the sidebar to 250px (show it) */
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "250px";
+            }
+
+            /* Set the width of the sidebar to 0 (hide it) */
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()"></span>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Talk</a>
+            <a href="#">Amongst</a>
+            <a href="#">Yourselves</a>
+            <a href="#">...</a>
+        </div>
+
+        <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+        <form id="main">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required />
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required />
+            <button type="submit">Submit</button>
+        </form>
+
+        <b id="note">Note: Rain data available only for 2024 currently! </b>
+
+        <section id="map">
+            <script type="text/javascript" src="JS/map-init.js"></script>
+        </section>
+
+        <!-- <p>
+           People who clicked on the page: <b><i>ERROR_INVALID_NUM</i></b>
+        </p> -->
+
+        <h6>
+            Precipi-Tracker team. All rights reserved, unless stated otherwise, in which case no rights reserved, except
+            where we say so and that starts on this web page you see now... so take that.
+        </h6>
+    </body>
+</html>
