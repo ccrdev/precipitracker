@@ -1,8 +1,8 @@
 /* Created by: Ryan.S
- * Modified by: Cody R.
+ * Advanced Website Development (CIS-1152)
  */
 
- html {
+html {
     font-family: monospace;
     background-color: #017585;
 }
@@ -23,24 +23,22 @@
 
 /* Title styling */
 #header-title h1 {
-    font-size: 2.5rem; /* Larger font for the title */
+    font-size: 8vw; /* Larger font for the title */
     color: lightcyan; /* Darker color for contrast */
     margin-bottom: 10px; /* Adds spacing below the title */
 }
 
 /* Subtitle styling */
 #header-subtitle h1 {
-    font-size: 1.5rem; /* Smaller font for the subtitle */
-    color: cyan; /* Softer color for the subtitle */
+    font-size: 5vw; /* Smaller font for the subtitle */
+    color: #003c9f; /* Softer color for the subtitle */
     margin-top: 0; /* Ensures no extra space above */
 }
 
-b {
-    color: lightcyan; /* Brighter color for the bold sections */
-}
-
+b,
 p {
-    color: cyan; /* Softer color for the main sections */
+    color: #003c9f; /* Brighter color for the bold sections */
+    font-size: 3vw; /* Smaller font for the main body */
 }
 
 body {
@@ -48,15 +46,21 @@ body {
     margin: auto;
     width: auto;
 }
+#note {
+    font-size: 2.5vw;
+}
 
 a:hover {
-    background-color: beige;
+    background-color: #0b53c8;
     color: black;
     font-style: oblique;
 }
 
 a {
-    margin: 1em;
+    color: #0b53c8;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 nav {
@@ -67,12 +71,13 @@ nav {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 7vw;
     text-align: center;
 }
 h4 {
-    font-size: 12px;
+    font-size: 3vw;
     text-align: center;
+    font-style: oblique;
 }
 
 ul {
@@ -83,7 +88,7 @@ ul {
 form,
 section {
     border: double 2px black;
-    border-radius: 20px; /* Softens corners of the rectangle */    
+    border-radius: 20px; /* Softens corners of the rectangle */
     margin: 1em;
     text-indent: 2em;
     box-shadow: 8px 8px 4px;
@@ -97,12 +102,70 @@ section {
     align-items: center;
     width: 90%;
 }
+
 /*Styling for map API*/
 .leaflet-container {
     height: 500px;
-    width: 600px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     width: 90%;
+}
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 250px; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0c79b4;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: #5aa4ef;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #017585;
+    color: #708bfd;
+    padding: 5px; /* Adds space around the text */
+    border: double 2px black;
+    border-radius: 20px; /* Softens corners of the rectangle */
+    text-align: center; /* Centers the text */
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.openbtn:hover {
+    background-color: #003c9f;
 }
