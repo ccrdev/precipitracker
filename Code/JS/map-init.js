@@ -1,8 +1,26 @@
 console.log("Initializing Precipi-Tracker...");
 
+// Function to grt URL parameters for region
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+
+
+
+ // Get latitude, longitude, and zoom level from region link or use defaults
+    const lat = parseFloat(getQueryParam('lat')) || 37.8;  // Default latitude
+    const lng = parseFloat(getQueryParam('lng')) || -96; // Default longitude
+    const zoom = parseInt(getQueryParam('zoom')) || 4;     // Default zoom
+
+
+
 // Initialize the map
 function initializeMap() {
-    const map = L.map("map");
+   
+    //const map = L.map("map"); //**uncomment if using geolocation**
+    var map = L.map('map').setView([lat, lng], zoom); //**uncomment if not using geolocation**
 
     // Default tile for the map
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -13,21 +31,22 @@ function initializeMap() {
     return map;
 }
 
-// Handle user geolocation
-function enableUserLocation(map) {
-    map.locate({ setView: true, maxZoom: 7 });
 
-    map.on("locationfound", (e) => {
-        const radius = e.accuracy / 2;
-        L.marker(e.latlng).addTo(map);
-        L.circle(e.latlng, radius).addTo(map);
-    });
+// Handle user geolocation (uncomment all this if SSL cert is installed)
+//function enableUserLocation(map) {
+//    map.locate({ setView: true, maxZoom: 7 });
 
-    map.on("locationerror", (e) => {
-        alert(e.message);
-        map.setView([37.8, -96], 4); // Default view if geolocation fails
-    });
-}
+//    map.on("locationfound", (e) => {
+//        const radius = e.accuracy / 2;
+//        L.marker(e.latlng).addTo(map);
+//        L.circle(e.latlng, radius).addTo(map);
+//    });
+
+//    map.on("locationerror", (e) => {
+//        alert(e.message);
+//        map.setView([37.8, -96], 4); // Default view if geolocation fails
+//    });
+//}
 
 // Fetch precipitation data and convert it into a lookup table
 async function fetchPrecipitationData() {
