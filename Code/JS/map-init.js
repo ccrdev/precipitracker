@@ -29,9 +29,14 @@ function enableUserLocation(map) {
     });
 }
 
-// Fetch precipitation data and convert it into a lookup table
-async function fetchPrecipitationData() {
-    return fetch("PHP/api.php?action=get_precipitation")
+// Fetch precipitation data with optional date range
+async function fetchPrecipitationData(startDate = null, endDate = null) {
+    const url = new URL("PHP/api.php");
+    url.searchParams.append("action", "get_precipitation");
+    if (startDate) url.searchParams.append("start_date", startDate);
+    if (endDate) url.searchParams.append("end_date", endDate);
+
+    return fetch(url)
         .then(response => response.json())
         .then(precipitationData => {
             console.log("Precipitation Data:", precipitationData);
@@ -112,6 +117,28 @@ function bindPopupToFeature(feature, layer, precipitationMap) {
         <strong>Precipitation:</strong> ${precipitation} inches
     `);
 }
+
+// Handle form submission to update the map with filtered data
+document.getElementById("date-range-form").addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const startDate = document.getElementById("start-date").value;
+    const endDate = document.getElementById("end-date").value;
+
+    if (!startDate || !endDate) {
+        alert("Please select both start and end dates.");
+        return;
+    }
+
+    console.log(`Fetching data for date range: ${startDate} to ${endDate}`);
+    const precipitationMap = await fetchPrecipitationData(startDate, endDate);
+
+    if (precipitationMap) {
+        const map = initializeMap();
+        enableUserLocation(map);
+        loadGeoJSON(map, precipitationMap);
+    }
+});
 
 // Main execution function
 async function main() {
