@@ -1,5 +1,5 @@
 /* Created by: Ryan.S
- * Advanced Website Development (CIS-1152)
+ * Modified by: Josh.R
  */
 
 html {
@@ -19,7 +19,7 @@ html {
     margin-right: auto;
     align-items: center;
     width: 90%;
-}
+} 
 
 /* Title styling */
 #header-title h1 {
@@ -43,8 +43,9 @@ p {
 
 body {
     padding: 1em;
-    margin: auto;
-    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 #note {
     font-size: 2.5vw;
@@ -92,6 +93,9 @@ section {
     margin: 1em;
     text-indent: 2em;
     box-shadow: 8px 8px 4px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 
 #image,
@@ -106,12 +110,7 @@ section {
 /*Styling for map API*/
 .leaflet-container {
     height: 500px;
-    margin-left: 0px;
-    margin-right: 0px;
     align-items: center;
-    width: 100%;
-    border: none;
-    box-shadow: none
 }
 
 /* The sidepanel menu */
@@ -119,13 +118,13 @@ section {
     height: 250px; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 10000; /* Stay on top */
+    z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the side panel */
 }
 
 /* The sidepanel links */
@@ -154,22 +153,18 @@ section {
 
 /* Style the button that is used to open the sidepanel */
 .openbtn {
-    font-size: 35px;
+    padding: 5px; /* Adds space around the text */
+    font-size: 45px;
     cursor: pointer;
-    background-color: #017585;
-    color: #708bfd;
-    padding: 0px; /* Adds space around the text */
-    /*border: double 2px black;*/
-    border:none;
-    /*border-radius: 20px; /* Softens corners of the rectangle */
+    background-color: #2d9faf;
+    color: #ffffff;
+    border: double 2px black;
+    border-radius: 20px; /* Softens corners of the rectangle */
     text-align: center; /* Centers the text */
-   /* box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
 }
 
 .openbtn:hover {
-    /*background-color: #003c9f;*/
-    background-color: #017585;
+    background-color: #5aa4ef;
+    position: fixed;
 }
