@@ -107,8 +107,13 @@ section {
 .leaflet-container {
     height: 500px;
 <<<<<<< Updated upstream:Code/Precip-Test.css
+<<<<<<< Updated upstream:Code/Precip-Test.css
     margin-left: auto;
     margin-right: auto;
+=======
+    margin-left: 0;
+    margin-right: 0;
+>>>>>>> Stashed changes:Code/CSS/styles.css
 =======
     margin-left: 0;
     margin-right: 0;
@@ -158,6 +163,7 @@ section {
 /* Style the button that is used to open the sidepanel */
 .openbtn {
 <<<<<<< Updated upstream:Code/Precip-Test.css
+<<<<<<< Updated upstream:Code/Precip-Test.css
     font-size: 20px;
     cursor: pointer;
     background-color: #017585;
@@ -169,10 +175,17 @@ section {
     background-color: #2d9faf;
     color: #ffffff;
 >>>>>>> Stashed changes:Code/CSS/styles.css
+=======
+    font-size: 45px;
+    cursor: pointer;
+    background-color: #2d9faf;
+    color: #ffffff;
+>>>>>>> Stashed changes:Code/CSS/styles.css
     border: double 2px black;
     border-radius: 20px; /* Softens corners of the rectangle */
     text-align: center; /* Centers the text */
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+<<<<<<< Updated upstream:Code/Precip-Test.css
 <<<<<<< Updated upstream:Code/Precip-Test.css
     margin-left: auto;
     margin-right: auto;
@@ -181,6 +194,14 @@ section {
 
 .openbtn:hover {
     background-color: #003c9f;
+=======
+    position: fixed;
+}
+
+.openbtn:hover {
+    /*background-color: #003c9f;*/
+    background-color: #5aa4ef;
+>>>>>>> Stashed changes:Code/CSS/styles.css
 =======
     position: fixed;
 }
