@@ -106,10 +106,12 @@ section {
 /*Styling for map API*/
 .leaflet-container {
     height: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
     align-items: center;
-    width: 90%;
+    width: 100%;
+    border: none;
+    box-shadow: none
 }
 
 /* The sidepanel menu */
@@ -117,7 +119,7 @@ section {
     height: 250px; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 10000; /* Stay on top */
     top: 0;
     left: 0;
     background-color: #111; /* Black*/
@@ -152,20 +154,22 @@ section {
 
 /* Style the button that is used to open the sidepanel */
 .openbtn {
-    font-size: 20px;
+    font-size: 35px;
     cursor: pointer;
     background-color: #017585;
     color: #708bfd;
-    padding: 5px; /* Adds space around the text */
-    border: double 2px black;
-    border-radius: 20px; /* Softens corners of the rectangle */
+    padding: 0px; /* Adds space around the text */
+    /*border: double 2px black;*/
+    border:none;
+    /*border-radius: 20px; /* Softens corners of the rectangle */
     text-align: center; /* Centers the text */
-    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+   /* box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
     margin-left: auto;
     margin-right: auto;
     align-items: center;
 }
 
 .openbtn:hover {
-    background-color: #003c9f;
+    /*background-color: #003c9f;*/
+    background-color: #017585;
 }
