@@ -10,15 +10,7 @@
         <title>Precipitracker</title>
         <link rel="stylesheet" href="CSS/styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <div id="top-header">
-            <div id="header-title">
-                <h1>PrecipiTracker</h1>
-            </div>
-            <div id="header-subtitle">
-                <h1>Decipher the downpour!</h1>
-                <h4>[V0.5.90210 Beta-Gamma]</h4>
-            </div>
-        </div>
+        
         <link
             rel="stylesheet"
             href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -43,16 +35,27 @@
 
     <body>
         <!-- Use any element to open/show the overlay navigation menu -->
-        <span onclick="openNav()"></span>
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+        <!--<span onclick="openNav()"></span>-->
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Talk</a>
-            <a href="#">Amongst</a>
-            <a href="#">Yourselves</a>
-            <a href="#">...</a>
+            <a href="#">About PrecipiTracker</a>
+            <a href="#">Sources</a>
+            <a href="#">The Team</a>
+            <!--<a href="#">...</a>-->
         </div>
 
-        <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+        
+        <div id="top-header">
+            <div id="header-title">
+                <h1>PrecipiTracker</h1>
+            </div>
+            <div id="header-subtitle">
+                <h1>Decipher the downpour!</h1>
+                <h4>[V0.5.90211 Bangarang]</h4>
+            </div>
+        </div>
+        
         <form id="main">
             <label for="start-date">Start Date:</label>
             <input type="date" id="start-date" name="start-date" required />
@@ -71,9 +74,9 @@
            People who clicked on the page: <b><i>ERROR_INVALID_NUM</i></b>
         </p> -->
 
-        <h6>
+        <!--<h6>
             Precipi-Tracker team. All rights reserved, unless stated otherwise, in which case no rights reserved, except
             where we say so and that starts on this web page you see now... so take that.
-        </h6>
+        </h6>-->
     </body>
 </html>
