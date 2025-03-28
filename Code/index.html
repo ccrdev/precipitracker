@@ -23,7 +23,7 @@
         <script>
             /* Set the width of the sidebar to 250px (show it) */
             function openNav() {
-                document.getElementById("mySidepanel").style.width = "250px";
+                document.getElementById("mySidepanel").style.width = "100%";
             }
 
             /* Set the width of the sidebar to 0 (hide it) */
@@ -38,6 +38,16 @@
         <button class="openbtn" onclick="openNav()">&#9776; </button>
         <!--<span onclick="openNav()"></span>-->
         <div id="mySidepanel" class="sidepanel">
+            
+        <form id="main">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required />
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required />
+            <button type="submit">Submit</button>
+        </form>
+
+
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">About PrecipiTracker</a>
             <a href="#">Sources</a>
@@ -56,14 +66,7 @@
             </div>
         </div>
         
-        <form id="main">
-            <label for="start-date">Start Date:</label>
-            <input type="date" id="start-date" name="start-date" required />
-            <label for="end-date">End Date:</label>
-            <input type="date" id="end-date" name="end-date" required />
-            <button type="submit">Submit</button>
-        </form>
-
+        
         <b id="note">Note: Rain data available only for 2024 currently! </b>
 
         <section id="map">
