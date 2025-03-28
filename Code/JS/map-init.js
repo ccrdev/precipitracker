@@ -5,8 +5,8 @@ let map = null;
 let geoJsonLayer = null;
 let currentGeoJsonFile = null;
 let currentDataLevel = null;
-let currentStartDate = '2024-01-01';
-let currentEndDate = '2024-12-31';
+let currentStartDate = '2023-12-10';
+let currentEndDate = '2024-12-10';
 
 // Initialize the Leaflet map
 function initializeMap() {
@@ -66,7 +66,7 @@ async function loadLayerByZoom(zoom) {
 }
 
 // Fetch precipitation data from the API based on the level and date range
-async function fetchPrecipitationData(level = "county", start = "2024-01-01", end = "2024-12-31") {
+async function fetchPrecipitationData(level = "county", start = "2023-12-10", end = "2024-12-10") {
     const url = `PHP/api.php?action=get_precipitation&level=${level}&start=${start}&end=${end}`;
     try {
         const response = await fetch(url);
