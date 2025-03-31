@@ -88,7 +88,9 @@ async function fetchPrecipitationData(level = "county", start = "2023-12-10", en
         }
 
         // Directly return the records for further processing
+        console.log("Precipitation data:", data.data);
         return data.data || [];
+       
     } catch (err) {
         console.error("Fetch error:", err);
         return null;
