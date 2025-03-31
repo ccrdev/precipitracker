@@ -112,7 +112,7 @@ function styleFeature(feature, precipitationData, level) {
         );
         avgValue = computeAverageForArea(areaPrecipitationData);
 
-        // Handle state level
+    // Handle state level
     } else if (level === "state") {
         const stateFIPS = feature.properties.STATEFP;
         areaPrecipitationData = precipitationData.filter(
@@ -120,7 +120,7 @@ function styleFeature(feature, precipitationData, level) {
         );
         avgValue = computeAverageForArea(areaPrecipitationData);
 
-        // Handle region level
+    // Handle region level
     } else if (level === "region") {
         const regionGEOID = feature.properties.GEOID;
         areaPrecipitationData = precipitationData.filter(
