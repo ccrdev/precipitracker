@@ -124,7 +124,7 @@ function styleFeature(feature, precipitationData, level) {
     } else if (level === "region") {
         const regionGEOID = feature.properties.GEOID;
         areaPrecipitationData = precipitationData.filter(
-            r => String(r.region_id).padStart(2, '0') === String(regionGEOID)
+            r => String(r.region_id) === String(regionGEOID)
         );
         avgValue = computeAverageForArea(areaPrecipitationData);
     }
