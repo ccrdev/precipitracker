@@ -88,7 +88,9 @@ async function fetchPrecipitationData(level = "county", start = "2023-12-10", en
         }
 
         // Directly return the records for further processing
+        console.log("Precipitation data:", data.data);
         return data.data || [];
+       
     } catch (err) {
         console.error("Fetch error:", err);
         return null;
@@ -122,7 +124,7 @@ function styleFeature(feature, precipitationData, level) {
     } else if (level === "region") {
         const regionGEOID = feature.properties.GEOID;
         areaPrecipitationData = precipitationData.filter(
-            r => String(r.region_id).padStart(2, '0') === String(regionGEOID)
+            r => String(r.region_id) === String(regionGEOID)
         );
         avgValue = computeAverageForArea(areaPrecipitationData);
     }
@@ -168,7 +170,7 @@ function bindPopupToFeature(feature, layer, precipitationData, level) {
     } else if (level === "region") {
         const regionGEOID = feature.properties.GEOID;
         areaPrecipitationData = precipitationData.filter(
-            r => String(r.region_id).padStart(2, '0') === String(regionGEOID)
+            r => String(r.region_id) === String(regionGEOID)
         );
         // Compute average for the region
         avgValue = computeAverageForArea(areaPrecipitationData);
