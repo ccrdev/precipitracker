@@ -33,36 +33,47 @@ async function loadLayerByZoom(zoom) {
         level = "region";
     }
 
-    console.log("Zoom:", zoom, "| GeoJSON:", geoJsonFile, "| Level:", level);
-    console.log("Date Range:", currentStartDate, "to", currentEndDate);
-
-    // Avoid reloading same file/level/date
-    if (
-        geoJsonFile === currentGeoJsonFile &&
-        level === currentDataLevel
-    ) {
+    // Avoid reloading same file/level/date if it hasn't changed
+    if (geoJsonFile === currentGeoJsonFile && level === currentDataLevel) {
         console.log("Same layer already loaded.");
         return;
     }
 
+    // Clear the map and set new parameters
     currentGeoJsonFile = geoJsonFile;
     currentDataLevel = level;
-
+    // Remove existing layer if it exists
     if (geoJsonLayer) {
         map.removeLayer(geoJsonLayer);
         geoJsonLayer = null;
     }
 
+    // Fetch precipitation data
     const precipitationData = await fetchPrecipitationData(level, currentStartDate, currentEndDate);
     if (!precipitationData) return;
-
+    // Fetch GeoJSON data
     const geojson = await fetch(geoJsonFile).then(res => res.json());
-
+    // Filter out features with no properties
     geoJsonLayer = L.geoJson(geojson, {
         style: feature => styleFeature(feature, precipitationData, level),
         onEachFeature: (feature, layer) =>
             bindPopupToFeature(feature, layer, precipitationData, level)
     }).addTo(map);
+}
+
+// Function to compute average precipitation for a given set of records (county, state, region)
+function computeAverageForArea(records) {
+    // Check if records are empty
+    if (records.length === 0) return 0;
+    // Calculate the average precipitation
+    const total = records.reduce((sum, record) => sum + (convertToInches(Number(record.precipitation_amount)) || 0), 0);
+    // Return the average value
+    return total / records.length;
+}
+
+// Function to convert precipitation from mm to inches
+function convertToInches(mm) {
+    return mm / 25.4;  // 1 inch = 25.4 mm
 }
 
 // Fetch precipitation data from the API based on the level and date range
@@ -75,100 +86,118 @@ async function fetchPrecipitationData(level = "county", start = "2023-12-10", en
             console.error("Error fetching data:", data.message);
             return null;
         }
-        return data.data;
+
+        // Directly return the records for further processing
+        return data.data || [];
     } catch (err) {
         console.error("Fetch error:", err);
         return null;
     }
 }
 
-// Style map features based on precipitation values
+// Style map features based on precipitation values 
 function styleFeature(feature, precipitationData, level) {
-    let value = 0;
+    let areaPrecipitationData = [];
+    let avgValue = 0;
 
+    // Handle county level
     if (level === "county") {
         const stateFIPS = feature.properties.STATEFP;
         const countyFIPS = feature.properties.COUNTYFP?.padStart(3, '0');
-        const record = precipitationData.find(
+        areaPrecipitationData = precipitationData.filter(
             r => String(r.state_id).padStart(2, '0') === stateFIPS &&
-                 String(r.county_id).padStart(3, '0') === countyFIPS
+                String(r.county_id).padStart(3, '0') === countyFIPS
         );
-        value = record ? record.precipitation_amount : 0;
+        avgValue = computeAverageForArea(areaPrecipitationData);
 
+        // Handle state level
     } else if (level === "state") {
         const stateFIPS = feature.properties.STATEFP;
-        const record = precipitationData.find(
+        areaPrecipitationData = precipitationData.filter(
             r => String(r.state_id).padStart(2, '0') === stateFIPS
         );
-        value = record ? record.precipitation_amount : 0;
+        avgValue = computeAverageForArea(areaPrecipitationData);
 
+        // Handle region level
     } else if (level === "region") {
         const regionGEOID = feature.properties.GEOID;
-        const record = precipitationData.find(
+        areaPrecipitationData = precipitationData.filter(
             r => String(r.region_id).padStart(2, '0') === String(regionGEOID)
         );
-        value = record ? record.precipitation_amount : 0;
+        avgValue = computeAverageForArea(areaPrecipitationData);
     }
 
-    const color = value > 2.0 ? "#00429d" :
-                  value > 1.0 ? "#4771b2" :
-                  value > 0.5 ? "#73a2c6" :
-                  value > 0.25 ? "#a5d5d8" :
-                  "#dceebb";
+    const fillColor = avgValue > 2.0 ? "#00429d" :
+        avgValue > 1.0 ? "#4771b2" :
+            avgValue > 0.5 ? "#73a2c6" :
+                avgValue > 0.25 ? "#a5d5d8" :
+                    "#dceebb";
 
-    return { color: "#555", weight: 1, fillOpacity: 0.7, fillColor: color };
+    return { color: "#555", weight: 1, fillOpacity: 0.7, fillColor: fillColor };
 }
 
-// Bind popup info
+// Bind popup to each feature with average precipitation data
 function bindPopupToFeature(feature, layer, precipitationData, level) {
     let label = "No data";
-    let value = null;
+    let avgValue = 0;
+    let areaPrecipitationData = [];
 
+    // Handle county level
     if (level === "county") {
         const stateFIPS = feature.properties.STATEFP;
         const countyFIPS = feature.properties.COUNTYFP?.padStart(3, '0');
-        const record = precipitationData.find(
+        areaPrecipitationData = precipitationData.filter(
             r => String(r.state_id).padStart(2, '0') === stateFIPS &&
-                 String(r.county_id).padStart(3, '0') === countyFIPS
+                String(r.county_id).padStart(3, '0') === countyFIPS
         );
-        value = record?.precipitation_amount;
+        // Compute average for the county
+        avgValue = computeAverageForArea(areaPrecipitationData);
         label = `${feature.properties.NAME} County`;
 
+        // Handle state level
     } else if (level === "state") {
         const stateFIPS = feature.properties.STATEFP;
-        const record = precipitationData.find(
+        areaPrecipitationData = precipitationData.filter(
             r => String(r.state_id).padStart(2, '0') === stateFIPS
         );
-        value = record?.precipitation_amount;
+        // Compute average for the state
+        avgValue = computeAverageForArea(areaPrecipitationData);
         label = feature.properties.NAME + " (State)";
 
+        // Handle region level
     } else if (level === "region") {
         const regionGEOID = feature.properties.GEOID;
-        const record = precipitationData.find(
+        areaPrecipitationData = precipitationData.filter(
             r => String(r.region_id).padStart(2, '0') === String(regionGEOID)
         );
-        value = record?.precipitation_amount;
+        // Compute average for the region
+        avgValue = computeAverageForArea(areaPrecipitationData);
         label = feature.properties.name || `Region ${regionGEOID}`;
     }
 
-    const precipitation = value !== null && !isNaN(value)
-        ? Number(value).toFixed(2) + " inches"
+    // Format the average precipitation value
+    const precipitation = avgValue !== null && !isNaN(avgValue)
+        ? avgValue.toFixed(2) + " inches"
         : "No data";
 
+    // Bind the popup to the layer
     layer.bindPopup(`
         <strong>${label}</strong><br>
-        <strong>Precipitation:</strong> ${precipitation}
+        <strong>Average Precipitation:</strong> ${precipitation}
     `);
 }
 
 // Main entry point
 function main() {
+    // Initialize the map
     map = initializeMap();
 
+    // Load the initial layer based on the default zoom level
     map.whenReady(() => {
         loadLayerByZoom(map.getZoom());
     });
 
+    // Listen for zoom and move events to load the appropriate layer
     map.on("zoomend moveend", () => {
         loadLayerByZoom(map.getZoom());
     });
@@ -176,16 +205,29 @@ function main() {
     // Listen for form submission to update date range
     const form = document.getElementById("main");
     form.addEventListener("submit", (e) => {
+        // Prevent the default form submission behavior
         e.preventDefault();
 
+        // Get the start and end dates from the form inputs
         const startInput = document.getElementById("start-date").value;
         const endInput = document.getElementById("end-date").value;
 
+        // Validate the date inputs
         if (!startInput || !endInput) {
             alert("Please select both start and end dates.");
             return;
         }
-
+        // Check if the start date is after the end date
+        if (new Date(startInput) > new Date(endInput)) {
+            alert("Start date cannot be after end date.");
+            return;
+        }
+        // Check if the selected dates are within the allowed range
+        if (new Date(startInput) < new Date("2023-12-10") || new Date(endInput) > new Date("2024-12-10")) {
+            alert("Please select dates between 2023-12-10 and 2024-12-10.");
+            return;
+        }
+        // Update the current start and end dates
         currentStartDate = startInput;
         currentEndDate = endInput;
 
