@@ -5,6 +5,7 @@ let map = null;
 let geoJsonLayer = null;
 let currentGeoJsonFile = null;
 let currentDataLevel = null;
+let lastBounds = null;
 let currentStartDate = '2023-12-10';
 let currentEndDate = '2024-12-10';
 
@@ -19,8 +20,10 @@ function initializeMap() {
 }
 
 // Load GeoJSON + precipitation data based on zoom level and date
-async function loadLayerByZoom(zoom) {
+async function loadLayerByZoom() {
     let geoJsonFile, level;
+
+    const zoom = map.getZoom();  // Get the current zoom level
 
     if (zoom >= 8) {
         geoJsonFile = "./US_Counties.geojson";
@@ -33,31 +36,87 @@ async function loadLayerByZoom(zoom) {
         level = "region";
     }
 
-    // Avoid reloading same file/level/date if it hasn't changed
-    if (geoJsonFile === currentGeoJsonFile && level === currentDataLevel) {
-        console.log("Same layer already loaded.");
-        return;
+    // Check if the file/level hasn't changed and the bounds are the same as last time
+    const mapBounds = map.getBounds();
+    if (
+        geoJsonFile === currentGeoJsonFile &&
+        level === currentDataLevel &&
+        mapBounds.equals(lastBounds)  // Only return if bounds are the same
+    ) {
+        console.log("Same layer already loaded and bounds unchanged.");
+        return;  // No need to reload if everything is the same
     }
 
-    // Clear the map and set new parameters
+    // Clear the current layer (always reset it when bounds or zoom level change)
     currentGeoJsonFile = geoJsonFile;
     currentDataLevel = level;
-    // Remove existing layer if it exists
+    lastBounds = mapBounds;  // Update last known bounds
+
+    // Ensure the previous geoJsonLayer is removed
     if (geoJsonLayer) {
-        map.removeLayer(geoJsonLayer);
+        map.removeLayer(geoJsonLayer);  // Properly clear out the existing layer
         geoJsonLayer = null;
     }
 
     // Fetch precipitation data
     const precipitationData = await fetchPrecipitationData(level, currentStartDate, currentEndDate);
     if (!precipitationData) return;
+
     // Fetch GeoJSON data
     const geojson = await fetch(geoJsonFile).then(res => res.json());
-    // Filter out features with no properties
-    geoJsonLayer = L.geoJson(geojson, {
-        style: feature => styleFeature(feature, precipitationData, level),
+
+    // Filter out features that are outside the map bounds
+    const filteredFeatures = geojson.features.filter(feature => {
+        const layer = L.geoJson(feature);  // Create temporary layer for the feature
+        const featureBounds = layer.getBounds();  // Get the feature's bounds
+        return mapBounds.intersects(featureBounds);  // Only keep features within the visible bounds
+    });
+
+    // Construct a new "FeatureCollection" with only the filtered features
+    const filteredGeoJson = {
+        type: "FeatureCollection",
+        features: filteredFeatures
+    };
+
+    // Filter the precipitation data for the visible features
+    let validFeatureIds = new Set();
+
+    if (level === "county") {
+        // Filter based on county (stateFIPS + countyFIPS)
+        validFeatureIds = new Set(
+            filteredFeatures.map(f => `${f.properties.STATEFP}-${f.properties.COUNTYFP?.padStart(3, '0')}`)
+        );
+    } else if (level === "state") {
+        // Filter based on state (stateFIPS)
+        validFeatureIds = new Set(
+            filteredFeatures.map(f => f.properties.STATEFP)
+        );
+    } else if (level === "region") {
+        // Filter based on region (GEOID or region_id)
+        validFeatureIds = new Set(
+            filteredFeatures.map(f => f.properties.GEOID)
+        );
+    }
+
+    const filteredPrecipitationData = precipitationData.filter(record => {
+        let key = null;
+
+        if (level === "county") {
+            key = String(record.state_id).padStart(2, '0') + "-" + String(record.county_id).padStart(3, '0');
+        } else if (level === "state") {
+            key = String(record.state_id).padStart(2, '0');
+        } else if (level === "region") {
+            key = String(record.region_id);
+        }
+
+        return validFeatureIds.has(key);
+    });
+
+    // Add the filtered GeoJSON data to the map
+    geoJsonLayer = L.geoJson(filteredGeoJson, {
+        style: feature => styleFeature(feature, filteredPrecipitationData, level),
         onEachFeature: (feature, layer) =>
-            bindPopupToFeature(feature, layer, precipitationData, level)
+            bindPopupToFeature(feature, layer, filteredPrecipitationData, level)
     }).addTo(map);
 }
 
@@ -90,19 +149,19 @@ async function fetchPrecipitationData(level = "county", start = "2023-12-10", en
         // Directly return the records for further processing
         console.log("Precipitation data:", data.data);
         return data.data || [];
-       
+
     } catch (err) {
         console.error("Fetch error:", err);
         return null;
     }
 }
 
-// Style map features based on precipitation values 
+// Bind popups and style features based on precipitation values
 function styleFeature(feature, precipitationData, level) {
     let areaPrecipitationData = [];
     let avgValue = 0;
 
-    // Handle county level
+    // Handle different levels (county, state, region)
     if (level === "county") {
         const stateFIPS = feature.properties.STATEFP;
         const countyFIPS = feature.properties.COUNTYFP?.padStart(3, '0');
@@ -111,16 +170,12 @@ function styleFeature(feature, precipitationData, level) {
                 String(r.county_id).padStart(3, '0') === countyFIPS
         );
         avgValue = computeAverageForArea(areaPrecipitationData);
-
-    // Handle state level
     } else if (level === "state") {
         const stateFIPS = feature.properties.STATEFP;
         areaPrecipitationData = precipitationData.filter(
             r => String(r.state_id).padStart(2, '0') === stateFIPS
         );
         avgValue = computeAverageForArea(areaPrecipitationData);
-
-    // Handle region level
     } else if (level === "region") {
         const regionGEOID = feature.properties.GEOID;
         areaPrecipitationData = precipitationData.filter(
@@ -196,46 +251,49 @@ function main() {
 
     // Load the initial layer based on the default zoom level
     map.whenReady(() => {
-        loadLayerByZoom(map.getZoom());
+        loadLayerByZoom();
     });
 
     // Listen for zoom and move events to load the appropriate layer
-    map.on("zoomend moveend", () => {
-        loadLayerByZoom(map.getZoom());
+    map.on("moveend", () => {
+        console.log("Map moved, loading new layer based on updated bounds...");
+        loadLayerByZoom();  // Trigger reloading layer on move
+    });
+
+    map.on("zoomend", () => {
+        console.log("Zoom level changed, loading new layer...");
+        loadLayerByZoom();  // Trigger reloading layer on zoom
     });
 
     // Listen for form submission to update date range
     const form = document.getElementById("main");
     form.addEventListener("submit", (e) => {
-        // Prevent the default form submission behavior
         e.preventDefault();
 
-        // Get the start and end dates from the form inputs
         const startInput = document.getElementById("start-date").value;
         const endInput = document.getElementById("end-date").value;
 
-        // Validate the date inputs
         if (!startInput || !endInput) {
             alert("Please select both start and end dates.");
             return;
         }
-        // Check if the start date is after the end date
+
         if (new Date(startInput) > new Date(endInput)) {
             alert("Start date cannot be after end date.");
             return;
         }
-        // Check if the selected dates are within the allowed range
+
         if (new Date(startInput) < new Date("2023-12-10") || new Date(endInput) > new Date("2024-12-10")) {
             alert("Please select dates between 2023-12-10 and 2024-12-10.");
             return;
         }
-        // Update the current start and end dates
+
         currentStartDate = startInput;
         currentEndDate = endInput;
 
-        // Force reload current layer with new dates
+        // Force reload with new dates
         currentGeoJsonFile = null;
-        loadLayerByZoom(map.getZoom());
+        loadLayerByZoom();
     });
 }
 
