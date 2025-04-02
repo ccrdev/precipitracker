@@ -45,16 +45,19 @@ try {
                 GROUP BY region_id
             ";
 
-        } else {
-            // Raw county-level data (no aggregation)
+        } elseif ($level === 'county') {
+            // Aggregate by county
             $query = "
                 SELECT 
-                    state_id, 
                     county_id, 
-                    precipitation_amount
+                    state_id, 
+                    NULL as region_id, 
+                    SUM(precipitation_amount) AS precipitation_amount
                 FROM precipitationrecords
                 WHERE precipitation_amount > 0
+                  AND county_id IS NOT NULL
                   AND timestamp BETWEEN :start AND :end
+                GROUP BY county_id, state_id
             ";
         }
 
