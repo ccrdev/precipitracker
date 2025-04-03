@@ -9,11 +9,11 @@ function main() {
     const map = initializeMap();
 
     // Load the initial layer based on the default zoom level
-    map.whenReady(() => loadLayerByZoom());
+    map.whenReady(() => loadLayerOnEvent());
 
     // Listen for zoom and move events to load the appropriate layer
-    map.on("zoomend", loadLayerByZoom);
-    map.on("moveend", loadLayerByZoom);
+    map.on("zoomend", loadLayerOnEvent);
+    map.on("moveend", loadLayerOnEvent);
 
     // Handle form submission for date range updates
     const form = document.getElementById("main");
