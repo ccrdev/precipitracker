@@ -87,7 +87,7 @@ function formatFeatureLabel(feature, level) {
         case "state":
             return `${feature.properties.NAME} State`;
         case "region":
-            return feature.properties.name || `Region ${feature.properties.GEOID}`;
+            return feature.properties.name || `Region ${feature.properties.NAME}`;
         default:
             return "No data";
     }
