@@ -34,7 +34,10 @@ async function loadLayerByZoom() {
     if (
         geoJsonFile === getCurrentGeoJsonFile() &&
         level === getCurrentDataLevel() &&
-        mapBounds.equals(getLastBounds())
+        mapBounds.equals(getLastBounds() &&
+        startDate === getCurrentStartDate() &&
+        endDate === getCurrentEndDate()
+    )
     ) {
         console.log("Same layer already loaded and bounds unchanged.");
         return;
