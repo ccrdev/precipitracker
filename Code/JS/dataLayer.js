@@ -14,8 +14,6 @@ import { getCurrentStartDate, getCurrentEndDate } from './date.js'; // Date func
 
 async function loadLayerByZoom() {
     const map = getMap();
-    const startDate = getCurrentStartDate();
-    const endDate = getCurrentEndDate();
     let geoJsonFile, level;
     const zoom = map.getZoom();
 
@@ -30,26 +28,14 @@ async function loadLayerByZoom() {
         level = "region";
     }
 
-    const mapBounds = map.getBounds();
-    if (
-        geoJsonFile === getCurrentGeoJsonFile() &&
-        level === getCurrentDataLevel() &&
-        mapBounds.equals(getLastBounds())
-    ) {
-        console.log("Same layer already loaded and bounds unchanged.");
-        return;
+    // Clear the existing layer every time this function runs
+    if (getGeoJsonLayer()) {
+        map.removeLayer(getGeoJsonLayer());
+        setGeoJsonLayer(null); // Ensure the old layer is discarded
     }
 
-    setCurrentGeoJsonFile(geoJsonFile);
-    setCurrentDataLevel(level);
-    setLastBounds(mapBounds);
-
-    const geoJsonLayer = getGeoJsonLayer();
-    if (geoJsonLayer) {
-        map.removeLayer(geoJsonLayer);
-    }
-
-    const precipitationData = await fetchPrecipitationData(level, startDate, endDate);
+    // Load new data and update layer
+    const precipitationData = await fetchPrecipitationData(level, getCurrentStartDate(), getCurrentEndDate());
     if (!precipitationData) return;
 
     const response = await fetch(geoJsonFile);
@@ -58,7 +44,7 @@ async function loadLayerByZoom() {
     const filteredFeatures = geojson.features.filter(feature => {
         const layer = L.geoJson(feature);
         const featureBounds = layer.getBounds();
-        return mapBounds.intersects(featureBounds);
+        return map.getBounds().intersects(featureBounds);
     });
 
     const filteredGeoJson = {
@@ -66,10 +52,12 @@ async function loadLayerByZoom() {
         features: filteredFeatures
     };
 
-    setGeoJsonLayer(L.geoJson(filteredGeoJson, {
+    const newLayer = L.geoJson(filteredGeoJson, {
         style: feature => styleFeature(feature, precipitationData, level),
         onEachFeature: (feature, layer) => bindPopupToFeature(feature, layer, precipitationData, level)
-    }).addTo(map));
+    });
+
+    setGeoJsonLayer(newLayer.addTo(map));
 }
 
 export { loadLayerByZoom };
