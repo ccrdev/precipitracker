@@ -1,7 +1,7 @@
 // main.js
 import { initializeMap } from './map.js';
 import { loadLayerByZoom } from './dataLayer.js';
-import { setCurrentStartDate, setCurrentEndDate } from './date.js';
+import { validateDates, setCurrentStartDate, setCurrentEndDate } from './date.js';
 
 
 function main() {
