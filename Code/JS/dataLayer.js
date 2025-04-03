@@ -46,7 +46,7 @@ async function loadLayerByZoom() {
         map.removeLayer(geoJsonLayer);
     }
 
-    const precipitationData = await fetchPrecipitationData(level, '2023-12-10', '2024-12-10');
+    const precipitationData = await fetchPrecipitationData(level, currentStartDate, currentEndDate);
     if (!precipitationData) return;
 
     const response = await fetch(geoJsonFile);
