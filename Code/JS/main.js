@@ -1,6 +1,6 @@
 // main.js
 import { initializeMap } from './map.js';
-import { loadLayerByZoom } from './dataLayer.js';
+import { loadLayerOnEvent } from './dataLayer.js';
 import { validateDates, setCurrentStartDate, setCurrentEndDate } from './date.js';
 
 
@@ -33,7 +33,7 @@ function main() {
         setCurrentEndDate(endInput);
 
         // Force reload with new dates
-        loadLayerByZoom();
+        loadLayerOnEvent();
     });
 }
 main();

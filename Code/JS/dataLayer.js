@@ -6,13 +6,19 @@ import {
     setCurrentDataLevel,
     setLastBounds,
     getLastBounds,
-    getCurrentGeoJsonFile, getCurrentDataLevel, getGeoJsonLayer
+    getCurrentGeoJsonFile,
+    getCurrentDataLevel,
+    getGeoJsonLayer
 } from './map.js';
-import { fetchPrecipitationData } from './api.js'; // Assume you have this function implemented in api.js
-import { styleFeature, bindPopupToFeature } from './utils.js'; // Utility functions
-import { getCurrentStartDate, getCurrentEndDate } from './date.js'; // Date functions
+import { fetchPrecipitationData } from './api.js';
+import { styleFeature, bindPopupToFeature } from './utils.js';
+import { getCurrentStartDate, getCurrentEndDate } from './date.js';
 
-async function loadLayerByZoom() {
+// Store last loaded dates
+let lastStartDate = null;
+let lastEndDate = null;
+
+async function loadLayerOnEvent() {
     const map = getMap();
     const startDate = getCurrentStartDate();
     const endDate = getCurrentEndDate();
@@ -31,27 +37,31 @@ async function loadLayerByZoom() {
     }
 
     const mapBounds = map.getBounds();
-    if (
-        geoJsonFile === getCurrentGeoJsonFile() &&
-        level === getCurrentDataLevel() &&
-        mapBounds.equals(getLastBounds() &&
-        startDate === getCurrentStartDate() &&
-        endDate === getCurrentEndDate()
-    )
-    ) {
-        console.log("Same layer already loaded and bounds unchanged.");
+    const boundsUnchanged = mapBounds.equals(getLastBounds());
+    const zoomAndLevelUnchanged = (geoJsonFile === getCurrentGeoJsonFile() && level === getCurrentDataLevel());
+    const datesUnchanged = (startDate === lastStartDate && endDate === lastEndDate);
+
+    // Check if the view (bounds, zoom/level) and dates are all unchanged
+    if (boundsUnchanged && zoomAndLevelUnchanged && datesUnchanged) {
+        console.log("Same layer already loaded, bounds, and dates unchanged.");
         return;
     }
 
+    // Update stored state
     setCurrentGeoJsonFile(geoJsonFile);
     setCurrentDataLevel(level);
     setLastBounds(mapBounds);
+    lastStartDate = startDate;
+    lastEndDate = endDate;
 
+    // Clear existing layer
     const geoJsonLayer = getGeoJsonLayer();
-    if (geoJsonLayer) {
+    if (geoJsonLayer && map.hasLayer(geoJsonLayer)) {
         map.removeLayer(geoJsonLayer);
     }
+    setGeoJsonLayer(null);
 
+    // Fetch precipitation data with current date range
     const precipitationData = await fetchPrecipitationData(level, startDate, endDate);
     if (!precipitationData) return;
 
@@ -69,10 +79,12 @@ async function loadLayerByZoom() {
         features: filteredFeatures
     };
 
-    setGeoJsonLayer(L.geoJson(filteredGeoJson, {
+    const newLayer = L.geoJson(filteredGeoJson, {
         style: feature => styleFeature(feature, precipitationData, level),
         onEachFeature: (feature, layer) => bindPopupToFeature(feature, layer, precipitationData, level)
-    }).addTo(map));
+    });
+
+    setGeoJsonLayer(newLayer.addTo(map));
 }
 
-export { loadLayerByZoom };
+export { loadLayerOnEvent };
