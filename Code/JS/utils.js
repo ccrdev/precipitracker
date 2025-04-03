@@ -83,11 +83,11 @@ export function bindPopupToFeature(feature, layer, precipitationData, level) {
 function formatFeatureLabel(feature, level) {
     switch (level) {
         case "county":
-            return `${feature.properties.NAME} County`;
+            return `${feature.properties.NAME} (County)`;
         case "state":
-            return `${feature.properties.NAME} State`;
+            return `${feature.properties.NAME} (State)`;
         case "region":
-            return feature.properties.name || `Region ${feature.properties.NAME}`;
+            return feature.properties.name || `${feature.properties.NAME} (Region)`;
         default:
             return "No data";
     }
