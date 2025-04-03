@@ -1,9 +1,8 @@
 // main.js
 import { initializeMap } from './map.js';
 import { loadLayerByZoom } from './dataLayer.js';
+import { setCurrentStartDate, setCurrentEndDate } from './date.js';
 
-let currentStartDate = '2023-12-10';
-let currentEndDate = '2024-12-10';
 
 function main() {
     console.log("Initializing Precipi-Tracker...");
@@ -18,28 +17,20 @@ function main() {
 
     // Handle form submission for date range updates
     const form = document.getElementById("main");
-    form.addEventListener("submit", function(e) {
+    form.addEventListener("submit", function (e) {
         e.preventDefault();
         const startInput = document.getElementById("start-date").value;
         const endInput = document.getElementById("end-date").value;
 
-        if (!startInput || !endInput) {
-            alert("Please select both start and end dates.");
+        // Validate dates
+        const validationResult = validateDates(startInput, endInput);
+        if (!validationResult.isValid) {
+            alert(validationResult.message);
             return;
         }
 
-        if (new Date(startInput) > new Date(endInput)) {
-            alert("Start date cannot be after end date.");
-            return;
-        }
-
-        if (new Date(startInput) < new Date("2023-12-10") || new Date(endInput) > new Date("2024-12-10")) {
-            alert("Please select dates between 2023-12-10 and 2024-12-10.");
-            return;
-        }
-
-        currentStartDate = startInput;
-        currentEndDate = endInput;
+        setCurrentStartDate(startInput);
+        setCurrentEndDate(endInput);
 
         // Force reload with new dates
         loadLayerByZoom();

@@ -10,9 +10,12 @@ import {
 } from './map.js';
 import { fetchPrecipitationData } from './api.js'; // Assume you have this function implemented in api.js
 import { styleFeature, bindPopupToFeature } from './utils.js'; // Utility functions
+import { getCurrentStartDate, getCurrentEndDate } from './date.js'; // Date functions
 
 async function loadLayerByZoom() {
     const map = getMap();
+    const startDate = getCurrentStartDate();
+    const endDate = getCurrentEndDate();
     let geoJsonFile, level;
     const zoom = map.getZoom();
 
@@ -46,7 +49,7 @@ async function loadLayerByZoom() {
         map.removeLayer(geoJsonLayer);
     }
 
-    const precipitationData = await fetchPrecipitationData(level, currentStartDate, currentEndDate);
+    const precipitationData = await fetchPrecipitationData(level, startDate, endDate);
     if (!precipitationData) return;
 
     const response = await fetch(geoJsonFile);
