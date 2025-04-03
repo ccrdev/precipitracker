@@ -2,20 +2,20 @@
 import {
     getMap,
     setGeoJsonLayer,
-    getGeoJsonLayer,
     setCurrentGeoJsonFile,
     setCurrentDataLevel,
     setLastBounds,
     getLastBounds,
-    getCurrentGeoJsonFile,
-    getCurrentDataLevel
+    getCurrentGeoJsonFile, getCurrentDataLevel, getGeoJsonLayer
 } from './map.js';
-import { fetchPrecipitationData } from './api.js';
-import { styleFeature, bindPopupToFeature } from './utils.js';
-import { getCurrentStartDate, getCurrentEndDate } from './date.js';
+import { fetchPrecipitationData } from './api.js'; // Assume you have this function implemented in api.js
+import { styleFeature, bindPopupToFeature } from './utils.js'; // Utility functions
+import { getCurrentStartDate, getCurrentEndDate } from './date.js'; // Date functions
 
 async function loadLayerByZoom() {
     const map = getMap();
+    const startDate = getCurrentStartDate();
+    const endDate = getCurrentEndDate();
     let geoJsonFile, level;
     const zoom = map.getZoom();
 
@@ -30,25 +30,35 @@ async function loadLayerByZoom() {
         level = "region";
     }
 
-    // Explicitly clear existing layer (robust method)
-    const existingLayer = getGeoJsonLayer();
-    if (existingLayer && map.hasLayer(existingLayer)) {
-        map.removeLayer(existingLayer);
+    const mapBounds = map.getBounds();
+    if (
+        geoJsonFile === getCurrentGeoJsonFile() &&
+        level === getCurrentDataLevel() &&
+        mapBounds.equals(getLastBounds())
+    ) {
+        console.log("Same layer already loaded and bounds unchanged.");
+        return;
     }
-    setGeoJsonLayer(null); // Reset the reference immediately
 
-    // Fetch new precipitation data
-    const precipitationData = await fetchPrecipitationData(level, getCurrentStartDate(), getCurrentEndDate());
+    setCurrentGeoJsonFile(geoJsonFile);
+    setCurrentDataLevel(level);
+    setLastBounds(mapBounds);
+
+    const geoJsonLayer = getGeoJsonLayer();
+    if (geoJsonLayer) {
+        map.removeLayer(geoJsonLayer);
+    }
+
+    const precipitationData = await fetchPrecipitationData(level, startDate, endDate);
     if (!precipitationData) return;
 
-    // Fetch GeoJSON data and filter features
     const response = await fetch(geoJsonFile);
     const geojson = await response.json();
 
-    const mapBounds = map.getBounds();
     const filteredFeatures = geojson.features.filter(feature => {
-        const tempLayer = L.geoJson(feature);
-        return mapBounds.intersects(tempLayer.getBounds());
+        const layer = L.geoJson(feature);
+        const featureBounds = layer.getBounds();
+        return mapBounds.intersects(featureBounds);
     });
 
     const filteredGeoJson = {
@@ -56,19 +66,10 @@ async function loadLayerByZoom() {
         features: filteredFeatures
     };
 
-    // Add new layer to map and save reference
-    const newGeoJsonLayer = L.geoJson(filteredGeoJson, {
+    setGeoJsonLayer(L.geoJson(filteredGeoJson, {
         style: feature => styleFeature(feature, precipitationData, level),
         onEachFeature: (feature, layer) => bindPopupToFeature(feature, layer, precipitationData, level)
-    });
-
-    newGeoJsonLayer.addTo(map);
-    setGeoJsonLayer(newGeoJsonLayer);
-    
-    // Update state
-    setCurrentGeoJsonFile(geoJsonFile);
-    setCurrentDataLevel(level);
-    setLastBounds(mapBounds);
+    }).addTo(map));
 }
 
 export { loadLayerByZoom };
