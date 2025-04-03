@@ -38,8 +38,8 @@ export function validateDates(start, end) {
         return { isValid: false, message: `Please select dates between ${minimumDate.toDateString()} and ${maximumDate.toDateString()}.` };
     }
 
-    if (startDate < now || endDate < now) {
-        return { isValid: false, message: "Dates cannot be in the past." };
+    if (startDate > now || endDate > now) {
+        return { isValid: false, message: "Dates cannot be in the future." };
     }
 
     return { isValid: true, message: "Dates are valid." };
