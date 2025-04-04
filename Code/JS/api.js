@@ -9,13 +9,6 @@ export async function fetchPrecipitationData(level = "county", start = "2023-12-
         return null;
     }
 
-    // Ensure the level is one of the expected values
-    const validLevels = ["county", "state", "region"];
-    if (!validLevels.includes(level)) {
-        console.error(`Invalid level: ${level}. Expected one of ${validLevels.join(", ")}.`);
-        return null;
-    }
-
     // Use default dates if not provided
     if (!start) {
         start = getCurrentStartDate();
