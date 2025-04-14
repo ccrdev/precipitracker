@@ -81,6 +81,13 @@ h4 {
     font-style: oblique;
 }
 
+h6 {
+    font-size: 2vw;
+    font-style: oblique;
+    padding: 15px; 
+    color: #78abff;
+}
+
 ul {
     font-style: oblique;
     list-style-type: none;
@@ -115,10 +122,10 @@ section {
 
 /* The sidepanel menu */
 .sidepanel {
-    height: 250px; /* Specify a height */
+    height: 300px; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 10000; /* Stay on top */
     top: 0;
     left: 0;
     background-color: #111; /* Black*/
@@ -149,6 +156,7 @@ section {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    z-index: 
 }
 
 /* Style the button that is used to open the sidepanel */
