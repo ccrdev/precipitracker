@@ -162,6 +162,7 @@ section {
     border-radius: 20px; /* Softens corners of the rectangle */
     text-align: center; /* Centers the text */
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+    position: fixed;
 }
 
 .openbtn:hover {
