@@ -3,7 +3,7 @@ class DBConnection {
     private static $pdo = null;
 
     // Load configuration from JSON file
-    private static function loadEnv($filePath = __DIR__ . '/../.env') {
+    private static function loadEnv($filePath = __DIR__ . '/../../../.env') {
         if (!file_exists($filePath)) {
             die(json_encode(["status" => "error", "message" => "Environment file not found: $filePath"]));
         }
