@@ -30,6 +30,20 @@
             function closeNav() {
                 document.getElementById("mySidepanel").style.width = "0";
             }
+            /* Toggles the submenu items in the sidebar menu and displays the correct submenu arrow */
+            function toggleSubmenu(linkElement) {
+            var submenu = linkElement.nextElementSibling;
+            var arrow = linkElement.querySelector(".arrow");
+
+            if (submenu.style.display === "block") {
+                submenu.style.display = "none";
+                arrow.innerHTML = "&#9662;"; // down arrow
+            } 
+            else {
+            submenu.style.display = "block";
+            arrow.innerHTML = "&#9652;"; // up arrow
+            }
+            }
         </script>
     </head>
 
@@ -39,9 +53,27 @@
         <!--<span onclick="openNav()"></span>-->
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About PrecipiTracker</a>
-            <a href="#">Sources</a>
-            <a href="#">The Team</a>
+            
+            <!--About Submenu-->
+            <a href="javascript:void(0)" onclick="toggleSubmenu(this)">About PrecipiTracker <span class="arrow">&#9662;</span></a>
+            <div id="aboutSubmenu" class="submenu">
+                <p>"Suff about Precipitracker goes here.."</p>
+                </div>
+            
+            <!--Sources Submenu-->
+            <a href="javascript:void(0)" onclick="toggleSubmenu(this)">Sources <span class="arrow">&#9662;</span></a>
+            <div id="sourcesSubmenu" class="submenu">
+                <a href="#">Precipitation Data</a>
+                <a href="#">Cartographic Boundary Data</a>
+                <a href="#">Interactive Map API</a>
+                </div>
+            
+            <!--The Team Submenu-->
+            <a href="javascript:void(0)" onclick="toggleSubmenu(this)">The Team <span class="arrow">&#9662;</span></a>
+            <div id="teamSubmenu" class="submenu">
+            <p>"Team stuff goes here"</p>
+            </div>
+           
             <h6> © Precipi-Tracker team. All rights reserved, unless stated otherwise, in which case no rights reserved, except where we say so and that starts on this web page you see now... so take that.</h6>
         </div>
 
