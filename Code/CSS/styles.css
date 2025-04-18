@@ -177,3 +177,8 @@ section {
     background-color: #5aa4ef;
     position: fixed;
 }
+
+.submenu {
+    display: none;
+    padding-left: 20px;
+}
