@@ -95,11 +95,11 @@ ul {
 
 form,
 section {
-    border: double 2px black;
+ /* border: double 2px black;
     border-radius: 20px; /* Softens corners of the rectangle */
     margin: 1em;
-    text-indent: 2em;
-    box-shadow: 8px 8px 4px;
+    /*text-indent: 2em;
+   /* box-shadow: 8px 8px 4px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -107,7 +107,8 @@ section {
 
 #image,
 #main {
-    background-color: #2d9faf; /* Light-blue background for the rectangle */
+   /* background-color: #2d9faf; /* Light-blue background for the rectangle */
+    color: #0c79b4;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
