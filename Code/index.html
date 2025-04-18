@@ -10,7 +10,7 @@
         <title>Precipitracker</title>
         <link rel="stylesheet" href="CSS/styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
+
         <link
             rel="stylesheet"
             href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -32,26 +32,26 @@
             }
             /* Toggles the submenu items in the sidebar menu and displays the correct submenu arrow */
             function toggleSubmenu(linkElement) {
-            var submenu = linkElement.nextElementSibling;
-            var arrow = linkElement.querySelector(".arrow");
+                var submenu = linkElement.nextElementSibling;
+                var arrow = linkElement.querySelector(".arrow");
 
-            if (submenu.style.display === "block") {
-                submenu.style.display = "none";
-                arrow.innerHTML = "&#9662;"; // down arrow
-            } 
-            else {
-            submenu.style.display = "block";
-            arrow.innerHTML = "&#9652;"; // up arrow
-            }
+                if (submenu.style.display === "block") {
+                    submenu.style.display = "none";
+                    arrow.innerHTML = "&#9662;"; // down arrow
+                } else {
+                    submenu.style.display = "block";
+                    arrow.innerHTML = "&#9652;"; // up arrow
+                }
             }
         </script>
     </head>
 
     <body>
         <!-- Use any element to open/show the overlay navigation menu -->
-        <button class="openbtn" onclick="openNav()">&#9776; </button>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
         <!--<span onclick="openNav()"></span>-->
         <div id="mySidepanel" class="sidepanel">
+<<<<<<< HEAD
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
             
             <form id="main">
@@ -62,42 +62,102 @@
             <button type="submit" onclick="closeNav()">Submit</button>
             </form>
 
+=======
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+>>>>>>> ba67380a8cbaf98e8f0b7f048abf9f4fcb1b6c31
 
             <!--About Submenu-->
-            <a href="javascript:void(0)" onclick="toggleSubmenu(this)">About PrecipiTracker <span class="arrow">&#9662;</span></a>
+            <a href="javascript:void(0)" onclick="toggleSubmenu(this)"
+                >About PrecipiTracker <span class="arrow">&#9662;</span></a
+            >
             <div id="aboutSubmenu" class="submenu">
-                <p>"Suff about Precipitracker goes here.."</p>
-                </div>
-            
+                <p>
+                    Precipi-Tracker is an application designed to provide detailed information on rainfall patterns for
+                    users off the grid. The website/web app displays areas with significant rainfall and collecting
+                    stations for specified locations such as regions of the United States:
+                </p>
+                <b>
+                    <p>- Midwest</p>
+                    <p>- West</p>
+                    <p>- South</p>
+                    <p>- Northeast</p>
+                </b>
+                <p>You can also views States within those regions, or counties within a specified State.</p>
+                <p>
+                    PrecipiTracker aims to aid individuals in managing water resources and staying informed about
+                    precipitation trends in their local areas. Features include:
+                </p>
+                <p>
+                    <b>Real-time Rainfall Data:</b> Get up-to-date information on rainfall across different regions of
+                    the United States.
+                </p>
+                <p>
+                    <b>Interactive Map:</b> View rainfall data on an interactive map, divided by region, state, or
+                    county.
+                </p>
+                <p>
+                    <b>Collecting Stations:</b> Locate rainfall collection stations nearby or in any specified region.
+                </p>
+                <p>
+                    <b>User-Friendly Interface:</b> Intuitive UI to help users understand and interact with rainfall
+                    data effectively.
+                </p>
+            </div>
+
+            <!--Tutorial-->
+            <a href="javascript:void(0)" onclick="toggleSubmenu(this)"
+                >How to Use Precipitracker <span class="arrow">&#9662;</span></a
+            >
+            <div id="aboutSubmenu" class="submenu">
+                <p>Step 1: Find a state you want to view.</p>
+                <p>Step 2: Zoom in using your scroll wheel.</p>
+                <p>Step 3: Profit (You can see the rainfall by inches)</p>
+            </div>
+
             <!--Sources Submenu-->
             <a href="javascript:void(0)" onclick="toggleSubmenu(this)">Sources <span class="arrow">&#9662;</span></a>
             <div id="sourcesSubmenu" class="submenu">
                 <a href="#">Precipitation Data</a>
                 <a href="#">Cartographic Boundary Data</a>
                 <a href="#">Interactive Map API</a>
-                </div>
-            
+            </div>
+
             <!--The Team Submenu-->
             <a href="javascript:void(0)" onclick="toggleSubmenu(this)">The Team <span class="arrow">&#9662;</span></a>
             <div id="teamSubmenu" class="submenu">
-            <p>"Team stuff goes here"</p>
+                <b>
+                    <p>- Austin Hegarty</p>
+                    <p>- Josh Remillard</p>
+                    <p>- Cody Rosa</p>
+                    <p>- Ryan Shirlock</p>
+                </b>
             </div>
-           
-            <h6> © Precipi-Tracker team. All rights reserved, unless stated otherwise, in which case no rights reserved, except where we say so and that starts on this web page you see now... so take that.</h6>
+
+            <h6>
+                © Precipi-Tracker team. All rights reserved, unless stated otherwise, in which case no rights reserved,
+                except where we say so and that starts on this web page you see now... so take that.
+            </h6>
         </div>
 
-        
         <div id="top-header">
             <div id="header-title">
                 <h1>PrecipiTracker</h1>
             </div>
             <div id="header-subtitle">
                 <h1>Decipher the downpour!</h1>
+<<<<<<< HEAD
                 <h4>[V0.5.90212 Blue-Blur]</h4>
             </div>
         </div>
         
         <!--<form id="main">
+=======
+                <h4>[V0.6.8675309 Blue Blur]</h4>
+            </div>
+        </div>
+
+        <form id="main">
+>>>>>>> ba67380a8cbaf98e8f0b7f048abf9f4fcb1b6c31
             <label for="start-date">Start Date:</label>
             <input type="date" id="start-date" name="start-date" required />
             <label for="end-date">End Date:</label>
@@ -112,6 +172,5 @@
         <!-- <p>
            People who clicked on the page: <b><i>ERROR_INVALID_NUM</i></b>
         </p> -->
-
     </body>
 </html>
