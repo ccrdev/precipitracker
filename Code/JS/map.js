@@ -7,11 +7,16 @@ let currentDataLevel = null;
 let lastBounds = null;
 
 export function initializeMap() {
-    map = L.map("map").setView([37.8, -96], 4);
+    map = L.map("map",{zoomControl:false}).setView([37.8, -96], 4);
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
         attribution: '&copy; OpenStreetMap'
     }).addTo(map);
+    
+    L.control.zoom({        // Load custom-positioned zoom buttons 
+    position: 'bottomleft'  // options: 'topleft', 'topright', 'bottomleft', 'bottomright'
+    }).addTo(map);
+
     return map;
 }
 

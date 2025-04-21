@@ -157,7 +157,7 @@ section {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    z-index: 
+    z-index: 10000;
 }
 
 /* Style the button that is used to open the sidepanel */
