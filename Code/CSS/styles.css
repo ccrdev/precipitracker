@@ -3,12 +3,22 @@
  */
 
 html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
     font-family: monospace;
     background-color: #017585;
 }
 
 /* Header container styling */
 #top-header {
+    display: inline-block; /* scale the header bubble*/
+    position: absolute; /*fixed position top right*/
+    top: 10px;
+    right: 10px;
+    z-index: 10001; /*to ensure bubble is above map layer*/
     background-color: #2d9faf; /* Light-blue background for the rectangle */
     padding: 5px; /* Adds space around the text */
     border: double 2px black;
@@ -18,34 +28,44 @@ html {
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    width: 90%;
+    width: 33%;
 }
 
 /* Title styling */
 #header-title h1 {
-    font-size: 8vw; /* Larger font for the title */
+    font-size: 20px; /* Larger font for the title */
     color: lightcyan; /* Darker color for contrast */
-    margin-bottom: 10px; /* Adds spacing below the title */
+    margin-bottom: 5px; /* Adds spacing below the title */
 }
-
 /* Subtitle styling */
 #header-subtitle h1 {
-    font-size: 5vw; /* Smaller font for the subtitle */
+    font-size: 12px; /* Smaller font for the subtitle */
     color: #003c9f; /* Softer color for the subtitle */
     margin-top: 0; /* Ensures no extra space above */
+}
+#header-subtitle h4 {
+    font-size: 10px;
+    margin-bottom: 1px;
 }
 
 b,
 p {
-    color: #004ed0; /* Brighter color for the bold sections */
+    color: #003c9f; /* Brighter color for the bold sections */
     font-size: 3vw; /* Smaller font for the main body */
 }
 
 body {
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    /* padding: 1em; */
+    /* margin-left: auto;*/
+    /* margin-right: auto;*/
+    /* align-items: center;*/
 }
 #note {
     font-size: 2.5vw;
@@ -100,18 +120,18 @@ ul {
 }
 
 #vers {
-    color: #78abff;
+    color: #3763ac;
 }
 
 #daterange {
+    background-color: #2d9faf; /* Light-blue background for the rectangle */
+    padding: 5px; /* Adds space around the text */
     border: double 2px black;
     border-radius: 20px; /* Softens corners of the rectangle */
-    background-color: #002a5c;
-    font-size: medium;
-    margin: 2em;
-    box-shadow: 8px 8px 4px;
-    margin-left: 5px;
-    margin-right: 5px;
+    text-align: center; /* Centers the text */
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+    width: 50%;
+    margin: auto;
 }
 
 #image,
@@ -126,8 +146,9 @@ ul {
 
 /*Styling for map API*/
 .leaflet-container {
-    height: 500px;
-    align-items: center;
+    /* align-items: center;*/
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw; /* 100% of the viewport width */
 }
 
 /* The sidepanel menu */
@@ -135,7 +156,7 @@ ul {
     height: 100%; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 10000; /* Stay on top */
+    z-index: 10002; /* Stay on top */
     top: 0;
     left: 0;
     background-color: #111; /* Black*/
@@ -151,7 +172,7 @@ ul {
     font-size: 15px;
     color: #00a5ff;
     display: block;
-    transition: 0.25s;
+    transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -166,7 +187,7 @@ ul {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    z-index: 10000;
+    z-index: 1100;
 }
 
 /* Style the button that is used to open the sidepanel */
@@ -181,6 +202,10 @@ ul {
     text-align: center; /* Centers the text */
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
     position: fixed;
+    display: inline-block; /* scale the header bubble*/
+    top: 10px;
+    left: 10px;
+    z-index: 10000;
 }
 
 .openbtn:hover {
