@@ -23,7 +23,7 @@
         <script>
             /* Set the width of the sidebar to 250px (show it) */
             function openNav() {
-                document.getElementById("mySidepanel").style.width = "100%";
+                document.getElementById("mySidepanel").style.width = "60%";
             }
 
             /* Set the width of the sidebar to 0 (hide it) */
@@ -51,57 +51,60 @@
         <button class="openbtn" onclick="openNav()">&#9776;</button>
         <!--<span onclick="openNav()"></span>-->
         <div id="mySidepanel" class="sidepanel">
-
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
-            
-            <form id="main">
-            <label for="start-date">Start Date:</label>
-            <input type="date" id="start-date" name="start-date" required />
-            <label for="end-date">End Date:</label>
-            <input type="date" id="end-date" name="end-date" required />
-            <button type="submit" onclick="closeNav()">Submit</button>
-            </form>
-
-
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+            <h4 id="vers">[V0.74444444449 Zeno's Paradox]</h4>
+
+            <div id="daterange">
+                <form id="main">
+                    <label for="start-date" id="vers">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date" required /> <br />
+                    <label for="end-date" id="vers">End Date:</label>
+                    <input type="date" id="end-date" name="end-date" required /> <br />
+                    <button type="submit" onclick="closeNav()">Submit</button>
+                </form>
+            </div>
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
             <!--About Submenu-->
             <a href="javascript:void(0)" onclick="toggleSubmenu(this)"
                 >About PrecipiTracker <span class="arrow">&#9662;</span></a
             >
             <div id="aboutSubmenu" class="submenu">
-                <p>
+                <p id="subtitle">
                     Precipi-Tracker is an application designed to provide detailed information on rainfall patterns for
                     users off the grid. The website/web app displays areas with significant rainfall and collecting
                     stations for specified locations such as regions of the United States:
-                </p>
-                <b>
-                    <p>- Midwest</p>
-                    <p>- West</p>
-                    <p>- South</p>
-                    <p>- Northeast</p>
-                </b>
-                <p>You can also views States within those regions, or counties within a specified State.</p>
-                <p>
+                    <b>
+                        <br />
+                        - Midwest <br />
+                        - West <br />
+                        - South <br />
+                        - Northeast <br />
+                    </b>
+                    <br />
+                    You can also views States within those regions, or counties within a specified State.
+                    <br />
+                    <br />
                     PrecipiTracker aims to aid individuals in managing water resources and staying informed about
                     precipitation trends in their local areas. Features include:
-                </p>
-                <p>
+                    <br />
+                    <br />
                     <b>Real-time Rainfall Data:</b> Get up-to-date information on rainfall across different regions of
-                    the United States.
-                </p>
-                <p>
+                    the United States. <br />
+                    <br />
                     <b>Interactive Map:</b> View rainfall data on an interactive map, divided by region, state, or
-                    county.
-                </p>
-                <p>
+                    county. <br />
+                    <br />
                     <b>Collecting Stations:</b> Locate rainfall collection stations nearby or in any specified region.
-                </p>
-                <p>
+                    <br />
+                    <br />
                     <b>User-Friendly Interface:</b> Intuitive UI to help users understand and interact with rainfall
                     data effectively.
                 </p>
+                <br />
+                <br />
             </div>
 
             <!--Tutorial-->
@@ -109,9 +112,16 @@
                 >How to Use Precipitracker <span class="arrow">&#9662;</span></a
             >
             <div id="tutorialSubmenu" class="submenu">
-                <p>Step 1: Find a state you want to view.</p>
-                <p>Step 2: Zoom in using your scroll wheel.</p>
-                <p>Step 3: Profit (You can see the rainfall by inches)</p>
+                <p id="subtitle">
+                    Step 1: Find a state you want to view. <br />
+                    <br />
+                    Step 2: Zoom in using your scroll wheel.
+                    <br />
+                    <br />
+                    Step 3: Profit (You can see the rainfall by inches)
+                    <br />
+                    <br />
+                </p>
             </div>
 
             <!--Sources Submenu-->
@@ -125,12 +135,12 @@
             <!--The Team Submenu-->
             <a href="javascript:void(0)" onclick="toggleSubmenu(this)">The Team <span class="arrow">&#9662;</span></a>
             <div id="teamSubmenu" class="submenu">
-                <b>
-                    <p>- Austin Hegarty</p>
-                    <p>- Josh Remillard</p>
-                    <p>- Cody Rosa</p>
-                    <p>- Ryan Shirlock</p>
-                </b>
+                <p id="subtitle">
+                    - Austin Hegarty <br />
+                    - Josh Remillard <br />
+                    - Cody Rosa <br />
+                    - Ryan Shirlock <br />
+                </p>
             </div>
 
             <h6>
@@ -145,11 +155,9 @@
             </div>
             <div id="header-subtitle">
                 <h1>Decipher the downpour!</h1>
-
-                 <h4>[V0.6.8675309 Blue Blur]</h4>
             </div>
         </div>
-        
+
         <!--<form id="main">
 
                

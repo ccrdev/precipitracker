@@ -19,7 +19,7 @@ html {
     margin-right: auto;
     align-items: center;
     width: 90%;
-} 
+}
 
 /* Title styling */
 #header-title h1 {
@@ -37,7 +37,7 @@ html {
 
 b,
 p {
-    color: #003c9f; /* Brighter color for the bold sections */
+    color: #004ed0; /* Brighter color for the bold sections */
     font-size: 3vw; /* Smaller font for the main body */
 }
 
@@ -58,7 +58,7 @@ a:hover {
 }
 
 a {
-    color: #0b53c8;
+    color: #0745aa;
     padding: 14px 16px;
     text-decoration: none;
     display: block;
@@ -84,7 +84,7 @@ h4 {
 h6 {
     font-size: 2vw;
     font-style: oblique;
-    padding: 15px; 
+    padding: 15px;
     color: #78abff;
 }
 
@@ -93,21 +93,30 @@ ul {
     list-style-type: none;
 }
 
-form,
-section {
- /* border: double 2px black;
+#subtitle {
+    font-size: 15px;
+    margin: auto;
+    color: #78abff;
+}
+
+#vers {
+    color: #78abff;
+}
+
+#daterange {
+    border: double 2px black;
     border-radius: 20px; /* Softens corners of the rectangle */
-    margin: 1em;
-    /*text-indent: 2em;
-   /* box-shadow: 8px 8px 4px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+    background-color: #002a5c;
+    font-size: medium;
+    margin: 2em;
+    box-shadow: 8px 8px 4px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #image,
 #main {
-   /* background-color: #2d9faf; /* Light-blue background for the rectangle */
+    /* background-color: #2d9faf; /* Light-blue background for the rectangle */
     color: #0c79b4;
     margin-left: auto;
     margin-right: auto;
@@ -123,7 +132,7 @@ section {
 
 /* The sidepanel menu */
 .sidepanel {
-    height: 300px; /* Specify a height */
+    height: 100%; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 10000; /* Stay on top */
@@ -139,10 +148,10 @@ section {
 .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #0c79b4;
+    font-size: 15px;
+    color: #00a5ff;
     display: block;
-    transition: 0.3s;
+    transition: 0.25s;
 }
 
 /* When you mouse over the navigation links, change their color */
