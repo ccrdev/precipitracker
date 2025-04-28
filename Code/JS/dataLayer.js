@@ -11,7 +11,7 @@ import {
     getGeoJsonLayer
 } from './map.js';
 import { fetchPrecipitationData } from './api.js';
-import { styleFeature, bindPopupToFeature } from './utils.js';
+import { styleFeature, bindPopupToFeature, calculateDynamicBoundaries } from './utils.js';
 import { getCurrentStartDate, getCurrentEndDate } from './date.js';
 
 // Store last loaded dates
@@ -79,12 +79,18 @@ async function loadLayerOnEvent() {
         features: filteredFeatures
     };
 
+    const minValue = Math.min(...precipitationData.map(r => Number(r.precipitation_amount)));
+    const maxValue = Math.max(...precipitationData.map(r => Number(r.precipitation_amount)));
+    const boundaries = calculateDynamicBoundaries(minValue, maxValue);
+
     const newLayer = L.geoJson(filteredGeoJson, {
-        style: feature => styleFeature(feature, precipitationData, level),
+        style: feature => styleFeature(feature, precipitationData, level, boundaries),
         onEachFeature: (feature, layer) => bindPopupToFeature(feature, layer, precipitationData, level)
     });
 
     setGeoJsonLayer(newLayer.addTo(map));
+
+    updateLegend(boundaries);
 }
 
 export { loadLayerOnEvent };
