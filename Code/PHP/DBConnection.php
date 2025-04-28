@@ -3,31 +3,55 @@ class DBConnection {
     private static $pdo = null;
 
     // Load configuration from JSON file
-    private static function loadConfig() {
-        $configPath = __DIR__ . '/../config.json';
-        if (!file_exists($configPath)) {
-            die(json_encode(["status" => "error", "message" => "Configuration file missing"]));
+    private static function loadEnv($filePath = __DIR__ . '/../../../.env') {
+        if (!file_exists($filePath)) {
+            die(json_encode(["status" => "error", "message" => "Environment file not found: $filePath"]));
         }
-        return json_decode(file_get_contents($configPath), true);
-    }
+    
+        $lines = file($filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        foreach ($lines as $line) {
+            $line = trim($line);
+            if ($line === '' || $line[0] === '#') continue;
+    
+            [$name, $value] = explode('=', $line, 2);
+            $name = trim($name);
+            $value = trim($value);
+    
+            if (!array_key_exists($name, $_ENV)) {
+                putenv("$name=$value");
+                $_ENV[$name] = $value;
+                $_SERVER[$name] = $value;
+            }
+        }
+    }    
 
     // Establish a PDO connection
     public static function connect() {
         if (self::$pdo === null) {
-            $config = self::loadConfig();
+            self::loadEnv(); // Load .env once
+    
+            $host = getenv('DB_HOST');
+            $port = getenv('DB_PORT');
+            $dbname = getenv('DB_NAME');
+            $user = getenv('DB_USER');
+            $password = getenv('DB_PASSWORD');
+    
+            if (!$host || !$port || !$dbname || !$user) {
+                die(json_encode(["status" => "error", "message" => "Missing DB credentials"]));
+            }
+    
             try {
                 self::$pdo = new PDO(
-                    "pgsql:host=" . $config['DB_HOST'] . 
-                    ";port=" . $config['DB_PORT'] . 
-                    ";dbname=" . $config['DB_NAME'],
-                    $config['DB_USER'],
-                    $config['DB_PASSWORD'],
+                    "pgsql:host=$host;port=$port;dbname=$dbname",
+                    $user,
+                    $password,
                     [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
                 );
             } catch (PDOException $e) {
-                die(json_encode(["status" => "error", "message" => "Database connection failed: " . $e->getMessage()]));
+                die(json_encode(["status" => "error", "message" => "Connection failed", "error" => $e->getMessage()]));
             }
         }
+    
         return self::$pdo;
     }
 
