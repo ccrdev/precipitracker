@@ -10,6 +10,7 @@ export function initializeMap() {
     map = L.map("map",{zoomControl:false}).setView([37.8, -96], 4);
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
+        minZoom: 3,
         attribution: '&copy; OpenStreetMap'
     }).addTo(map);
     
