@@ -51,7 +51,7 @@ html {
 b,
 p {
     color: #003c9f; /* Brighter color for the bold sections */
-    font-size: 3vw; /* Smaller font for the main body */
+    font-size: auto; /* Smaller font for the main body */
 }
 
 body {
