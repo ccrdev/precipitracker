@@ -128,8 +128,12 @@ ul {
     color: #78abff;
 }
 
-#vers {
+#vers, #copy {
     color: #3763ac;
+}
+
+#copy {
+    font-size: 10px;
 }
 
 #daterange {
