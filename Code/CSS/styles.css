@@ -40,7 +40,7 @@ html {
 #header-title h1 {
     /*font-size: 4vw; /* Larger font for the title */
     font-family: 'Hfont';
-    font-size: clamp(12px, 3vw, 40px); /* Min: 20px, Preferred: 4vw, Max: 40px */
+    font-size: clamp(10px, 3vw, 40px); /* Min: 20px, Preferred: 4vw, Max: 40px */
     color: lightcyan; /* Darker color for contrast */
     margin-bottom: 5px; /* Adds spacing below the title */
     margin-left: 2px;
