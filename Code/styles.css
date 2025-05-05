@@ -1,0 +1,228 @@
+/* Created by: Ryan.S
+ * Modified by: Josh.R
+ */
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: monospace;
+    background-color: #017585;
+}
+@font-face{
+    font-family: 'Hfont';
+    src: url('../Fonts/Supercharge.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Header container styling */
+#top-header {
+    display: inline-block; /* scale the header bubble*/
+    position: absolute; /*fixed position top right*/
+    top: 10px;
+    right: 10px;
+    z-index: 10001; /*to ensure bubble is above map layer*/
+    background-color: #2d9faf; /* Light-blue background for the rectangle */
+    padding: 5px; /* Adds space around the text */
+    border: double 2px black;
+    border-radius: 20px; /* Softens corners of the rectangle */
+    text-align: center; /* Centers the text */
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 33%;
+}
+
+/* Title styling */
+#header-title h1 {
+    /*font-size: 4vw; /* Larger font for the title */
+    font-family: 'Hfont';
+    font-size: clamp(12px, 3vw, 40px); /* Min: 20px, Preferred: 4vw, Max: 40px */
+    color: lightcyan; /* Darker color for contrast */
+    margin-bottom: 5px; /* Adds spacing below the title */
+    margin-left: 2px;
+    margin-right: 2px;
+}
+/* Subtitle styling */
+#header-subtitle h1 {
+    font-size: 12px; /* Smaller font for the subtitle */
+    color: #003c9f; /* Softer color for the subtitle */
+    margin-top: 0; /* Ensures no extra space above */
+}
+#header-subtitle h4 {
+    font-size: 10px;
+    margin-bottom: 1px;
+}
+
+b,
+p {
+    color: #003c9f; /* Brighter color for the bold sections */
+    font-size: auto; /* Smaller font for the main body */
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    /* padding: 1em; */
+    /* margin-left: auto;*/
+    /* margin-right: auto;*/
+    /* align-items: center;*/
+}
+#note {
+    font-size: 2.5vw;
+}
+
+a:hover {
+    background-color: #0b53c8;
+    color: black;
+    font-style: oblique;
+}
+
+a {
+    color: #0745aa;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav {
+    border: double 2px;
+    align-content: center;
+    font-family: sans-serif;
+    font-style: initial;
+}
+
+h3 {
+    font-size: 7vw;
+    text-align: center;
+}
+h4 {
+    font-size: 3vw;
+    text-align: center;
+    font-style: oblique;
+}
+
+h6 {
+    font-size: 2vw;
+    font-style: oblique;
+    padding: 15px;
+    color: #78abff;
+}
+
+ul {
+    font-style: oblique;
+    list-style-type: none;
+}
+
+#subtitle {
+    font-size: 15px;
+    margin: auto;
+    color: #78abff;
+}
+
+#vers {
+    color: #3763ac;
+}
+
+#daterange {
+    background-color: #2d9faf; /* Light-blue background for the rectangle */
+    padding: 5px; /* Adds space around the text */
+    border: double 2px black;
+    border-radius: 20px; /* Softens corners of the rectangle */
+    text-align: center; /* Centers the text */
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+    width: 50%;
+    margin: auto;
+}
+
+#image,
+#main {
+    /* background-color: #2d9faf; /* Light-blue background for the rectangle */
+    color: #0c79b4;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 90%;
+}
+
+/*Styling for map API*/
+.leaflet-container {
+    /* align-items: center;*/
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw; /* 100% of the viewport width */
+}
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10002; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the side panel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #00a5ff;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: #5aa4ef;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 1100;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+    padding: 5px; /* Adds space around the text */
+    font-size: 45px;
+    cursor: pointer;
+    background-color: #2d9faf;
+    color: #ffffff;
+    border: double 2px black;
+    border-radius: 20px; /* Softens corners of the rectangle */
+    text-align: center; /* Centers the text */
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+    position: fixed;
+    display: inline-block; /* scale the header bubble*/
+    top: 10px;
+    left: 10px;
+    z-index: 10000;
+}
+
+.openbtn:hover {
+    background-color: #5aa4ef;
+    position: fixed;
+}
+
+.submenu {
+    display: none;
+    padding-left: 20px;
+}
