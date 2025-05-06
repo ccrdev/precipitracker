@@ -38,7 +38,6 @@ html {
 
 /* Title styling */
 #header-title h1 {
-    /*font-size: 4vw; /* Larger font for the title */
     font-family: 'Hfont';
     font-size: clamp(10px, 3vw, 40px); /* Min: 20px, Preferred: 4vw, Max: 40px */
     color: lightcyan; /* Darker color for contrast */
@@ -70,11 +69,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-
-    /* padding: 1em; */
-    /* margin-left: auto;*/
-    /* margin-right: auto;*/
-    /* align-items: center;*/
 }
 #note {
     font-size: 2.5vw;
@@ -131,6 +125,10 @@ ul {
 #vers, #copy {
     color: #3763ac;
 }
+#version{
+    font-family: 'Hfont';
+    color: #3763ac;
+}
 
 #copy {
     font-size: 10px;
@@ -159,7 +157,6 @@ ul {
 
 /*Styling for map API*/
 .leaflet-container {
-    /* align-items: center;*/
     height: 100vh; /* 100% of the viewport height */
     width: 100vw; /* 100% of the viewport width */
 }
@@ -229,4 +226,8 @@ ul {
 .submenu {
     display: none;
     padding-left: 20px;
+}
+.arrow{
+    font-size: 3vw;
+    color: #ffffff;
 }
