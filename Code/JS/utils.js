@@ -12,22 +12,8 @@ export function computeAverageForArea(records) {
     return total / records.length;
 }
 
-// Styles a GeoJSON feature based on average precipitation.
-export function styleFeature(feature, precipitationData, level) {
-    const areaPrecipitationData = filterPrecipitationData(feature, precipitationData, level);
-    const avgValue = computeAverageForArea(areaPrecipitationData);
-    const fillColor = determineFillColor(avgValue);
-
-    return {
-        color: "#555",
-        weight: 1,
-        fillOpacity: 0.7,
-        fillColor: fillColor
-    };
-}
-
 // Filters precipitation data for a specific feature based on the level.
-function filterPrecipitationData(feature, precipitationData, level) {
+export function filterPrecipitationData(feature, precipitationData, level) {
     switch (level) {
         case "county":
             // Convert to string and pad state and county IDs for comparison
@@ -50,45 +36,62 @@ function filterPrecipitationData(feature, precipitationData, level) {
     }
 }
 
+// Simple color interpolation for fill color
+// Simple color interpolation for fill color
+function interpolateColor(max, value) {
+    // If max is 0 (no data), return baby blue color
+    if (max === 0 || isNaN(value)) return `rgb(173, 216, 230)`; // Baby blue if no data or invalid value
 
-// Determines the fill color for a feature based on the average precipitation value.
-function determineFillColor(avgValue) {
-    if (avgValue > 2.0) {
-        return "#00429d";
-    } else if (avgValue > 1.0) {
-        return "#4771b2";
-    } else if (avgValue > 0.5) {
-        return "#73a2c6";
-    } else if (avgValue > 0.25) {
-        return "#a5d5d8";
-    } else {
-        return "#dceebb";
-    }
+    const ratio = Math.min(value / max, 1);  // Ensure the ratio stays between 0 and 1
+    // Interpolate from baby blue (173, 216, 230) to dark blue (0, 0, 255)
+    const r = Math.round(173 + ratio * (0 - 173));  // Red component
+    const g = Math.round(216 + ratio * (0 - 216));  // Green component
+    const b = Math.round(230 + ratio * (255 - 230));  // Blue component
+    return `rgb(${r},${g},${b})`;
 }
 
-// Binds a popup to each feature with average precipitation data.
-export function bindPopupToFeature(feature, layer, precipitationData, level) {
-    const areaPrecipitationData = filterPrecipitationData(feature, precipitationData, level);
-    const avgValue = computeAverageForArea(areaPrecipitationData);
-    const label = formatFeatureLabel(feature, level);
-    const precipitationText = avgValue.toFixed(2) + " inches";
 
+// Styles a GeoJSON feature based on average precipitation.
+export function styleFeature(feature, data, level, maxAvg) {
+    const records = filterPrecipitationData(feature, data, level);
+    const avg = computeAverageForArea(records)
+    const color = interpolateColor(maxAvg, avg);
+    console.log(`Feature: ${feature.properties.NAME}, Avg Precipitation: ${avg}, Color: ${color}`);
+
+    return {
+        color: "#555",
+        weight: 1,
+        fillOpacity: 0.7,
+        fillColor: color
+    };
+}
+
+// Binds a popup showing the feature’s name and average precipitation.
+export function bindPopupToFeature(feature, layer, data, dataLevel) {
+    const featureRecords    = filterPrecipitationData(feature, data, dataLevel);
+    const featureAverage    = computeAverageForArea(featureRecords).toFixed(2);
+    const featureLabel      = formatFeatureLabel(feature, dataLevel);
+  
     layer.bindPopup(`
-        <strong>${label}</strong><br>
-        <strong>Average Precipitation:</strong> ${precipitationText}
+      <strong>${featureLabel}</strong><br>
+      <strong>Average Precipitation:</strong> ${featureAverage} inches
     `);
 }
-
-// Formats a label for a feature based on its level.
-function formatFeatureLabel(feature, level) {
-    switch (level) {
-        case "county":
-            return `${feature.properties.NAME} (County)`;
-        case "state":
-            return `${feature.properties.NAME} (State)`;
-        case "region":
-            return feature.properties.name || `${feature.properties.NAME} (Region)`;
-        default:
-            return "No data";
+  
+// Helper to produce a human‐readable label.
+function formatFeatureLabel(feature, dataLevel) {
+    const name = feature.properties.NAME;
+    if (dataLevel === "county") {
+      return `${name} (County)`;
     }
+    if (dataLevel === "state") {
+      return `${name} (State)`;
+    }
+    // for regions some GeoJSON use .name, others .NAME
+    if (dataLevel === "region") {
+      return feature.properties.name
+        ? `${feature.properties.name} (Region)`
+        : `${name} (Region)`;
+    }
+    return "No data";
 }
