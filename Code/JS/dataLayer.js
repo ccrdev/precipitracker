@@ -23,8 +23,14 @@ import { getCurrentStartDate, getCurrentEndDate } from "./date.js";
 
 let lastStartDate = null;
 let lastEndDate = null;
+let isLayerUpdating = false; // Flag to prevent concurrent layer updates
 
 export async function loadLayerOnEvent() {
+  // If a layer is already being updated, skip this request to prevent stacking
+  if (isLayerUpdating) return;
+
+  isLayerUpdating = true; // Set the flag to indicate we're updating the layer
+
   const mapInstance = getMap();
   const startDate = getCurrentStartDate();
   const endDate = getCurrentEndDate();
@@ -53,6 +59,7 @@ export async function loadLayerOnEvent() {
 
   if (viewUnchanged) {
     console.log("View, zoom/level, and dates unchanged; skipping reload.");
+    isLayerUpdating = false; // Reset flag after operation
     return;
   }
 
@@ -74,7 +81,10 @@ export async function loadLayerOnEvent() {
 
   // Fetch precipitation data and GeoJSON
   const precipitationData = await fetchPrecipitationData(dataLevel, startDate, endDate);
-  if (!precipitationData) return;
+  if (!precipitationData) {
+    isLayerUpdating = false; // Reset flag after operation
+    return;
+  }
 
   const geoJsonResponse = await fetch(geoJsonFilePath);
   const geoJsonObject = await geoJsonResponse.json();
@@ -106,4 +116,6 @@ export async function loadLayerOnEvent() {
 
   // Set the new layer in the map state
   setGeoJsonLayer(newLayer);
+
+  isLayerUpdating = false; // Reset flag after operation is complete
 }
