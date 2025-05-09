@@ -75,7 +75,7 @@ export function bindPopupToFeature(feature, layer, data, dataLevel) {
 
     layer.bindPopup(`
       <strong>${featureLabel}</strong><br>
-      <strong>Average Precipitation:</strong> ${featureAverageInches.toFixed(2)} inches / ${featureAverageMM.toFixed(1)} mm
+      <strong>Average Precipitation:</strong> ${featureAverageInches.toFixed(2)} inches (${featureAverageMM.toFixed(1)} mm)
     `);
 }
 
