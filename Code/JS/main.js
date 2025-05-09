@@ -1,7 +1,7 @@
 // main.js
-import { initializeMap } from './map.js';
-import { loadLayerOnEvent } from './dataLayer.js';
-import { validateDates, setCurrentStartDate, setCurrentEndDate } from './date.js';
+import {initializeMap} from './map.js';
+import {loadLayerOnEvent} from './dataLayer.js';
+import {setCurrentEndDate, setCurrentStartDate, validateDates} from './date.js';
 
 
 function main() {
@@ -36,4 +36,5 @@ function main() {
         loadLayerOnEvent();
     });
 }
+
 main();
