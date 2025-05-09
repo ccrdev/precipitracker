@@ -65,15 +65,17 @@ export function styleFeature(feature, data, level, maxAvg) {
     };
 }
 
-// Binds a popup showing the feature’s name and average precipitation.
+// Binds a popup showing the feature’s name and average precipitation in inches and millimeters.
 export function bindPopupToFeature(feature, layer, data, dataLevel) {
     const featureRecords = filterPrecipitationData(feature, data, dataLevel);
-    const featureAverage = computeAverageForArea(featureRecords).toFixed(2);
+    const featureAverageInches = computeAverageForArea(featureRecords);
+    const featureAverageMM = (featureAverageInches * 25.4);
+
     const featureLabel = formatFeatureLabel(feature, dataLevel);
 
     layer.bindPopup(`
       <strong>${featureLabel}</strong><br>
-      <strong>Average Precipitation:</strong> ${featureAverage} inches
+      <strong>Average Precipitation:</strong> ${featureAverageInches.toFixed(2)} inches (${featureAverageMM.toFixed(1)} mm)
     `);
 }
 
