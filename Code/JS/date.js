@@ -31,16 +31,19 @@ export function validateDates(start, end) {
     const maximumDate = new Date('2024-12-10');
 
     if (startDate > endDate) {
-        return { isValid: false, message: "Start date cannot be after end date." };
+        return {isValid: false, message: "Start date cannot be after end date."};
     }
 
     if (startDate < minimumDate || endDate > maximumDate) {
-        return { isValid: false, message: `Please select dates between ${minimumDate.toDateString()} and ${maximumDate.toDateString()}.` };
+        return {
+            isValid: false,
+            message: `Please select dates between ${minimumDate.toDateString()} and ${maximumDate.toDateString()}.`
+        };
     }
 
     if (startDate > now || endDate > now) {
-        return { isValid: false, message: "Dates cannot be in the future." };
+        return {isValid: false, message: "Dates cannot be in the future."};
     }
 
-    return { isValid: true, message: "Dates are valid." };
+    return {isValid: true, message: "Dates are valid."};
 }

@@ -1,5 +1,6 @@
 // api.js
-import { validateDates, getCurrentStartDate, getCurrentEndDate } from "./date.js";
+import {getCurrentEndDate, getCurrentStartDate, validateDates} from "./date.js";
+
 // Fetches precipitation data from the API based on the level (county, state, region) and date range
 export async function fetchPrecipitationData(level = "county", start = "2023-12-10", end = "2024-12-10") {
     // Validate the dates before making the API call
@@ -22,7 +23,7 @@ export async function fetchPrecipitationData(level = "county", start = "2023-12-
     }
     if (!end) {
         end = getCurrentEndDate();
-    }  
+    }
 
     // Set Start and End dates
     start = getCurrentStartDate();
