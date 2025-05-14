@@ -1,37 +1,72 @@
 // dataLayer.js
 
+/**
+ * @fileoverview
+ * Handles dynamic loading and rendering of precipitation data layers
+ * based on the user's current map view, zoom level, and selected date range.
+ * 
+ * This module:
+ * - Selects the appropriate GeoJSON file (county, state, or region level)
+ *   depending on the map zoom level.
+ * - Fetches precipitation data from the backend API.
+ * - Filters visible geographic features based on map bounds.
+ * - Computes average precipitation and applies a color scale.
+ * - Styles each feature and binds popup information to it.
+ * - Prevents unnecessary reloads if the map view and data context have not changed.
+ */
+
 import {
-  getCurrentDataLevel,
-  getCurrentGeoJsonFile,
-  getGeoJsonLayer,
-  getLastBounds,
-  getMap,
-  setCurrentDataLevel,
-  setCurrentGeoJsonFile,
-  setGeoJsonLayer,
-  setLastBounds
+    getCurrentDataLevel,
+    getCurrentGeoJsonFile,
+    getGeoJsonLayer,
+    getLastBounds,
+    getMap,
+    setCurrentDataLevel,
+    setCurrentGeoJsonFile,
+    setGeoJsonLayer,
+    setLastBounds
 } from "./map.js";
 
-import {fetchPrecipitationData} from "./api.js";
-import {bindPopupToFeature, computeAverageForArea, filterPrecipitationData, styleFeature} from "./utils.js";
-import {getCurrentEndDate, getCurrentStartDate} from "./date.js";
+import { fetchPrecipitationData } from "./api.js";
+import { bindPopupToFeature, computeAverageForArea, filterPrecipitationData, styleFeature } from "./utils.js";
+import { getCurrentEndDate, getCurrentStartDate } from "./date.js";
 
 let lastStartDate = null;
 let lastEndDate = null;
 let isLayerUpdating = false; // Flag to prevent concurrent layer updates
 
+/**
+ * Loads and renders a new precipitation layer on the map when a change in view,
+ * zoom level, or date range is detected. Automatically selects the correct
+ * GeoJSON level (county, state, region) based on the current zoom level.
+ * 
+ * Prevents redundant rendering if the view or data is unchanged. 
+ * Updates the internal map state, fetches required data, and styles features
+ * based on precipitation averages for the selected time range.
+ * 
+ * Steps:
+ * 1. Abort if an update is already running.
+ * 2. Determine appropriate data granularity (geo level) from zoom.
+ * 3. Compare current bounds, zoom, and date range with previous values.
+ * 4. If changed, fetch precipitation and GeoJSON data.
+ * 5. Style, filter, and bind each feature based on precipitation stats.
+ * 6. Add the new layer to the map.
+ * 
+ * @async
+ * @function loadLayerOnEvent
+ * @returns {Promise<void>} Does not return data; updates the map directly.
+ */
 export async function loadLayerOnEvent() {
-    // If a layer is already being updated, skip this request to prevent stacking
-    if (isLayerUpdating) return;
+    if (isLayerUpdating) return; // Avoid concurrent updates
 
-    isLayerUpdating = true; // Set the flag to indicate we're updating the layer
+    isLayerUpdating = true;
 
     const mapInstance = getMap();
     const startDate = getCurrentStartDate();
     const endDate = getCurrentEndDate();
     const currentZoom = mapInstance.getZoom();
 
-    // Choose GeoJSON file and dataLevel by zoom level
+    // Select GeoJSON file and data level based on zoom
     let geoJsonFilePath, dataLevel;
     if (currentZoom >= 8) {
         geoJsonFilePath = "./US_Counties.geojson";
@@ -44,6 +79,7 @@ export async function loadLayerOnEvent() {
         dataLevel = "region";
     }
 
+    // Check if map view, data level, or date range has changed
     const mapBounds = mapInstance.getBounds();
     const viewUnchanged =
         mapBounds.equals(getLastBounds()) &&
@@ -54,43 +90,42 @@ export async function loadLayerOnEvent() {
 
     if (viewUnchanged) {
         console.log("View, zoom/level, and dates unchanged; skipping reload.");
-        isLayerUpdating = false; // Reset flag after operation
+        isLayerUpdating = false;
         return;
     }
 
-    // Update stored state
+    // Update internal state with current parameters
     setCurrentGeoJsonFile(geoJsonFilePath);
     setCurrentDataLevel(dataLevel);
     setLastBounds(mapBounds);
     lastStartDate = startDate;
     lastEndDate = endDate;
 
-    // Remove previous layer if present
+    // Remove existing layer, if any
     const previousLayer = getGeoJsonLayer();
     if (previousLayer && mapInstance.hasLayer(previousLayer)) {
         mapInstance.removeLayer(previousLayer);
     }
+    setGeoJsonLayer(null); // Clear previous reference
 
-    // Clear the geoJsonLayer in the map.js state
-    setGeoJsonLayer(null); // Ensures the previous layer is not lingering
-
-    // Fetch precipitation data and GeoJSON
+    // Fetch precipitation records for current parameters
     const precipitationData = await fetchPrecipitationData(dataLevel, startDate, endDate);
     if (!precipitationData) {
-        isLayerUpdating = false; // Reset flag after operation
+        isLayerUpdating = false;
         return;
     }
 
+    // Fetch and parse appropriate GeoJSON file
     const geoJsonResponse = await fetch(geoJsonFilePath);
     const geoJsonObject = await geoJsonResponse.json();
 
-    // Keep only features visible in current map bounds
+    // Filter features within current map view
     const visibleFeatures = geoJsonObject.features.filter(feature => {
         const featureBounds = L.geoJson(feature).getBounds();
         return mapBounds.intersects(featureBounds);
     });
 
-    // Compute the maximum average precipitation among visible features
+    // Determine the maximum average precipitation to normalize coloring
     const maximumAverage = visibleFeatures.length
         ? Math.max(
             ...visibleFeatures.map(feature => {
@@ -100,17 +135,17 @@ export async function loadLayerOnEvent() {
         )
         : 0;
 
-    // Create and add the new layer
+    // Create and add a new styled GeoJSON layer with popups
     const newLayer = L.geoJSON(
-        {type: "FeatureCollection", features: visibleFeatures},
+        { type: "FeatureCollection", features: visibleFeatures },
         {
             style: feature => styleFeature(feature, precipitationData, dataLevel, maximumAverage),
-            onEachFeature: (feature, layer) => bindPopupToFeature(feature, layer, precipitationData, dataLevel)
+            onEachFeature: (feature, layer) =>
+                bindPopupToFeature(feature, layer, precipitationData, dataLevel)
         }
     ).addTo(mapInstance);
 
-    // Set the new layer in the map state
+    // Update map state with the new layer
     setGeoJsonLayer(newLayer);
-
-    isLayerUpdating = false; // Reset flag after operation is complete
+    isLayerUpdating = false;
 }

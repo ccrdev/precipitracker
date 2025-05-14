@@ -1,28 +1,69 @@
 // date.js
-let currentStartDate = '2023-12-10'; // default start date
-let currentEndDate = '2024-12-10';   // default end date
 
-// Function to get the current start date
+/**
+ * @fileoverview
+ * Manages global date state and validation logic for the Precipi-Tracker application.
+ * 
+ * This module provides:
+ * - Getters and setters for the current start and end dates used across the app
+ * - A validation function to ensure date ranges are in proper order, not in the future,
+ *   and within the allowed historical bounds for precipitation data (Dec 10, 2023 – Dec 10, 2024)
+ */
+
+// Stores the globally selected start and end dates for precipitation filtering
+let currentStartDate = '2023-12-10'; // Default start date
+let currentEndDate = '2024-12-10'; // Default end date
+
+/**
+ * Gets the currently selected start date for data filtering.
+ * 
+ * @function getCurrentStartDate
+ * @returns {string} The start date in YYYY-MM-DD format.
+ */
 export function getCurrentStartDate() {
     return currentStartDate;
 }
 
-// Function to set the current start date
+/**
+ * Sets the start date to be used in data filtering.
+ * 
+ * @function setCurrentStartDate
+ * @param {string} newStartDate - A string representing the new start date in YYYY-MM-DD format.
+ */
 export function setCurrentStartDate(newStartDate) {
     currentStartDate = newStartDate;
 }
 
-// Function to get the current end date
+/**
+ * Gets the currently selected end date for data filtering.
+ * 
+ * @function getCurrentEndDate
+ * @returns {string} The end date in YYYY-MM-DD format.
+ */
 export function getCurrentEndDate() {
     return currentEndDate;
 }
 
-// Function to set the current end date
+/**
+ * Sets the end date to be used in data filtering.
+ * 
+ * @function setCurrentEndDate
+ * @param {string} newEndDate - A string representing the new end date in YYYY-MM-DD format.
+ */
 export function setCurrentEndDate(newEndDate) {
     currentEndDate = newEndDate;
 }
 
-// Function to validate start and end dates
+/**
+ * Validates a given start and end date pair.
+ * Ensures the range is within allowed bounds, not in the future,
+ * and that the start date does not come after the end date.
+ * 
+ * @function validateDates
+ * @param {string} start - Start date in YYYY-MM-DD format.
+ * @param {string} end - End date in YYYY-MM-DD format.
+ * @returns {{ isValid: boolean, message: string }} An object containing validation status and explanation.
+ */
 export function validateDates(start, end) {
     const startDate = new Date(start);
     const endDate = new Date(end);
@@ -31,7 +72,10 @@ export function validateDates(start, end) {
     const maximumDate = new Date('2024-12-10');
 
     if (startDate > endDate) {
-        return {isValid: false, message: "Start date cannot be after end date."};
+        return {
+            isValid: false,
+            message: "Start date cannot be after end date."
+        };
     }
 
     if (startDate < minimumDate || endDate > maximumDate) {
@@ -42,8 +86,14 @@ export function validateDates(start, end) {
     }
 
     if (startDate > now || endDate > now) {
-        return {isValid: false, message: "Dates cannot be in the future."};
+        return {
+            isValid: false,
+            message: "Dates cannot be in the future."
+        };
     }
 
-    return {isValid: true, message: "Dates are valid."};
+    return {
+        isValid: true,
+        message: "Dates are valid."
+    };
 }
